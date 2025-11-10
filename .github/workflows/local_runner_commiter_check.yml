@@ -22,11 +22,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check if commit author is permitted to use local runner
         run: |
-          commits=$(curl -s -H "Authorization: token $repo_token" "https://api.github.com/repos/$repo/pulls/$pr_number/commits")
+          commits=$(curl -s -H "Authorization: token ${{ secrets.repo_token }}" "https://api.github.com/repos/${{ inputs.repo }}/pulls/${{ inputs.pr_number }}/commits")
           latest_commit=$(echo "$commits" | jq '.[-1]')
+
           author_login=$(echo "$latest_commit" | jq -r '.author.login')
-          collaborator=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: token $repo_token" https://api.github.com/repos/$repo/collaborators/zzz)
-          echo "Collaborator status check: $collaborator"
+          collaborator=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: token ${{ secrets.repo_token }}" https://api.github.com/repos/${{ inputs.repo }}/collaborators/zzz)
+
           if [[ "$collaborator" == "204" ]]; then
             echo "✅ $author_login is allowed to use local runner"
           else

@@ -11,7 +11,7 @@ env:
   PR_NUMBER: ${{ github.event.pull_request.number }}
 
 jobs:
-  hardware_tests:
+  repo_check:
     runs-on: ubuntu-latest
     steps:
       - uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@master
