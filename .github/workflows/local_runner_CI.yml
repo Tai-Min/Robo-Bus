@@ -12,11 +12,9 @@ env:
 
 jobs:
   repo_check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@master
-        with:
-          repo: $REPO
-          pr_number: $PR_NUMBER
-        secrets:
-          repo_token: $GITHUB_TOKEN
+    - uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@master
+      with:
+        repo: $REPO
+        pr_number: $PR_NUMBER
+      secrets:
+        repo_token: $GITHUB_TOKEN
