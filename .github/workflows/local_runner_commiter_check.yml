@@ -1,13 +1,17 @@
 name: local_runner
 
 on:
-  pull_request:
-    branches:
-      - master
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  REPO: ${{ github.repository }}
-  PR_NUMBER: ${{ github.event.pull_request.number }}
+ workflow_call:
+  inputs:
+    repo:
+      required: true
+      type: string
+    pr_number:
+      required: true
+      type: string
+  secrets:
+    repo_token:
+      required: true
 
 jobs:
   local_runner:
@@ -17,7 +21,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check if commit author is permitted to use local runner
-        if: github.repository == 'Tai-Min/Robo-Bus'
         run: |
           commits=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$REPO/pulls/$PR_NUMBER/commits")
           latest_commit=$(echo "$commits" | jq '.[-1]')
@@ -28,6 +31,4 @@ jobs:
             echo "✅ $author_login is allowed to use local runner"
           else
             echo "❌ $author_login is not allowed to use local runner, skipping"
-            gh run cancel ${{ github.run_id }}
-            gh run watch ${{ github.run_id }}
           fi

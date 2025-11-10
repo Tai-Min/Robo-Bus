@@ -1,0 +1,22 @@
+name: CI (local)
+
+on:
+  pull_request:
+    branches:
+      - master
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  REPO: Tai-Min/Robo-Bus
+  PR_NUMBER: ${{ github.event.pull_request.number }}
+
+jobs:
+  hardware_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@master
+        with:
+          repo: $REPO
+          pr_number: $PR_NUMBER
+        secrets:
+          repo_token: $GITHUB_TOKEN
