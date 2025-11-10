@@ -43,4 +43,3 @@ jobs:
             echo "❌ $author_login is not allowed to use local runner"
             echo "association=false" >> $GITHUB_OUTPUT
           fi
-          echo "$GITHUB_OUTPUT"

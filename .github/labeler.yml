@@ -1,14 +1,30 @@
 feature:
- - head-branch: ['^feature']
+  - head-branch: ['^feature']
 
 devel:
- - head-branch: ['^devel']
+  - head-branch: ['^devel']
 
 bug:
- - head-branch: ['^bug']
+  - head-branch: ['^bug']
 
 repo:
- - head-branch: ['^repo']
+  - head-branch: ['^repo']
+  - changed-files:
+    - any-glob-to-any-file: '**/*.yml'
 
 documentation:
  - head-branch: ['^docs']
+ - changed-files:
+    - any-glob-to-any-file: ['**/*.md', 'media/*']
+
+hardware:
+  - changed-files:
+    - any-glob-to-any-file: hw/*
+
+firmware:
+  - changed-files:
+    - any-glob-to-any-file: fw/*
+
+software:
+  - changed-files:
+    - any-glob-to-any-file: sw/*

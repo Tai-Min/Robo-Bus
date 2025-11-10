@@ -18,9 +18,10 @@ jobs:
     secrets:
       repo_token: ${{ secrets.GITHUB_TOKEN }}
 
-  # Do stuff here later...
-  hardware_tests:
+  filter:
     runs-on: ubuntu-latest
+    outputs:
+      fw: ${{ steps.filter.outputs.fw }}
     needs: committer_check
     if: needs.committer_check.outputs.association == 'true'
     steps:
@@ -31,6 +32,12 @@ jobs:
           filters: |
             fw:
               - 'fw/**'
+
+  # Do stuff here later...
+  hardware_tests:
+    runs-on: ubuntu-latest
+    needs: filter
+    if: needs.filter.outputs.fw == 'true'
+    steps:
       - name: Run hardware tests
-        if: steps.filter.outputs.fw == 'true'
         run: echo "Hello tests!"
