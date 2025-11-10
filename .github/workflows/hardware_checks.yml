@@ -1,13 +1,16 @@
-# Label PRs based on rules in labeler.yml
+# Run KiCad checks
 name: Hardware checks
 on:
-  workflow_call: # TODO: remove and replace with below
-  #branches-ignore:
-  #  - private/**
+  pull_request:
+    branches-ignore:
+      - private/**
 
 jobs:
-  hardware_checks:
-    runs-on: ubuntu-22.04
+  filter:
+    runs-on: ubuntu-latest
+    outputs:
+      schematics: ${{ steps.filter.outputs.schematics }}
+      pcb: ${{ steps.filter.outputs.pcb }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -27,9 +30,15 @@ jobs:
         if: steps.filter.outputs.pcb == 'false'
         run: echo "No PCB to check"
 
+  # Run only if there were changes in schematics or PCBs
+  hardware_checks:
+    runs-on: ubuntu-22.04
+    needs: filter
+    if: needs.filter.outputs.schematics == 'true' || needs.filter.outputs.pcb == 'true'
+    steps:
       - name: Install KiCad
-        if: steps.filter.outputs.schematics == 'true' || steps.filter.outputs.pcb == 'true'
         run: |
           sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases
           sudo apt update
           sudo apt install kicad=9.0.6~ubuntu22.04.1
+      - uses: actions/checkout@v4
