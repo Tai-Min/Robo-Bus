@@ -26,5 +26,5 @@ jobs:
             echo "✅ $author_login is allowed to use local runner"
           else
             echo "❌ $author_login is not allowed to use local runner, skipping"
-            exit 1
+            gh run cancel ${{ github.run_id }}
           fi
