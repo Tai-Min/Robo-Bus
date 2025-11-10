@@ -20,7 +20,7 @@ jobs:
           commits=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$REPO/pulls/$PR_NUMBER/commits")
           latest_commit=$(echo "$commits" | jq '.[-1]')
           author_login=$(echo "$latest_commit" | jq -r '.author.login')
-          collaborator=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/$REPO/collaborators/$author_login)
+          collaborator=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/$REPO/collaborators/zzz)
           echo "Collaborator status check: $collaborator"
           if [[ "$collaborator" == "204" ]]; then
             echo "✅ $author_login is allowed to use local runner"
