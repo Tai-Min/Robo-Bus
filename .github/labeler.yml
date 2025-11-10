@@ -6,3 +6,6 @@ devel:
 
 bug:
  - head-branch: ['^bug']
+
+repo:
+ - head-branch: ['^repo']
