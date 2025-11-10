@@ -5,18 +5,13 @@ on:
     branches:
       - master
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  REPO: Tai-Min/Robo-Bus
-  PR_NUMBER: ${{ github.event.pull_request.number }}
-
 jobs:
   repo_check:
     permissions:
       actions: write
     uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@private/local-runner-test
     with:
-      repo: ${{ $REPO }}
-      pr_number: ${{ $PR_NUMBER }}
+      repo: Tai-Min/Robo-Bus
+      pr_number: ${{ github.event.pull_request.number }}
     secrets:
-      repo_token: ${{ $GITHUB_TOKEN }}
+      repo_token: ${{ secrets.GITHUB_TOKEN }}
