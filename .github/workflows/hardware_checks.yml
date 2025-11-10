@@ -1,0 +1,17 @@
+# Label PRs based on rules in labeler.yml
+name: Hardware checks
+on:
+  workflow_call: # TODO: remove and replace with below
+  #pull_request:
+  #  branches:
+  #    - master
+
+jobs:
+  hardware_checks:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Install KiCad
+        run: |
+          sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases
+          sudo apt update
+          sudo apt install kicad=9.0.6~ubuntu22.04.1
