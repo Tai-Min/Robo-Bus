@@ -1,9 +1,7 @@
 # Label PRs based on rules in labeler.yml
 name: PR Labeler
 on:
-  pull_request:
-    branches:
-      - master
+  pull_request_target:
 
 jobs:
   labeler:
