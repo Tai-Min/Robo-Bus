@@ -12,6 +12,8 @@ env:
 jobs:
   local_runner:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
     steps:
 
       - name: Check if commit author is permitted to use local runner
