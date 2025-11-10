@@ -1,0 +1,8 @@
+feature:
+ - head-branch: ['^feature']
+
+devel:
+ - head-branch: ['^devel']
+
+bug:
+ - head-branch: ['^bug']
