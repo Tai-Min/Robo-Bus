@@ -10,5 +10,5 @@ bug:
 repo:
  - head-branch: ['^repo']
 
- documentation:
+documentation:
  - head-branch: ['^docs']
