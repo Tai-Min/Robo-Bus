@@ -17,6 +17,7 @@ jobs:
       repo_token: ${{ secrets.GITHUB_TOKEN }}
 
   hardware_tests:
+    runs-on: ubuntu-latest
     needs: repo_check
     if: needs.repo_check.outputs.association == 0
     steps:
