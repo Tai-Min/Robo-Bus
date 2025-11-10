@@ -14,7 +14,7 @@ jobs:
   hardware_tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@master
+      - uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@master
         with:
           repo: $REPO
           pr_number: $PR_NUMBER
