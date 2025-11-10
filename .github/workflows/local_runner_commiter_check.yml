@@ -12,15 +12,22 @@ on:
   secrets:
     repo_token:
       required: true
+  outputs:
+    association:
+      description: 0 if user is a collaborator in repo, 1 otherwise
+      value: ${{ jobs.user_check.outputs.association }}
 
 jobs:
-  local_runner:
+  user_check:
     runs-on: ubuntu-latest
     permissions:
       actions: write
+    outputs:
+      association: ${{ steps.user_check.outputs.association }}
     steps:
       - uses: actions/checkout@v4
-      - name: Check if commit author is permitted to use local runner
+      - id: user_check
+        name: Check if commit author is permitted to use local runner
         run: |
           commits=$(curl -s -H "Authorization: token ${{ secrets.repo_token }}" "https://api.github.com/repos/${{ inputs.repo }}/pulls/${{ inputs.pr_number }}/commits")
           latest_commit=$(echo "$commits" | jq '.[-1]')
@@ -30,6 +37,8 @@ jobs:
 
           if [[ "$collaborator" == "204" ]]; then
             echo "✅ $author_login is allowed to use local runner"
+            echo "association=0" >> $GITHUB_OUTPUT
           else
             echo "❌ $author_login is not allowed to use local runner, skipping"
+            echo "association=1" >> $GITHUB_OUTPUT
           fi
