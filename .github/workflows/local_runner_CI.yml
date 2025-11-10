@@ -12,6 +12,8 @@ env:
 
 jobs:
   repo_check:
+    permissions:
+      actions: write
     uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@private/local-runner-test
     with:
       repo: $REPO
