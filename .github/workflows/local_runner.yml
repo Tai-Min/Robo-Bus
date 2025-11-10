@@ -15,7 +15,7 @@ jobs:
     permissions:
       actions: write
     steps:
-
+      - uses: actions/checkout@v4
       - name: Check if commit author is permitted to use local runner
         if: github.repository == 'Tai-Min/Robo-Bus'
         run: |
