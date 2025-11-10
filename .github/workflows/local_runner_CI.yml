@@ -1,4 +1,4 @@
-# Use local runner to run tests on real hardware
+# Use local runner to run tests on a real hardware
 name: CI (local)
 
 on:
@@ -7,19 +7,21 @@ on:
       - master
 
 jobs:
-  user_check:
+  # Committer must be a collaborator to use a local runner
+  committer_check:
     permissions:
       actions: write
-    uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_committer_check.yml@master
+    uses: Tai-Min/Robo-Bus/.github/workflows/committer_check.yml@master
     with:
       repo: Tai-Min/Robo-Bus
       pr_number: ${{ github.event.pull_request.number }}
     secrets:
       repo_token: ${{ secrets.GITHUB_TOKEN }}
 
+  # Do stuff here later...
   hardware_tests:
     runs-on: ubuntu-latest
-    needs: user_check
-    if: needs.user_check.outputs.association == 0
+    needs: committer_check
+    if: needs.committer_check.outputs.association == 0
     steps:
       - run: echo "Hello tests!"
