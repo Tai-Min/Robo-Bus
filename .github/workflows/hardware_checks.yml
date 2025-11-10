@@ -2,15 +2,33 @@
 name: Hardware checks
 on:
   workflow_call: # TODO: remove and replace with below
-  #pull_request:
-  #  branches:
-  #    - master
+  #branches-ignore:
+  #  - private/**
 
 jobs:
   hardware_checks:
     runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            schematics:
+              - added|modified: '*.kicad_sch'
+            pcb:
+              - added|modified: '*.kicad_pcb'
+
+      - name: Echo schematics
+        if: steps.filter.outputs.schematics == 'false'
+        run: echo "No schematics to check"
+
+      - name: Echo PCB
+        if: steps.filter.outputs.pcb == 'false'
+        run: echo "No PCB to check"
+
       - name: Install KiCad
+        if: steps.filter.outputs.schematics == 'true' || steps.filter.outputs.pcb == 'true'
         run: |
           sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases
           sudo apt update

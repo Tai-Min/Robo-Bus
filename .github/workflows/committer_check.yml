@@ -15,7 +15,7 @@ on:
       required: true
   outputs:
     association:
-      description: 0 if user is a collaborator in repo, 1 otherwise
+      description: true if user is a collaborator in repo, false otherwise
       value: ${{ jobs.user_check.outputs.association }}
 
 jobs:
@@ -38,8 +38,9 @@ jobs:
 
           if [[ "$collaborator" == "204" ]]; then
             echo "✅ $author_login is allowed to use local runner"
-            echo "association=0" >> $GITHUB_OUTPUT
+            echo "association=true" >> $GITHUB_OUTPUT
           else
             echo "❌ $author_login is not allowed to use local runner"
-            echo "association=1" >> $GITHUB_OUTPUT
+            echo "association=false" >> $GITHUB_OUTPUT
           fi
+          echo "$GITHUB_OUTPUT"

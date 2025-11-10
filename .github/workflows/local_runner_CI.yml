@@ -3,8 +3,8 @@ name: CI (local)
 
 on:
   pull_request:
-    branches:
-      - master
+    branches-ignore:
+      - private/**
 
 jobs:
   # Committer must be a collaborator to use a local runner
@@ -22,6 +22,15 @@ jobs:
   hardware_tests:
     runs-on: ubuntu-latest
     needs: committer_check
-    if: needs.committer_check.outputs.association == 0
+    if: needs.committer_check.outputs.association == 'true'
     steps:
-      - run: echo "Hello tests!"
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            fw:
+              - 'fw/**'
+      - name: Run hardware tests
+        if: steps.filter.outputs.fw == 'true'
+        run: echo "Hello tests!"

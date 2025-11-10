@@ -1,10 +1,10 @@
 # Check PR if all committing rules are being followed
-name: Master branch rule enforcer
+name: PR rule enforcer
 
 on:
   pull_request:
-    branches:
-      - master
+    branches-ignore:
+      - private/**
 
 env:
   BRANCH_NAME: ${{ github.head_ref }}
