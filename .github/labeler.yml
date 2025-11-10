@@ -9,3 +9,6 @@ bug:
 
 repo:
  - head-branch: ['^repo']
+
+ documentation:
+ - head-branch: ['^docs']
