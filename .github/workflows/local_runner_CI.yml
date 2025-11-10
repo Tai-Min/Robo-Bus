@@ -16,7 +16,7 @@ jobs:
       actions: write
     uses: Tai-Min/Robo-Bus/.github/workflows/local_runner_commiter_check.yml@private/local-runner-test
     with:
-      repo: $REPO
-      pr_number: $PR_NUMBER
+      repo: ${{ $REPO }}
+      pr_number: ${{ $PR_NUMBER }}
     secrets:
-      repo_token: $GITHUB_TOKEN
+      repo_token: ${{ $GITHUB_TOKEN }}
