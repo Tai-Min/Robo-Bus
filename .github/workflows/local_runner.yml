@@ -29,4 +29,5 @@ jobs:
           else
             echo "❌ $author_login is not allowed to use local runner, skipping"
             gh run cancel ${{ github.run_id }}
+            gh run watch ${{ github.run_id }}
           fi
