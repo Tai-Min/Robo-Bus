@@ -3,27 +3,16 @@ name: CI (local)
 
 on:
   pull_request:
+    types: [ labeled ]
     branches-ignore:
       - private/**
 
 jobs:
-  # Committer must be a collaborator to use a local runner
-  committer_check:
-    permissions:
-      actions: write
-    uses: Tai-Min/Robo-Bus/.github/workflows/committer_check.yml@master
-    with:
-      repo: Tai-Min/Robo-Bus
-      pr_number: ${{ github.event.pull_request.number }}
-    secrets:
-      repo_token: ${{ secrets.GITHUB_TOKEN }}
-
   filter:
+    if: ${{ github.event.label.name == 'run_tests' }}
     runs-on: ubuntu-latest
     outputs:
       fw: ${{ steps.filter.outputs.fw }}
-    needs: committer_check
-    if: needs.committer_check.outputs.association == 'true'
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -33,11 +22,24 @@ jobs:
             fw:
               - 'fw/**'
 
-  # Do stuff here later...
-  hardware_tests:
-    runs-on: ubuntu-latest
+  # Committer must be a collaborator to use a local runner
+  committer_check:
     needs: filter
     if: needs.filter.outputs.fw == 'true'
+    permissions:
+      actions: write
+    uses: Tai-Min/Robo-Bus/.github/workflows/committer_check.yml@master
+    with:
+      repo: Tai-Min/Robo-Bus
+      pr_number: ${{ github.event.pull_request.number }}
+    secrets:
+      repo_token: ${{ secrets.GITHUB_TOKEN }}
+
+  # Do stuff here later...
+  hardware_tests:
+    if: needs.committer_check.outputs.association == 'true'
+    runs-on: ubuntu-latest
+    needs: committer_check
     steps:
       - name: Run hardware tests
         run: echo "Hello tests!"
