@@ -1,26 +1,32 @@
 # Run KiCad checks
 name: Hardware checks
+
 on:
   pull_request:
+    types: [ labeled ]
     branches-ignore:
       - private/**
 
 jobs:
   filter:
+    if: ${{ github.event.label.name == 'run_tests' }}
     runs-on: ubuntu-latest
     outputs:
       schematics: ${{ steps.filter.outputs.schematics }}
+      schematics_files: ${{ steps.filter.outputs.schematics_files }}
       pcb: ${{ steps.filter.outputs.pcb }}
+      pcb_files: ${{ steps.filter.outputs.pcb_files }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
         id: filter
         with:
+          list-files: shell
           filters: |
             schematics:
-              - added|modified: '*.kicad_sch'
+              - added|modified: '**/*.kicad_sch'
             pcb:
-              - added|modified: '*.kicad_pcb'
+              - added|modified: '**/*.kicad_pcb'
 
       - name: Echo schematics
         if: steps.filter.outputs.schematics == 'false'
@@ -33,12 +39,142 @@ jobs:
   # Run only if there were changes in schematics or PCBs
   hardware_checks:
     runs-on: ubuntu-22.04
+    env:
+      AUTO_BRANCH: ${{ github.head_ref }}-AUTO
+    permissions:
+      pull-requests: write
+      contents: write
     needs: filter
     if: needs.filter.outputs.schematics == 'true' || needs.filter.outputs.pcb == 'true'
     steps:
+      - uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: run_tests
+
       - name: Install KiCad
         run: |
           sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases
           sudo apt update
-          sudo apt install kicad=9.0.6~ubuntu22.04.1
+          sudo apt install kicad=9.0.6~ubuntu22.04.1 --no-install-recommends
+
       - uses: actions/checkout@v4
+
+      - name: Check schematics
+        id: check_schematics
+        if: needs.filter.outputs.schematics == 'true'
+        run: |
+          mkdir -p erc
+          mkdir -p schematics
+
+          FILES="${{ needs.filter.outputs.schematics_files }}"
+          FILES=$(echo "$FILES" | tr ' ' '\n')
+
+          # Ignore CvPcb warning on fresh install
+          FIRST_FILE=$(echo "$FILES" | head -n 1)
+          echo "$FIRST_FILE"
+          kicad-cli sch erc "$FIRST_FILE" --output "./result.rpt"
+
+          RESULT=""
+          for FILE in $FILES; do
+            OUT=$(kicad-cli sch erc "$FILE" --output "./erc/$FILE.rpt")
+            OUT=$(echo "$OUT" | head -n 1)
+            RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/erc/$FILE.rpt)\n $OUT"
+
+            kicad-cli sch export svg "$FILE" --output "./schematics"
+          done
+
+          echo -e "$RESULT"
+
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$RESULT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          SCHEMATICS=""
+          for i in $(ls ./schematics); do 
+            SCHEMATICS="${SCHEMATICS}\n- $i"
+            SCHEMATICS="${SCHEMATICS}\n![KiCad schematic](https://raw.githubusercontent.com/Tai-Min/Robo-Bus/$AUTO_BRANCH/schematics/$i)"
+          done
+
+          echo -e "$SCHEMATICS"
+
+          echo "schematics<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$SCHEMATICS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          exit 0
+
+      - name: Check PCB
+        id: check_pcb
+        if: needs.filter.outputs.pcb == 'true'
+        run: |
+          mkdir -p drc
+          mkdir -p pcb
+
+          FILES="${{ needs.filter.outputs.pcb_files }}"
+          FILES=$(echo "$FILES" | tr ' ' '\n')
+
+          RESULT=""
+          PCB=""
+          for FILE in $FILES; do
+            echo "$FILE"
+            OUT=$(kicad-cli pcb drc "$FILE" --output "./drc/$FILE.rpt" --schematic-parity)
+            OUT=$(echo "$OUT" | head -n 3)
+            RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt)\n $OUT"
+
+            kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE.svg" --layers F.Cu,B.Cu,F.SilkS,B.SilkS,Edge.Cuts --fit-page-to-board --mode-single
+            PCB="${PCB}\n- ./pcb/$FILE.svg"
+            PCB="${PCB}\n![KiCad PCB](https://raw.githubusercontent.com/Tai-Min/Robo-Bus/$AUTO_BRANCH/pcb/$FILE.svg)"
+          done
+
+          echo -e "$RESULT"
+
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$RESULT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          echo "$PCB"
+
+          echo "pcb<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$PCB" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          exit 0
+
+      - name: Push reports to git
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr checkout ${{ github.event.pull_request.number }}
+          git config --global user.email "bot@bots.robobus"
+          git config --global user.name "BOT"
+          git branch $AUTO_BRANCH
+          git checkout $AUTO_BRANCH
+          git add .
+          git commit -m "AUTO: Update reports" -s
+          git push origin $AUTO_BRANCH -f
+
+      - name: Post comment with results
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `
+            ### Schematics ERC results:
+            ${{ steps.check_schematics.outputs.result }}
+
+            ### Schematics:
+            ${{ steps.check_schematics.outputs.schematics }}
+
+            ### PCB DRC results:
+            ${{ steps.check_pcb.outputs.result }}
+
+            ### PCB:
+            ${{ steps.check_pcb.outputs.pcb }}
+            `;
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body
+            });
+      # reports for bad pcbs
+      # if no bad reports then generate images / pdfs with content

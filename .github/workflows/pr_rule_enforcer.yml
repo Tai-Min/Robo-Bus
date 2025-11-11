@@ -52,8 +52,6 @@ jobs:
     permissions:
       pull-requests: write
       contents: read
-    outputs:
-      unsigned: ${{ steps.check.outputs.unsigned }}
     steps:
       - uses: actions/checkout@v4
         with:

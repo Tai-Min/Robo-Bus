@@ -15,16 +15,16 @@ repo:
 documentation:
  - head-branch: ['^docs']
  - changed-files:
-    - any-glob-to-any-file: ['**/*.md', 'media/*']
+    - any-glob-to-any-file: ['**/*.md', 'media/**/*']
 
 hardware:
   - changed-files:
-    - any-glob-to-any-file: hw/*
+    - any-glob-to-any-file: hw/**/*
 
 firmware:
   - changed-files:
-    - any-glob-to-any-file: fw/*
+    - any-glob-to-any-file: fw/**/*
 
 software:
   - changed-files:
-    - any-glob-to-any-file: sw/*
+    - any-glob-to-any-file: sw/**/*
