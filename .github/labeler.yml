@@ -1,13 +1,13 @@
 feature:
   - head-branch: ['^feature']
 
-devel:
+development:
   - head-branch: ['^devel']
 
 bug:
   - head-branch: ['^bug']
 
-repo:
+repository:
   - head-branch: ['^repo']
   - changed-files:
     - any-glob-to-any-file: '**/*.yml'
