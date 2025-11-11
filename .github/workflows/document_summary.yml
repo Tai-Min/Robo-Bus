@@ -1,0 +1,32 @@
+name: AI documment summary
+
+on:
+  pull_request:
+
+jobs:
+  inference:
+    permissions:
+      models: read
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+ 
+      - name: Read README content
+        id: readme
+        run: |
+          content="$(cat README.md)" # Read entire README
+          echo "content<<EOF" >> $GITHUB_OUTPUT
+          echo "$content" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+ 
+      - name: Summarise document with AI
+        id: inference
+        uses: actions/ai-inference@v1
+        with:
+          model: openai/gpt-4.1
+          prompt: "Summarise the following README:\n${{ steps.readme.outputs.content }}"
+ 
+      - name: Print AI Summary
+        run: echo "${{ steps.inference.outputs.response }}"
