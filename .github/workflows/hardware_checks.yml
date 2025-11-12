@@ -1,4 +1,4 @@
-# Run KiCad checks
+# Run KiCad checks and display schematics / PCBs in a PR comment
 name: Hardware checks
 
 on:
