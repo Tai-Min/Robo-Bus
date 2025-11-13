@@ -2,9 +2,7 @@
 name: PR rule enforcer
 
 on:
-  pull_request:
-    branches-ignore:
-      - private/**
+  pull_request_target:
 
 env:
   BRANCH_NAME: ${{ github.head_ref }}
