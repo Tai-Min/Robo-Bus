@@ -1,3 +1,5 @@
+name: Remove stale branches created by bots
+
 on:
   schedule:
     - cron: "0 0 * * *" # Everday at midnight
