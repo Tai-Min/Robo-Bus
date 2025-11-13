@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+
     steps:
     - uses: actions/checkout@v4
       with:
@@ -15,7 +16,8 @@ jobs:
         repository: ${{github.event.pull_request.head.repo.full_name}}
         fetch-depth: 0
 
-    - uses: dorny/paths-filter@v3
+    - name: Check changes in .github folder
+      uses: dorny/paths-filter@v3
       id: filter
       with:
         filters: |
@@ -25,7 +27,7 @@ jobs:
     - name: Committer check
       if: steps.filter.outputs.gh == 'true'
       id: committer_check
-      uses: Tai-Min/Robo-Bus/.github/actions/committer_check@repo/update-actions-2
+      uses: Tai-Min/Robo-Bus/.github/actions/committer_check@master
       with:
         repo: Tai-Min/Robo-Bus
         pr_number: ${{ github.event.pull_request.number }}

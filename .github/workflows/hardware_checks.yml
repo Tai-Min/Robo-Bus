@@ -4,21 +4,23 @@ name: Hardware checks
 on:
   pull_request:
     types: [ labeled ]
-    branches-ignore:
-      - private/**
 
 jobs:
   filter:
     if: ${{ github.event.label.name == 'run_tests' }}
+
     runs-on: ubuntu-latest
     outputs:
       schematics: ${{ steps.filter.outputs.schematics }}
       schematics_files: ${{ steps.filter.outputs.schematics_files }}
       pcb: ${{ steps.filter.outputs.pcb }}
       pcb_files: ${{ steps.filter.outputs.pcb_files }}
+
     steps:
       - uses: actions/checkout@v4
-      - uses: dorny/paths-filter@v3
+
+      - name: Check if schematics or pcbs were changed
+        uses: dorny/paths-filter@v3
         id: filter
         with:
           list-files: shell
@@ -36,22 +38,27 @@ jobs:
         if: steps.filter.outputs.pcb == 'false'
         run: echo "No PCB to check"
 
-  # Run only if there were changes in schematics or PCBs
   hardware_checks:
+    needs: filter
+    if: needs.filter.outputs.schematics == 'true' || needs.filter.outputs.pcb == 'true'
+
     runs-on: ubuntu-22.04
     env:
       AUTO_BRANCH: ${{ github.head_ref }}-AUTO
     permissions:
       pull-requests: write
       contents: write
-    needs: filter
-    if: needs.filter.outputs.schematics == 'true' || needs.filter.outputs.pcb == 'true'
+
     steps:
       - name: Install KiCad
         run: |
           sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases
           sudo apt update
-          sudo apt install kicad=9.0.6~ubuntu22.04.1 --no-install-recommends
+          sudo apt install kicad=9.0.6~ubuntu22.04.1 kicad-libraries kicad-symbols kicad-footprints --no-install-recommends
+          mkdir -p ~/.config/kicad/9.0
+          cp /usr/share/kicad/template/sym-lib-table ~/.config/kicad/9.0/sym-lib-table
+          cp /usr/share/kicad/template/fp-lib-table ~/.config/kicad/9.0/fp-lib-table
+          #cp /usr/share/kicad/template/sym-lib-table ~/.config/kicad/9.0/sym-lib-table
 
       - uses: actions/checkout@v4
 
@@ -64,6 +71,8 @@ jobs:
 
           FILES="${{ needs.filter.outputs.schematics_files }}"
           FILES=$(echo "$FILES" | tr ' ' '\n')
+
+          echo "$FILES"
 
           # Ignore CvPcb warning on fresh install
           FIRST_FILE=$(echo "$FILES" | head -n 1)
@@ -109,6 +118,8 @@ jobs:
           FILES="${{ needs.filter.outputs.pcb_files }}"
           FILES=$(echo "$FILES" | tr ' ' '\n')
 
+          echo "$FILES"
+
           RESULT=""
           PCB=""
           for FILE in $FILES; do
@@ -117,7 +128,7 @@ jobs:
             OUT=$(echo "$OUT" | head -n 3)
             RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt)\n $OUT"
 
-            kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE.svg" --layers F.Cu,B.Cu,F.SilkS,B.SilkS,Edge.Cuts --fit-page-to-board --mode-single
+            kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE.svg" --layers F.Cu,B.Cu,Edge.Cuts --fit-page-to-board --mode-single
             PCB="${PCB}\n- ./pcb/$FILE.svg"
             PCB="${PCB}\n![KiCad PCB](https://raw.githubusercontent.com/Tai-Min/Robo-Bus/$AUTO_BRANCH/pcb/$FILE.svg)"
           done
@@ -136,7 +147,6 @@ jobs:
 
           exit 0
 
-      # TODO: use artifacts?
       - name: Push reports to git
         env:
           GH_TOKEN: ${{ github.token }}
@@ -173,5 +183,3 @@ jobs:
               repo: context.repo.repo,
               body
             });
-      # reports for bad pcbs
-      # if no bad reports then generate images / pdfs with content
