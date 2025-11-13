@@ -59,6 +59,8 @@ jobs:
         id: check
         run: |
           COMMITS=$(git log origin/${{ github.base_ref }}..HEAD~ --pretty=format:"%H")
+          echo "Base ref: origin/${{ github.base_ref }}"
+          echo "$COMMITS"
           UNSIGNED=""
           for COMMIT in $COMMITS; do
             if ! git show -s --format=%B $COMMIT | grep -q "Signed-off-by:"; then
