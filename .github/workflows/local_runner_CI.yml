@@ -13,19 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: dorny/paths-filter@v3
         id: filter
         with:
           filters: |
             fw:
               - 'fw/**'
-      - name: Committer check
-        if: steps.filter.outputs.fw == 'true'
-        id: commiter_check
-        uses: Tai-Min/Robo-Bus/.github/committer_check.yml@master
-        with:
-          repo: Tai-Min/Robo-Bus
-          pr_number: ${{ github.event.pull_request.number }}
+
       - name: Run hardware tests
         if: steps.committer_check.outputs.association == 'true'
         run: echo "Hello tests!"

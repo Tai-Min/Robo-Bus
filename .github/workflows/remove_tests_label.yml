@@ -1,10 +1,15 @@
+name: Remove run_tests when tests are triggered
+
 on:
   pull_request_target:
     types: [ labeled ]
 
 jobs:
   remove_label:
+    if: ${{ github.event.label.name == 'run_tests' }}
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - uses: actions-ecosystem/action-remove-labels@v1
         with:
