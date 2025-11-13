@@ -19,8 +19,8 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - id: user_check
-      name: Check if commit author is a collaborator
+    - name: Check if commit author is a collaborator
+      id: user_check
       shell: bash
       run: |
         commits=$(curl -s -H "Authorization: token ${{ inputs.repo_token }}" "https://api.github.com/repos/${{ inputs.repo }}/pulls/${{ inputs.pr_number }}/commits")

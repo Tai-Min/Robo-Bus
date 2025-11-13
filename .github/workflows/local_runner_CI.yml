@@ -4,23 +4,32 @@ name: CI (local)
 on:
   pull_request:
     types: [ labeled ]
-    branches-ignore:
-      - private/**
 
 jobs:
-  hardware_tests:
+  filter:
     if: ${{ github.event.label.name == 'run_tests' }}
+    
     runs-on: ubuntu-latest
+    outputs:
+      fw: ${{ steps.filter.outputs.fw }}
+
     steps:
       - uses: actions/checkout@v4
 
-      - uses: dorny/paths-filter@v3
+      - name: Check if fw folder was changed
+        uses: dorny/paths-filter@v3
         id: filter
         with:
           filters: |
             fw:
               - 'fw/**'
 
+  hardware_tests:
+    needs: filter
+    if: needs.filter.outputs.fw == 'true'
+
+    runs-on: ubuntu-latest
+    steps:
       - name: Run hardware tests
         if: steps.committer_check.outputs.association == 'true'
         run: echo "Hello tests!"

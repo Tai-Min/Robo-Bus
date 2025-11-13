@@ -14,6 +14,7 @@ jobs:
     permissions:
       pull-requests: write
       contents: read
+
     steps:
       - name: Check head branch
         run: |
@@ -50,6 +51,7 @@ jobs:
     permissions:
       pull-requests: write
       contents: read
+      
     steps:
       - uses: actions/checkout@v4
         with:

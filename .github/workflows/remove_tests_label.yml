@@ -7,10 +7,13 @@ on:
 jobs:
   remove_label:
     if: ${{ github.event.label.name == 'run_tests' }}
+
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+
     steps:
-      - uses: actions-ecosystem/action-remove-labels@v1
+      - name: Remove run_tests label
+        uses: actions-ecosystem/action-remove-labels@v1
         with:
           labels: run_tests
