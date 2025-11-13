@@ -22,7 +22,7 @@ jobs:
       - name: Committer check
         if: steps.filter.outputs.fw == 'true'
         id: commiter_check
-        uses: Tai-Min/Robo-Bus/.github/committer_check.yml@repo/update-actions-artifacts
+        uses: Tai-Min/Robo-Bus/.github/committer_check.yml@master
         with:
           repo: Tai-Min/Robo-Bus
           pr_number: ${{ github.event.pull_request.number }}
