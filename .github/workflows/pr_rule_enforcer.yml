@@ -58,7 +58,7 @@ jobs:
       - name: Check commit sign-offs
         id: check
         run: |
-          COMMITS=$(git log origin/${{ github.base_ref }}..origin/${{ github.event.pull_request.base.ref }} --pretty=format:"%H")
+          COMMITS=$(git log origin/${{ github.base_ref }}..origin/${{ github.event.pull_request.head.ref }} --pretty=format:"%H")
           echo "Base ref: origin/${{ github.base_ref }}"
           echo "$COMMITS"
           UNSIGNED=""
