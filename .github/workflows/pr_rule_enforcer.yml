@@ -60,7 +60,8 @@ jobs:
       - name: Check commit sign-offs
         id: check
         run: |
-          COMMITS=$(git log origin/${{ github.base_ref }}..origin/${{ github.event.pull_request.head.ref }} --pretty=format:"%H")
+          git remote add original https://github.com/Tai-Min/Robo-Bus.git
+          COMMITS=$(git log original/${{ github.base_ref }}..origin/${{ github.event.pull_request.head.ref }} --pretty=format:"%H")
           echo "Base ref: origin/${{ github.base_ref }}"
           echo "$COMMITS"
           UNSIGNED=""
