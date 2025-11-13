@@ -6,6 +6,8 @@ on:
 jobs:
   workflows_check:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
     - uses: actions/checkout@v4
       with:
@@ -23,8 +25,30 @@ jobs:
     - name: Committer check
       if: steps.filter.outputs.gh == 'true'
       id: committer_check
-      uses: Tai-Min/Robo-Bus/.github/actions/committer_check@repo/update-actions
+      uses: Tai-Min/Robo-Bus/.github/actions/committer_check@repo/update-actions-2
       with:
         repo: Tai-Min/Robo-Bus
         pr_number: ${{ github.event.pull_request.number }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Post comment if .github folder was edited by an outsider
+      if: steps.committer_check.outputs.association == 'false'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const body = `
+          ⚠️ .github folder was edited by an outsider.
+          ⚠️ MAKE SURE TO CHECK FOR ANY SUSPICIOUS CHANGES
+          `;
+          await github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body
+          });
+
+    - name: Fail the check
+      if: steps.committer_check.outputs.association == 'false'
+      run: |
+        echo "Check failed due to suspicious activity"
+        exit 1

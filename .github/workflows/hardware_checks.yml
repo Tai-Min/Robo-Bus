@@ -136,6 +136,7 @@ jobs:
 
           exit 0
 
+      # TODO: use artifacts?
       - name: Push reports to git
         env:
           GH_TOKEN: ${{ github.token }}
