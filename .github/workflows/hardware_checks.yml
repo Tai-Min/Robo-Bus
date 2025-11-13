@@ -47,10 +47,6 @@ jobs:
     needs: filter
     if: needs.filter.outputs.schematics == 'true' || needs.filter.outputs.pcb == 'true'
     steps:
-      - uses: actions-ecosystem/action-remove-labels@v1
-        with:
-          labels: run_tests
-
       - name: Install KiCad
         run: |
           sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases

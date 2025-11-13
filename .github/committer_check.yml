@@ -1,0 +1,35 @@
+# Check if committer of the last commit in a PR is associated with the repo
+name: Committer association check
+
+inputs:
+  repo:
+    required: true
+    type: string
+  pr_number:
+    required: true
+    type: string
+outputs:
+  association:
+    description: true if user is a collaborator in repo, false otherwise
+    value: ${{ steps.user_check.outputs.association }}
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v4
+    - id: user_check
+      name: Check if commit author is permitted to use local runner
+      run: |
+        commits=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ inputs.repo }}/pulls/${{ inputs.pr_number }}/commits")
+        latest_commit=$(echo "$commits" | jq '.[-1]')
+
+        author_login=$(echo "$latest_commit" | jq -r '.author.login')
+        collaborator=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ inputs.repo }}/collaborators/$author_login)
+
+        if [[ "$collaborator" == "204" ]]; then
+          echo "✅ $author_login is allowed to use local runner"
+          echo "association=true" >> $GITHUB_OUTPUT
+        else
+          echo "❌ $author_login is not allowed to use local runner"
+          echo "association=false" >> $GITHUB_OUTPUT
+        fi

@@ -1,0 +1,11 @@
+on:
+  pull_request_target:
+    types: [ labeled ]
+
+jobs:
+  remove_label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: run_tests
