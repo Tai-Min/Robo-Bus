@@ -19,16 +19,15 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v4
     - id: user_check
       name: Check if commit author is a collaborator
       shell: bash
       run: |
-        commits=$(curl -s -H "Authorization: token ${{ inputs.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ inputs.repo }}/pulls/${{ inputs.pr_number }}/commits")
+        commits=$(curl -s -H "Authorization: token ${{ inputs.repo_token }}" "https://api.github.com/repos/${{ inputs.repo }}/pulls/${{ inputs.pr_number }}/commits")
         latest_commit=$(echo "$commits" | jq '.[-1]')
 
         author_login=$(echo "$latest_commit" | jq -r '.author.login')
-        collaborator=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: token ${{ inputs.GITHUB_TOKEN }}" https://api.github.com/repos/${{ inputs.repo }}/collaborators/$author_login)
+        collaborator=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: token ${{ inputs.repo_token }}" https://api.github.com/repos/${{ inputs.repo }}/collaborators/$author_login)
 
         if [[ "$collaborator" == "204" ]]; then
           echo "✅ $author_login is allowed to use local runner"
