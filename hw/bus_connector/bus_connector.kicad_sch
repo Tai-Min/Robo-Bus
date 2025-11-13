@@ -2111,7 +2111,7 @@
 			)
 		)
 	)
-	(global_label "SHIELD"
+	(global_label "SHIELD_R"
 		(shape input)
 		(at 205.74 104.14 180)
 		(fields_autoplaced yes)
@@ -2123,7 +2123,7 @@
 		)
 		(uuid "2c7c386c-6880-45a2-bb6b-40aeb88513fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.1629 104.14 0)
+			(at 193.9253 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2265,7 +2265,7 @@
 			)
 		)
 	)
-	(global_label "SHIELD"
+	(global_label "SHIELD_R"
 		(shape input)
 		(at 163.83 134.62 180)
 		(fields_autoplaced yes)
@@ -2277,7 +2277,7 @@
 		)
 		(uuid "6c92455e-0266-4795-9b31-af7cf07f20f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.2529 134.62 0)
+			(at 152.0153 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2419,7 +2419,7 @@
 			)
 		)
 	)
-	(global_label "SHIELD"
+	(global_label "SHIELD_L"
 		(shape input)
 		(at 120.65 104.14 180)
 		(fields_autoplaced yes)
@@ -2431,7 +2431,7 @@
 		)
 		(uuid "9d76e8d8-5e1d-4f12-ac62-3e28f75eb3eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.0729 104.14 0)
+			(at 109.0772 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2617,7 +2617,7 @@
 			)
 		)
 	)
-	(global_label "SHIELD"
+	(global_label "SHIELD_L"
 		(shape input)
 		(at 78.74 134.62 180)
 		(fields_autoplaced yes)
@@ -2629,7 +2629,7 @@
 		)
 		(uuid "ec819bad-436d-4ef3-b071-54a275c06f18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.1629 134.62 0)
+			(at 67.1672 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
