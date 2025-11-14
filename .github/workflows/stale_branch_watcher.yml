@@ -12,5 +12,5 @@ jobs:
       - name: Remove stale branches created by bots
         uses: fpicalausa/remove-stale-branches@v2.4.0
         with:
-          dry-run: true
+          dry-run: false
           restrict-branches-regex: ^.*-AUTO$
