@@ -1,0 +1,3 @@
+
+- hw/mcu/mcu.kicad_sch: [report](https://github.com/Tai-Min/Robo-Bus/blob/repo/hardware-check-actions-PR39-AUTO/erc/hw/mcu/mcu.kicad_sch.rpt)
+ Found 2 violations
