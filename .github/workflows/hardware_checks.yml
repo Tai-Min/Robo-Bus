@@ -257,4 +257,4 @@ jobs:
   handle_skipped:
     needs: filter
     if: needs.filter.outputs.schematics == 'false' && needs.filter.outputs.pcb == 'false'
-    uses: Tai-Min/Robo-Bus/.github/workflows/handle_skipped.ymlmaster
+    uses: Tai-Min/Robo-Bus/.github/workflows/handle_skipped.yml@master
