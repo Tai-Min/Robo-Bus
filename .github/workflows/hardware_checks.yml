@@ -1,4 +1,3 @@
-# Run KiCad checks
 name: Hardware checks
 
 on:
@@ -159,9 +158,13 @@ jobs:
             OUT=$(echo "$OUT" | head -n 3)
             RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt)\n$OUT"
 
-            kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE.svg" --layers F.Cu,B.Cu,Edge.Cuts --fit-page-to-board --mode-single
-            PCB="${PCB}\n- ./pcb/$FILE.svg"
-            PCB="${PCB}\n![KiCad PCB](https://raw.githubusercontent.com/Tai-Min/Robo-Bus/$AUTO_BRANCH/pcb/$FILE.svg)"
+            kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE_FRONT.svg" --layers F.Cu,Edge.Cuts --fit-page-to-board --mode-single
+            PCB="${PCB}\n- ./pcb/$FILE_FRONT.svg"
+            PCB="${PCB}\n![KiCad PCB](https://raw.githubusercontent.com/Tai-Min/Robo-Bus/$AUTO_BRANCH/pcb/$FILE_FRONT.svg)"
+
+            kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE_BACK.svg" --layers B.Cu,Edge.Cuts --fit-page-to-board --mode-single
+            PCB="${PCB}\n- ./pcb/$FILE_BACK.svg"
+            PCB="${PCB}\n![KiCad PCB](https://raw.githubusercontent.com/Tai-Min/Robo-Bus/$AUTO_BRANCH/pcb/$FILE_BACK.svg)"
           done
 
           echo -e "$RESULT"
