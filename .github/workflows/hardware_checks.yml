@@ -112,7 +112,7 @@ jobs:
           for FILE in $FILES; do
             OUT=$(kicad-cli sch erc "$FILE" --output "./erc/$FILE.rpt")
             OUT=$(echo "$OUT" | head -n 1)
-            RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/erc/$FILE.rpt)\n $OUT"
+            RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/erc/$FILE.rpt)\n$OUT"
 
             kicad-cli sch export svg "$FILE" --output "./schematics"
           done
@@ -157,7 +157,7 @@ jobs:
             echo "$FILE"
             OUT=$(kicad-cli pcb drc "$FILE" --output "./drc/$FILE.rpt" --schematic-parity)
             OUT=$(echo "$OUT" | head -n 3)
-            RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt)\n $OUT"
+            RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt)\n$OUT"
 
             kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE.svg" --layers F.Cu,B.Cu,Edge.Cuts --fit-page-to-board --mode-single
             PCB="${PCB}\n- ./pcb/$FILE.svg"
@@ -257,4 +257,4 @@ jobs:
   handle_skipped:
     needs: filter
     if: needs.filter.outputs.schematics == 'false' && needs.filter.outputs.pcb == 'false'
-    uses: Tai-Min/Robo-Bus/.github/workflows/handle_skipped.yml@repo/hardware-check-actions
+    uses: Tai-Min/Robo-Bus/.github/workflows/handle_skipped.ymlmaster

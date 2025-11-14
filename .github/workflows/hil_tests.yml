@@ -1,5 +1,5 @@
 # Use local runner to run tests on a real hardware
-name: HIL
+name: HIL tests
 
 on:
   workflow_call:
@@ -45,4 +45,4 @@ jobs:
   handle_skipped:
     needs: filter
     if: needs.filter.outputs.fw == 'false'
-    uses: Tai-Min/Robo-Bus/.github/workflows/handle_skipped.yml@repo/hardware-check-actions
+    uses: Tai-Min/Robo-Bus/.github/workflows/handle_skipped.ymlmaster
