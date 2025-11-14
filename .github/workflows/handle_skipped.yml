@@ -1,0 +1,19 @@
+name: Handle skipped
+
+on: 
+  workflow_call:
+    outputs:
+      skipped:
+        description: true if skipped, empty otherwise
+        value: ${{ jobs.handle_skipped.outputs.skipped }}
+
+jobs:
+  handle_skipped:
+    runs-on: ubuntu-latest
+    outputs:
+      skipped: ${{ steps.skip.outputs.skipped }}
+
+    steps:
+      - name: Handle skipped test
+        id: skip
+        run: echo "skipped=true" >> $GITHUB_OUTPUT

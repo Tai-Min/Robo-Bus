@@ -1,4 +1,4 @@
-name: Remove run_tests when tests are triggered
+name: Remove run_tests
 
 on:
   pull_request_target:

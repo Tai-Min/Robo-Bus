@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  pull_request:
+    types: [ labeled ]
+
+jobs:
+  hardware_checks:
+    if: ${{ github.event.label.name == 'run_tests' }}
+
+    permissions:
+      pull-requests: write
+      contents: write
+
+    uses: Tai-Min/Robo-Bus/.github/workflows/hardware_checks.yml@repo/hardware-check-actions
+    with:
+      base_ref: ${{ github.base_ref }}
+      head_ref: ${{ github.head_ref }}
+      pr_number: ${{ github.event.pull_request.number }}
+      repo_name: ${{ github.event.pull_request.head.repo.full_name }}
+
+  hil_tests:
+    if: ${{ github.event.label.name == 'run_tests' }}
+    uses: Tai-Min/Robo-Bus/.github/workflows/hil_tests.yml@repo/hardware-check-actions
+
+  post_comment:
+    needs: [hardware_checks, hil_tests]
+
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
+    steps:
+    - name: Committer check
+      id: committer_check
+      uses: Tai-Min/Robo-Bus/.github/actions/committer_check@master
+      with:
+        repo: Tai-Min/Robo-Bus
+        pr_number: ${{ github.event.pull_request.number }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create comment
+      id: comment
+      run: |
+        echo "${{ needs.hardware_checks.outputs.comment }}"
+        echo "${{ needs.hardware_checks.outputs.skipped }}"
+
+        COMMENT=""
+        if [[ "${{ needs.hardware_checks.outputs.skipped }}" = 'true' ]]; then
+          COMMENT="## Hardware checks\n- Skipped."
+        else
+          COMMENT="## Hardware checks\n${{ needs.hardware_checks.outputs.comment }}"
+        fi
+
+        if [[ "${{ needs.hil_tests.outputs.skipped }}" = 'true' ]]; then
+          COMMENT="${COMMENT}\n## HIL tests\n- Skipped."
+        else
+          COMMENT="${COMMENT}\n## HIL tests\n{{ needs.hil_tests.outputs.comment }}"
+        fi
+
+        # Post comment instantly as the collaborator has write access
+        if [[ "${{ steps.committer_check.outputs.association }}" = 'true' ]]; then
+          echo "comment<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$COMMENT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+        # Post comment via cron job later
+        else
+          mkdir ./comments
+          echo -e "$COMMENT" > ./comments/message.md
+        fi
+        
+    - name: Post comment with results
+      if: steps.committer_check.outputs.association == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const body = `
+          ${{ steps.comment.outputs.comment }}
+          `;
+          await github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body
+          });
+
+    - name: Upload comment for a forked pr
+      if: steps.committer_check.outputs.association == 'false'
+      uses: actions/upload-artifact@v4
+      with:
+        name: pr_message
+        overwrite: 'true'
+        path: comments
