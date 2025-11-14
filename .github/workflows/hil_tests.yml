@@ -1,0 +1,48 @@
+# Use local runner to run tests on a real hardware
+name: HIL tests
+
+on:
+  workflow_call:
+    outputs:
+      comment:
+        description: Comment from job or empty if the job was skipped
+        value: ${{ jobs.hardware_checks.outputs.comment }}
+      skipped:
+        description: true if skipped, empty otherwise
+        value: ${{ jobs.handle_skipped.outputs.skipped }}
+
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    outputs:
+      fw: ${{ steps.filter.outputs.fw }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check if fw folder was changed
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            fw:
+              - 'fw/**'
+
+  hardware_tests:
+    needs: filter
+    if: needs.filter.outputs.fw == 'true'
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run hardware tests
+        if: steps.committer_check.outputs.association == 'true'
+        run: |
+          COMMENT="Hello tests!"
+          echo "comment<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$COMMENT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+  handle_skipped:
+    needs: filter
+    if: needs.filter.outputs.fw == 'false'
+    uses: Tai-Min/Robo-Bus/.github/workflows/handle_skipped.yml@master

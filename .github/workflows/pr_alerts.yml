@@ -1,4 +1,4 @@
-name: Provide warnings for suspicious PRs
+name: PR check
 
 on:
   pull_request_target:
@@ -12,8 +12,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: ${{github.event.pull_request.head.ref}}
-        repository: ${{github.event.pull_request.head.repo.full_name}}
+        ref: ${{ github.event.pull_request.head.ref }}
+        repository: ${{ github.event.pull_request.head.repo.full_name }}
         fetch-depth: 0
 
     - name: Check changes in .github folder
