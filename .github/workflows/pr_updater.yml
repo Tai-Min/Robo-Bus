@@ -3,7 +3,7 @@ name: Update PR comments
 on:
   workflow_run:
     workflows:
-      - Demo CI
+      - CI
     types:
       - completed
 
