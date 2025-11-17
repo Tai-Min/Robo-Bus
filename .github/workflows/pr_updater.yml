@@ -214,34 +214,39 @@ jobs:
                 | select(.!=null)
                 ' <( echo "$EXISTING_PR_COMMENTS" ) )"
 
-            if [ -z "$OLD_COMMENT" ]; then
-              COMMENT_HTML_URL="$(auth_crl "$GITHUB_API/issues/$PR_NUMBER/comments" \
+            auth_crl "$GITHUB_API/issues/$PR_NUMBER/comments" \
                   -X POST \
                   -H "Content-Type: application/json" \
-                  --data "$MESSAGE_BODY" \
-                | jq -r '.html_url' )"
-              COMMENT_INFO="New comment $COMMENT_HTML_URL was created"
-            else
-              # Make sure the content of the message has changed
-              COMMENT_URL="$(jq -r '
-                  (input | .body) as $body
-                  | select(.body | . != $body)
-                  | .url
-                  ' <( echo "$OLD_COMMENT" ) <( echo "$MESSAGE_BODY" ) )"
+                  --data "$MESSAGE_BODY"
+                  
+            #if [ -z "$OLD_COMMENT" ]; then
+            #  COMMENT_HTML_URL="$(auth_crl "$GITHUB_API/issues/$PR_NUMBER/comments" \
+            #      -X POST \
+            #      -H "Content-Type: application/json" \
+            #      --data "$MESSAGE_BODY" \
+            #    | jq -r '.html_url' )"
+            #  COMMENT_INFO="New comment $COMMENT_HTML_URL was created"
+            #else
+            #  # Make sure the content of the message has changed
+            #  COMMENT_URL="$(jq -r '
+            #      (input | .body) as $body
+            #      | select(.body | . != $body)
+            #      | .url
+            #      ' <( echo "$OLD_COMMENT" ) <( echo "$MESSAGE_BODY" ) )"
+            #
+            #  if [ -z "$COMMENT_URL" ]; then
+            #    echo "The message has already been posted from artifact '$MSG_ARTIFACT_NAME' in workflow $RUN_ID (PR #$PR_NUMBER), skipping..."
+            #    continue
+            #  fi
 
-              if [ -z "$COMMENT_URL" ]; then
-                echo "The message has already been posted from artifact '$MSG_ARTIFACT_NAME' in workflow $RUN_ID (PR #$PR_NUMBER), skipping..."
-                continue
-              fi
+            #  COMMENT_HTML_URL="$(auth_crl "$COMMENT_URL" \
+            #      -X PATCH \
+            #      -H "Content-Type: application/json" \
+            #      --data "$MESSAGE_BODY" \
+            #    | jq -r '.html_url' )"
 
-              COMMENT_HTML_URL="$(auth_crl "$COMMENT_URL" \
-                  -X PATCH \
-                  -H "Content-Type: application/json" \
-                  --data "$MESSAGE_BODY" \
-                | jq -r '.html_url' )"
-
-              COMMENT_INFO="Existing comment $COMMENT_HTML_URL was updated"
-            fi
+            #  COMMENT_INFO="Existing comment $COMMENT_HTML_URL was updated"
+            #fi
 
             echo "$COMMENT_INFO from workflow $WORKFLOW_NAME #$RUN_ID"
           done
