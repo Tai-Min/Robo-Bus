@@ -1,3 +1,4 @@
+# Works only for forked PRs as it's not needed for collaborators
 name: Update PR comments
 
 on:
@@ -35,6 +36,7 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MSG_ARTIFACT_NAME: "pr_message"
+
         run: |
           export GITHUB_API="https://api.github.com/repos/$GITHUB_REPOSITORY"
 
