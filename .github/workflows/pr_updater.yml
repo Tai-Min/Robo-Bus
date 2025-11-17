@@ -47,17 +47,17 @@ jobs:
 
           if [ -z "$ARTIFACT_URL" ]; then
             echo "Unable to find an artifact named '$MSG_ARTIFACT_NAME' in workflow $RUN_ID (PR #$PR_NUMBER), skipping..."
-            continue
+            exit 0
           fi
 
           echo "Downloading artifact $ARTIFACT_URL (assuming single text file per artifact)..."
           if ! MESSAGE="$(auth_crl "$ARTIFACT_URL" | gunzip)"; then
             echo "Unable to download or parse message from artifact '$MSG_ARTIFACT_NAME' in workflow $RUN_ID (PR #$PR_NUMBER), skipping..."
-            continue
+            exit 0
           fi
           if [ -z "$MESSAGE" ]; then
             echo "Empty message in artifact '$MSG_ARTIFACT_NAME' in workflow $RUN_ID (PR #$PR_NUMBER), skipping..."
-            continue
+            exit 0
           fi
 
           auth_crl "$GITHUB_API/issues/$PR_NUMBER/comments" \
