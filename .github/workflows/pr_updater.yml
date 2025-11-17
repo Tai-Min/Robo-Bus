@@ -74,7 +74,12 @@ jobs:
             exit 0
           fi
 
+          MESSAGE_BODY="$(jq -n \
+            --arg MESSAGE "$MESSAGE" \
+            '{ body: (($MESSAGE | sub( "^[\\s\\p{Cc}]+"; "" ) | sub( "[\\s\\p{Cc}]+$"; "" ))) }' \
+          )"
+
           auth_crl "$GITHUB_API/issues/$PR_NUMBER/comments" \
                 -X POST \
                 -H "Content-Type: application/json" \
-                --data "$MESSAGE"
+                --data "$MESSAGE_BODY"
