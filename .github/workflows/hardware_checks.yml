@@ -90,6 +90,14 @@ jobs:
 
           mkdir -p ./results
 
+      - name: Committer check
+        id: committer_check
+        uses: Tai-Min/Robo-Bus/.github/actions/committer_check@master
+        with:
+          repo: Tai-Min/Robo-Bus
+          pr_number: ${{ github.event.pull_request.number }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Check schematics
         id: check_schematics
         if: needs.filter.outputs.schematics == 'true'
@@ -111,7 +119,15 @@ jobs:
           for FILE in $FILES; do
             OUT=$(kicad-cli sch erc "$FILE" --output "./erc/$FILE.rpt")
             OUT=$(echo "$OUT" | head -n 1)
-            RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/erc/$FILE.rpt)\n$OUT"
+
+            REPORT=""
+            if [[ ${{ steps.committer_check.outputs.association }} = 'true' ]]; then
+              REPORT="[report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/erc/$FILE.rpt"
+            else
+              REPORT="Report not available"
+            fi
+
+            RESULT="${RESULT}\n- ${FILE}: $REPORT)\n$OUT"
 
             kicad-cli sch export svg "$FILE" --output "./schematics"
           done
@@ -156,7 +172,15 @@ jobs:
             echo "$FILE"
             OUT=$(kicad-cli pcb drc "$FILE" --output "./drc/$FILE.rpt" --schematic-parity)
             OUT=$(echo "$OUT" | head -n 3)
-            RESULT="${RESULT}\n- ${FILE}: [report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt)\n$OUT"
+
+            REPORT=""
+            if [[ ${{ steps.committer_check.outputs.association }} = 'true' ]]; then
+              REPORT="[report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt"
+            else
+              REPORT="Report not available"
+            fi
+
+            RESULT="${RESULT}\n- ${FILE}: $REPORT)\n$OUT"
 
             kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE-FRONT.svg" --layers F.Cu,Edge.Cuts --fit-page-to-board --mode-single
             PCB="${PCB}\n- ./pcb/$FILE-FRONT.svg"
@@ -194,14 +218,6 @@ jobs:
             drc/
             pcb/
             results/
-
-      - name: Committer check
-        id: committer_check
-        uses: Tai-Min/Robo-Bus/.github/actions/committer_check@master
-        with:
-          repo: Tai-Min/Robo-Bus
-          pr_number: ${{ github.event.pull_request.number }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push reports to git
         if: steps.committer_check.outputs.association == 'true'
