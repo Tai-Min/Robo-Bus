@@ -122,12 +122,12 @@ jobs:
 
             REPORT=""
             if [[ ${{ steps.committer_check.outputs.association }} = 'true' ]]; then
-              REPORT="[report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/erc/$FILE.rpt"
+              REPORT="[report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/erc/$FILE.rpt)"
             else
               REPORT="Report not available"
             fi
 
-            RESULT="${RESULT}\n- ${FILE}: $REPORT)\n$OUT"
+            RESULT="${RESULT}\n- ${FILE}: $REPORT\n$OUT"
 
             kicad-cli sch export svg "$FILE" --output "./schematics"
           done
@@ -175,12 +175,12 @@ jobs:
 
             REPORT=""
             if [[ ${{ steps.committer_check.outputs.association }} = 'true' ]]; then
-              REPORT="[report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt"
+              REPORT="[report](https://github.com/Tai-Min/Robo-Bus/blob/$AUTO_BRANCH/drc/$FILE.rpt)"
             else
               REPORT="Report not available"
             fi
 
-            RESULT="${RESULT}\n- ${FILE}: $REPORT)\n$OUT"
+            RESULT="${RESULT}\n- ${FILE}: $REPORT\n$OUT"
 
             kicad-cli pcb export svg "$FILE" --output "./pcb/$FILE-FRONT.svg" --layers F.Cu,Edge.Cuts --fit-page-to-board --mode-single
             PCB="${PCB}\n- ./pcb/$FILE-FRONT.svg"
