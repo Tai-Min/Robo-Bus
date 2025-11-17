@@ -10,7 +10,8 @@ on:
 jobs:
   pr_updater:
     runs-on: ubuntu-latest
-
+    permissions:
+      pull-requests: write
     steps:
       - name: main
         env:
