@@ -51,8 +51,41 @@
           "min_clearance": 0.5
         }
       },
+<<<<<<< Updated upstream
       "diff_pair_dimensions": [],
       "drc_exclusions": [],
+=======
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        },
+        {
+          "gap": 0.21,
+          "via_gap": 0.21,
+          "width": 0.16
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|115174669|108475000|4228dd6d-0bfa-42b8-9671-bc423e95ca3e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|146500000|92500000|77655d19-fe28-4dbc-b866-331b8d8c2859|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|177825331|108475000|7027bf1f-3b4d-4bd0-b895-546c5e86e083|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "text_thickness|134800000|122400000|8066e837-a222-4330-b1ed-a904c878d444|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
+>>>>>>> Stashed changes
       "meta": {
         "version": 2
       },
@@ -127,7 +160,7 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.3,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
@@ -193,7 +226,7 @@
         "diff_pair_skew_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 1.0,
+          "max_amplitude": 0.4,
           "min_amplitude": 0.2,
           "single_sided": false,
           "spacing": 0.6
@@ -458,8 +491,13 @@
     "classes": [
       {
         "bus_width": 12,
+<<<<<<< Updated upstream
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
+=======
+        "clearance": 0.21,
+        "diff_pair_gap": 0.21,
+>>>>>>> Stashed changes
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -490,7 +528,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../bus_connector.step",
       "svg": "",
       "vrml": ""
     },
