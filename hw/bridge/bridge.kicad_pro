@@ -412,6 +412,18 @@
     [
       "3b0cc3d4-df75-4145-abb6-d19d57c31f1b",
       "Root"
+    ],
+    [
+      "ee32e54e-8e22-4372-9897-0863eef95f76",
+      "mcu"
+    ],
+    [
+      "bdf538a0-d28a-4d8b-85d4-59a1db2dafb5",
+      "pwr"
+    ],
+    [
+      "4c6f2595-f15e-4244-9b90-548609f15b3d",
+      "can"
     ]
   ],
   "text_variables": {}
