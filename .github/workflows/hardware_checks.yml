@@ -121,7 +121,7 @@ jobs:
             LAST_DIR="$(basename "$(dirname "$FILE")")"
             FILENAME="$(basename "$FILE")"
             FILE_NAME_NO_EXT="${FILENAME%.*}"
-            if [ "$last_dir" != "$name_without_ext" ]; then
+            if [ "$LAST_DIR" != "$FILE_NAME_NO_EXT" ]; then
               continue
             fi
 
