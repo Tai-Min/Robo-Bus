@@ -117,6 +117,14 @@ jobs:
 
           RESULT=""
           for FILE in $FILES; do
+            # Ignore hierarchical schematics
+            LAST_DIR="$(basename "$(dirname "$FILE")")"
+            FILENAME="$(basename "$FILE")"
+            FILE_NAME_NO_EXT="${FILENAME%.*}"
+            if [ "$last_dir" != "$name_without_ext" ]; then
+              continue
+            fi
+
             OUT=$(kicad-cli sch erc "$FILE" --output "./erc/$FILE.rpt")
             OUT=$(echo "$OUT" | head -n 1)
 
