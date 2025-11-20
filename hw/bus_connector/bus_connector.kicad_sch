@@ -2540,6 +2540,16 @@
 		(uuid "0d8ec3c9-a484-489e-8e71-ac900de0cf77")
 	)
 	(label "CAN-"
+		(at 120.65 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "170e289e-e239-4f86-a235-890af37677f6")
+	)
+	(label "CAN-"
 		(at 139.7 78.74 180)
 		(effects
 			(font
