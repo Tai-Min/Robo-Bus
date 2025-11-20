@@ -2529,489 +2529,215 @@
 		)
 		(uuid "ffcc5f40-3c8a-4726-82f4-64194b617863")
 	)
-	(global_label "MODBUS+"
-		(shape input)
-		(at 166.37 58.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "00f298e7-2015-494f-b6d3-fce032fe303c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.9505 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN+"
-		(shape input)
-		(at 176.53 119.38 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0331008a-4652-4ea6-859a-62d7dad98460")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.2833 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MODBUS+"
-		(shape input)
-		(at 176.53 114.3 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0717fef9-1be2-4f05-96eb-7efa6e80e426")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.1105 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MODBUS-"
-		(shape input)
-		(at 166.37 55.88 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "429cc44d-b4f0-4475-b714-96d18230da24")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.9505 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN+"
-		(shape input)
-		(at 139.7 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "69f253fc-fd8b-4313-a511-f8dff2b0e5fd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.4533 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MODBUS-"
-		(shape input)
-		(at 120.65 111.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6dbba8a8-ab4f-44a3-83fc-bc5ac5903677")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.2305 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN-"
-		(shape input)
-		(at 166.37 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "70515cb3-bc5d-4347-a324-4ae7b9721211")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.1233 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN-"
-		(shape input)
-		(at 176.53 121.92 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7d172ed8-f3d1-4da8-b7cd-d862a38e42b4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.2833 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MODBUS+"
-		(shape input)
-		(at 93.98 99.06 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8994af38-ca19-429e-acd7-e1c96d612b79")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.5605 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MODBUS-"
-		(shape input)
-		(at 93.98 109.22 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8a52f645-e54a-4fd6-89c3-ade83cdfd785")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.5605 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MODBUS+"
-		(shape input)
-		(at 120.65 114.3 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8b716afc-6334-4636-8731-d970c92c5390")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.2305 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SHIELD_L"
-		(shape input)
+	(label "SHIELD_L"
 		(at 120.65 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify right bottom)
 		)
-		(uuid "9d76e8d8-5e1d-4f12-ac62-3e28f75eb3eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.0772 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "0d8ec3c9-a484-489e-8e71-ac900de0cf77")
 	)
-	(global_label "CAN-"
-		(shape input)
-		(at 93.98 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a9a89992-6142-455e-a879-692ade198882")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.7333 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MODBUS-"
-		(shape input)
-		(at 139.7 63.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aa29ad5a-1a2d-47cf-8f86-b3d0b1def8ff")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.2805 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN+"
-		(shape input)
-		(at 120.65 119.38 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "af819eee-4c6c-4615-a271-d409c7de858c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.4033 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN-"
-		(shape input)
-		(at 120.65 121.92 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bbcc3fcf-3a11-49dd-8fcf-bf3fc481ae17")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.4033 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MODBUS+"
-		(shape input)
-		(at 139.7 53.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d52c8eb2-1bf3-47cb-b34c-011d2ac9fb17")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.2805 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN-"
-		(shape input)
+	(label "CAN-"
 		(at 139.7 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify right bottom)
 		)
-		(uuid "df204749-427b-4444-9caf-6102d1a73b06")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.4533 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "2730bb68-a47a-4308-84ce-6aabce64d37e")
 	)
-	(global_label "MODBUS-"
-		(shape input)
-		(at 176.53 111.76 180)
-		(fields_autoplaced yes)
+	(label "CAN-"
+		(at 93.98 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify right bottom)
 		)
-		(uuid "e1a3299d-d4ae-46c4-9081-15a04b80acec")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.1105 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "2d2de4f1-7da2-4516-af65-2ef6fe373689")
 	)
-	(global_label "SHIELD_L"
-		(shape input)
+	(label "MODBUS+"
+		(at 176.53 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3119ff97-aae3-49fd-8954-9fd9ba69c3d3")
+	)
+	(label "MODBUS-"
+		(at 93.98 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "33defe09-5391-462c-85f1-27b362dd2a16")
+	)
+	(label "MODBUS-"
+		(at 166.37 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3cbd1de4-33aa-4610-a3ad-ff23808d6041")
+	)
+	(label "SHIELD_L"
 		(at 73.66 135.89 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify right bottom)
 		)
-		(uuid "ec819bad-436d-4ef3-b071-54a275c06f18")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.0872 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "422fe5c2-e930-422a-b68b-678e44a425a4")
 	)
-	(global_label "CAN+"
-		(shape input)
+	(label "MODBUS-"
+		(at 139.7 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "54832e8c-0e52-4552-af47-6efafc50620d")
+	)
+	(label "MODBUS+"
+		(at 93.98 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ab8c0e4-dff6-43a2-a42a-9e1181975c95")
+	)
+	(label "CAN-"
+		(at 176.53 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ded5a1c-25eb-45cc-af61-d7e7de0c6b37")
+	)
+	(label "MODBUS-"
+		(at 120.65 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7cbccdcb-b004-4a6e-a299-fc176a846baf")
+	)
+	(label "CAN+"
+		(at 176.53 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "91a2f644-b260-4e01-84d3-3294a666329c")
+	)
+	(label "MODBUS+"
+		(at 120.65 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a21b30c3-d1c2-4a97-88d0-c784f0954ca4")
+	)
+	(label "MODBUS-"
+		(at 176.53 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc05bd39-3347-49bc-8663-b3870fb71b64")
+	)
+	(label "MODBUS+"
+		(at 139.7 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "da45fa5c-c474-41ac-820a-7db0f68a8ad2")
+	)
+	(label "MODBUS+"
+		(at 166.37 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ddab1f6c-a471-4d25-b9b0-567746feaa5f")
+	)
+	(label "CAN+"
 		(at 93.98 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify right bottom)
 		)
-		(uuid "fc0eac97-a670-4be4-9140-00f35a6defbf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.7333 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "e6822281-a6a2-46e0-b748-8e1cd2cff5da")
 	)
-	(global_label "CAN+"
-		(shape input)
-		(at 166.37 63.5 180)
-		(fields_autoplaced yes)
+	(label "CAN+"
+		(at 120.65 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify right bottom)
 		)
-		(uuid "ff03e11b-8d51-413b-a13e-655405ccd30f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.1233 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
+		(uuid "f26e1e5b-5426-430a-bdaa-24247d5a37fb")
+	)
+	(label "CAN+"
+		(at 166.37 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right bottom)
 		)
+		(uuid "fa0e712c-01df-473a-8b1b-290326bab525")
+	)
+	(label "CAN-"
+		(at 166.37 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fd261177-ea84-49f5-9409-c25bfc7f60de")
+	)
+	(label "CAN+"
+		(at 139.7 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "feb9dfb0-44a1-426f-99a3-f1c52955f72e")
 	)
 	(symbol
 		(lib_id "power:GND")

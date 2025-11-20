@@ -131,7 +131,7 @@
 	(net 6 "CAN-")
 	(net 7 "MODBUS-")
 	(net 8 "SHIELD_L")
-	(net 9 "SHIELD_R")
+	(net 9 "unconnected-(J2-Pad5)")
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "2b7418fa-e51e-4285-9666-4e1e8ab12551")
@@ -2972,9 +2972,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "SHIELD_R")
+			(net 9 "unconnected-(J2-Pad5)")
 			(pinfunction "5")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "929bcf76-fcde-4bec-80f9-448a9932e9b4")
 		)
 		(pad "6" thru_hole circle
