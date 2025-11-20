@@ -3439,22 +3439,22 @@
 		(dnp no)
 		(uuid "0c793407-4256-41a2-b226-501f156eb9d1")
 		(property "Reference" "Y1"
-			(at 109.22 74.93 0)
+			(at 108.966 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "8MHz"
-			(at 109.22 77.47 0)
+		(property "Value" "HCI XC53G2-8.000-F12NJHP"
+			(at 109.22 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm"
 			(at 109.22 71.12 0)
 			(effects
 				(font
@@ -3523,7 +3523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 90.4748 69.85 0)
 			(effects
 				(font
@@ -3592,7 +3592,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 101.9048 72.39 0)
 			(effects
 				(font
@@ -3856,7 +3856,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
 			(at 100.33 106.68 0)
 			(effects
 				(font
@@ -4277,7 +4277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 151.4348 39.37 0)
 			(effects
 				(font
@@ -4611,7 +4611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 97.282 134.62 90)
 			(effects
 				(font
@@ -4681,7 +4681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 105.41 127 0)
 			(effects
 				(font
@@ -4750,7 +4750,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 114.6048 72.39 0)
 			(effects
 				(font
@@ -4885,7 +4885,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 141.2748 39.37 0)
 			(effects
 				(font
