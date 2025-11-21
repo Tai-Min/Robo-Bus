@@ -1,0 +1,32 @@
+** Drc report for bus_connector.kicad_pcb **
+** Created on 2025-11-21T00:23:16+0000 **
+
+** Found 7 DRC violations **
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(146.5000 mm, 123.4750 mm): PCB text 'BUS CONNECTOR	Ver. 1.0' on F.Silkscreen
+    @(161.5000 mm, 123.4750 mm): PCB text '2025-11-21' on F.Silkscreen
+[lib_footprint_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    Local override; warning
+    @(143.0000 mm, 105.2250 mm): Footprint R3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    Local override; warning
+    @(126.9000 mm, 111.9750 mm): Footprint R1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    Local override; warning
+    @(126.9000 mm, 104.9750 mm): Footprint R2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    Local override; warning
+    @(150.0000 mm, 105.2250 mm): Footprint R4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    Local override; warning
+    @(166.1000 mm, 104.9750 mm): Footprint R5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    Local override; warning
+    @(166.1000 mm, 111.9750 mm): Footprint R6
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

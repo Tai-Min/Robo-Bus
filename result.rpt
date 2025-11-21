@@ -1,0 +1,23 @@
+ERC report (2025-11-21T00:23:15+0000, Encoding UTF8)
+
+***** Sheet /
+[footprint_link_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    ; warning
+    @(93.98 mm, 101.60 mm): Symbol R1 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    ; warning
+    @(93.98 mm, 116.84 mm): Symbol R2 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    ; warning
+    @(139.70 mm, 55.88 mm): Symbol R3 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    ; warning
+    @(139.70 mm, 71.12 mm): Symbol R4 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    ; warning
+    @(179.07 mm, 101.60 mm): Symbol R5 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'KMur_kicad_lib'.
+    ; warning
+    @(179.07 mm, 116.84 mm): Symbol R6 [R]
+
+ ** ERC messages: 6  Errors 0  Warnings 6
