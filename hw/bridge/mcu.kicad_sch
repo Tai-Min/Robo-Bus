@@ -2458,6 +2458,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "8MHz"
+		(exclude_from_sim no)
+		(at 109.22 75.184 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "326edd0a-7261-46ad-afb5-06083a059e9d")
+	)
 	(text "VREF/VDD"
 		(exclude_from_sim no)
 		(at 147.574 30.226 0)
@@ -3514,7 +3524,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n / 50V"
+		(property "Value" "100n / 16V"
 			(at 87.63 71.6281 90)
 			(effects
 				(font
@@ -3523,7 +3533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 90.4748 69.85 0)
 			(effects
 				(font
@@ -3592,7 +3602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 101.9048 72.39 0)
 			(effects
 				(font
@@ -4277,7 +4287,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 151.4348 39.37 0)
 			(effects
 				(font
@@ -4611,7 +4621,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 97.282 134.62 90)
 			(effects
 				(font
@@ -4741,7 +4751,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6p / 50V"
+		(property "Value" "6p / 16V"
 			(at 121.158 73.6601 90)
 			(effects
 				(font
@@ -4750,7 +4760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 114.6048 72.39 0)
 			(effects
 				(font
@@ -4885,7 +4895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 141.2748 39.37 0)
 			(effects
 				(font
