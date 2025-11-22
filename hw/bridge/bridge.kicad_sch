@@ -4293,6 +4293,16 @@
 		)
 		(uuid "addcc42e-c728-4373-81ad-384d77ef1e8c")
 	)
+	(text "USB hub"
+		(exclude_from_sim no)
+		(at 97.282 15.748 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d65de962-6801-49d9-9676-75d40cbd070f")
+	)
 	(text "12MHz"
 		(exclude_from_sim no)
 		(at 108.966 69.342 0)
