@@ -4253,6 +4253,16 @@
 		)
 		(uuid "0db9db21-e528-4622-bcbb-ad4581c4b01a")
 	)
+	(text "male"
+		(exclude_from_sim no)
+		(at 228.6 107.442 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "47500a69-0999-4a1b-b72c-0ce6407a2eaf")
+	)
 	(text "Bus is terminated"
 		(exclude_from_sim no)
 		(at 97.536 122.682 0)
@@ -6063,16 +6073,6 @@
 		)
 		(uuid "58025291-4962-4713-8ddd-b92c677e4518")
 	)
-	(label "M-"
-		(at 220.98 116.84 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6696a07b-bd12-4b21-b402-445d3da1fc10")
-	)
 	(label "MODBUS+"
 		(at 91.44 120.65 0)
 		(effects
@@ -6132,16 +6132,6 @@
 			(justify right bottom)
 		)
 		(uuid "7d7da7bf-13f5-4f2f-beeb-244945fac0a6")
-	)
-	(label "M+"
-		(at 220.98 119.38 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "939999e3-105c-4a34-bc42-ddc74334fc44")
 	)
 	(label "D_RS+"
 		(at 140.97 41.91 0)
@@ -6468,7 +6458,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100n / 16V"
 			(at 57.9119 106.68 90)
 			(effects
 				(font
@@ -6497,6 +6487,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 55.88 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 55.88 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 55.88 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6566,6 +6574,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 170.18 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C92487.html"
+			(at 170.18 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 170.18 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6772,6 +6798,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 93.98 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 93.98 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "24520d78-8c78-442f-b24c-390794803ea6")
 		)
@@ -6971,6 +7015,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 111.76 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 111.76 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8a438ffa-44e0-4704-8499-ad4ebd73ed9b")
 		)
@@ -7023,7 +7085,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "\\datasheets\\1810251317_Shanghai-Prisemi-Elec-PTVSHC3D4V5B_C110752.pdf"
 			(at 72.39 59.69 0)
 			(effects
 				(font
@@ -7034,6 +7096,24 @@
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 72.39 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C110752.html?s_z=n_PTVSHC3D4V5B"
+			(at 72.39 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 72.39 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7372,6 +7452,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C92487.html"
+			(at 207.01 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 207.01 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "79e9456b-a5cf-494c-a253-16383912fc72")
 		)
@@ -7432,6 +7530,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 198.12 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 198.12 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 198.12 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7555,7 +7671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "\\datasheets\\HCI XC53G2-12.000-F20LJDT.pdf"
 			(at 113.03 66.04 0)
 			(effects
 				(font
@@ -7566,6 +7682,24 @@
 		)
 		(property "Description" "Two pin crystal"
 			(at 113.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C2842275.html?s_z=n_HCI%2520XC53G2-12.000-F20LJDT"
+			(at 113.03 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 113.03 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7626,7 +7760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mpja.com/download/35227cpdata.pdf"
+		(property "Datasheet" "\\datasheets\\35227cpdata.pdf"
 			(at 40.64 107.95 0)
 			(effects
 				(font
@@ -7636,6 +7770,24 @@
 			)
 		)
 		(property "Description" "USB serial converter, UART, MSOP-10"
+			(at 49.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C99652.html?s_z=n_ch340e"
+			(at 49.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 49.53 128.27 0)
 			(effects
 				(font
@@ -7737,6 +7889,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C1592.html"
+			(at 149.86 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 149.86 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d47df9a8-b3eb-4b74-90b8-5e94e2e7bda8")
 		)
@@ -7804,6 +7974,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 217.17 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 217.17 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8bd94fbc-93f0-49dc-a442-d6407705678a")
 		)
@@ -7864,6 +8052,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 146.05 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 146.05 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 146.05 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8008,6 +8214,24 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 198.12 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C72038.html"
+			(at 198.12 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 198.12 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8552,6 +8776,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C72038.html"
+			(at 146.05 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 146.05 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "94f4d011-dab6-4034-9313-3e677799bae3")
 		)
@@ -8605,7 +8847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.wch-ic.com/downloads/file/327.html"
+		(property "Datasheet" "\\datasheets\\CH334DS1.PDF"
 			(at 130.81 19.05 0)
 			(effects
 				(font
@@ -8615,6 +8857,24 @@
 			)
 		)
 		(property "Description" "USB HUB controller, UART, QSOP-16"
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C4154405.html?s_z=n_ch334r%2520"
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 130.81 52.07 0)
 			(effects
 				(font
@@ -8717,7 +8977,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "\\datasheets\\1810251317_Shanghai-Prisemi-Elec-PTVSHC3D4V5B_C110752.pdf"
 			(at 66.04 53.34 0)
 			(effects
 				(font
@@ -8728,6 +8988,24 @@
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 66.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C110752.html?s_z=n_PTVSHC3D4V5B"
+			(at 66.04 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 66.04 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8802,6 +9080,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C2907044.html"
+			(at 68.58 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 68.58 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "156d606c-be42-40bb-8873-e5a20a1a0b1a")
 		)
@@ -8854,7 +9150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+		(property "Datasheet" "\\datasheets\\74LVC2G240-2937553.pdf"
 			(at 165.1 119.38 0)
 			(effects
 				(font
@@ -8864,6 +9160,24 @@
 			)
 		)
 		(property "Description" "Dual Inverter Buffer Tri-State, Low-Voltage CMOS"
+			(at 165.1 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C730238.html?s_z=n_74LVC2G240"
+			(at 165.1 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 165.1 119.38 0)
 			(effects
 				(font
@@ -8959,6 +9273,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 250.19 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 250.19 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f11cc3c5-5b3d-4759-9904-c7e24e81ea8d")
 		)
@@ -9009,7 +9341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20002276C.pdf"
+		(property "Datasheet" "\\datasheets\\20002276C.pdf"
 			(at 186.69 26.67 0)
 			(effects
 				(font
@@ -9019,6 +9351,24 @@
 			)
 		)
 		(property "Description" "Fixed 150mA Low Dropout Voltage Regulator, Positive, 3.3V output, SOT-23"
+			(at 186.69 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C625392.html?s_z=n_MCP1754S-3302xCB"
+			(at 186.69 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 186.69 26.67 0)
 			(effects
 				(font
@@ -9147,7 +9497,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf"
+		(property "Datasheet" "\\datasheets\\max1487e-max491e.pdf"
 			(at 78.74 127 0)
 			(effects
 				(font
@@ -9157,6 +9507,24 @@
 			)
 		)
 		(property "Description" "Half duplex RS-485/RS-422, 2.5 Mbps, ±15kV electro-static discharge (ESD) protection, no slew-rate, no low-power shutdown, with receiver/driver enable, 32 receiver drive capability, DIP-8 and SOIC-8"
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C481667.html?s_z=n_max485e"
+			(at 78.74 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 78.74 128.27 0)
 			(effects
 				(font
@@ -9243,6 +9611,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 68.58 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C2907044.html"
+			(at 68.58 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 68.58 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9442,6 +9828,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 101.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C92487.html"
+			(at 101.6 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 101.6 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9660,6 +10064,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C72038.html"
+			(at 146.05 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 146.05 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12ca34bf-8b3b-489b-a332-63ed92b60697")
 		)
@@ -9797,6 +10219,24 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 95.25 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C22371297.html"
+			(at 95.25 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 95.25 149.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9948,6 +10388,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C22371297.html"
+			(at 217.17 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 217.17 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1b76a5eb-3d96-434c-b1d1-9ce46a3ff19a")
 		)
@@ -10082,6 +10540,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 68.58 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 68.58 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c377d468-3aab-4899-9200-91658aa81ee9")
 		)
@@ -10197,7 +10673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "\\datasheets\\usb-c.pdf"
 			(at 50.8 43.18 0)
 			(effects
 				(font
@@ -10207,6 +10683,24 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(at 46.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C5119948.html?s_z=n_12401610E4"
+			(at 46.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 46.99 43.18 0)
 			(effects
 				(font
@@ -10316,6 +10810,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 240.03 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 240.03 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 240.03 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10521,6 +11033,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 95.25 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 95.25 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "24d5a173-0ea7-4bb5-ad89-419a04b38455")
 		)
@@ -10600,6 +11130,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C72038.html"
+			(at 187.96 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 187.96 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4b0ddd07-245f-4d8f-986d-fc56f3b206cc")
 		)
@@ -10650,7 +11198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+		(property "Datasheet" "\\datasheets\\74LVC2G240-2937553.pdf"
 			(at 132.08 132.08 0)
 			(effects
 				(font
@@ -10660,6 +11208,24 @@
 			)
 		)
 		(property "Description" "Dual Inverter Buffer Tri-State, Low-Voltage CMOS"
+			(at 132.08 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C730238.html?s_z=n_74LVC2G240"
+			(at 132.08 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 132.08 132.08 0)
 			(effects
 				(font
@@ -11127,7 +11693,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+		(property "Datasheet" "\\datasheets\\74LVC2G240-2937553.pdf"
 			(at 132.08 106.68 0)
 			(effects
 				(font
@@ -11137,6 +11703,24 @@
 			)
 		)
 		(property "Description" "Dual Inverter Buffer Tri-State, Low-Voltage CMOS"
+			(at 132.08 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C730238.html?s_z=n_74LVC2G240"
+			(at 132.08 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 132.08 106.68 0)
 			(effects
 				(font
@@ -11223,6 +11807,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 187.96 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 187.96 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 187.96 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11430,6 +12032,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C19077344.html?s_z=n_dsub"
+			(at 228.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 228.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "6e38f9c9-d3bc-428f-83db-9916d84cff3d")
 		)
@@ -11569,7 +12189,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "\\datasheets\\fuse.pdf"
 			(at 68.58 27.94 0)
 			(effects
 				(font
@@ -11580,6 +12200,24 @@
 		)
 		(property "Description" "Fuse"
 			(at 68.58 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C41380225.html"
+			(at 68.58 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 68.58 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11640,7 +12278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/TJA1051.pdf"
+		(property "Datasheet" "\\datasheets\\TJA1051.pdf"
 			(at 228.6 62.23 0)
 			(effects
 				(font
@@ -11650,6 +12288,24 @@
 			)
 		)
 		(property "Description" "High-Speed CAN Transceiver, separate VIO, silent mode, SOIC-8"
+			(at 228.6 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C51954344.html?s_z=n_TJA1051T-3"
+			(at 228.6 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 228.6 62.23 0)
 			(effects
 				(font
@@ -11802,6 +12458,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 146.05 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 146.05 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 146.05 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)

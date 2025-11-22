@@ -3473,7 +3473,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "\\datasheets\\HCI XC53G2-8.000-F12NJHP.pdf"
 			(at 109.22 71.12 0)
 			(effects
 				(font
@@ -3483,6 +3483,24 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
+			(at 109.22 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C2842269.html"
+			(at 109.22 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 109.22 71.12 0)
 			(effects
 				(font
@@ -3560,6 +3578,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 91.44 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 91.44 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "10845ac0-c90f-4c25-b888-f2fda6526a03")
 		)
@@ -3622,6 +3658,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 102.87 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C170142.html"
+			(at 102.87 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 102.87 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3847,7 +3901,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "55c36962-bd73-4093-9e8c-9bb8ff3a184c")
 		(property "Reference" "J4"
@@ -3885,6 +3939,24 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 100.33 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C7494874.html"
+			(at 100.33 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 100.33 106.68 0)
 			(effects
 				(font
@@ -4023,7 +4095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g0b1cb.pdf"
+		(property "Datasheet" "\\datasheets\\stm32g0b1cb-2.pdf"
 			(at 161.29 101.6 0)
 			(effects
 				(font
@@ -4033,6 +4105,24 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 128KB flash, 144KB RAM, 64 MHz, 1.7-3.6V, 44 GPIO, LQFP48"
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C2847904.html?s_z=n_STM32G0B1CBT"
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 161.29 101.6 0)
 			(effects
 				(font
@@ -4307,6 +4397,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 152.4 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 152.4 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 152.4 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4648,6 +4756,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C98220.html"
+			(at 99.06 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 99.06 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "790f5ec3-6247-4220-bb62-df5d543ddfbc")
 		)
@@ -4670,7 +4796,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "dbb392a0-1b6c-4c8a-87f3-dd1b7af566f3")
 		(property "Reference" "J5"
@@ -4718,6 +4844,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C7494857.html"
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ed8f35c0-4cb0-48c9-bd6d-4777ce9b1abe")
 		)
@@ -4751,7 +4895,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6p / 16V"
+		(property "Value" "6p / 50V"
 			(at 121.158 73.6601 90)
 			(effects
 				(font
@@ -4780,6 +4924,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 115.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C170142.html"
+			(at 115.57 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 115.57 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4915,6 +5077,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 142.24 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+			(at 142.24 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 142.24 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
