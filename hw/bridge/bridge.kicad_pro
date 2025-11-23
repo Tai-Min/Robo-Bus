@@ -683,5 +683,8 @@
       "mcu"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "REVISION": "1.0",
+    "TITLE": "USB <-> CAN / RS485 ADAPTER"
+  }
 }
