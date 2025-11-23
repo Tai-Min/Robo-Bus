@@ -479,156 +479,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_TVS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_TVS"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Bidirectional transient-voltage-suppression diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode TVS thyrector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_TVS_0_1"
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_TVS_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1602,10 +1452,10 @@
 		(uuid "4ad1b896-0d16-4a05-9832-f1db0880aafd")
 	)
 	(junction
-		(at 184.15 119.38)
+		(at 184.785 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "51ed272e-a04f-4af6-baf5-4fa5695cac29")
+		(uuid "528ba733-4712-424c-9805-17ffc0647423")
 	)
 	(junction
 		(at 213.36 138.43)
@@ -1614,16 +1464,16 @@
 		(uuid "63073f64-95de-47c1-8efd-101243dbd541")
 	)
 	(junction
-		(at 177.8 121.92)
+		(at 167.005 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ac85955d-e265-483e-94d5-a564c1f8c1c3")
+		(uuid "6bc0ca91-9879-420f-ae03-e5de10ffd4e1")
 	)
 	(junction
-		(at 184.15 138.43)
+		(at 186.69 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b08be5a0-8ca9-4ba7-a1a1-985096126c89")
+		(uuid "81299915-5927-4f1a-8cda-080dc01ad031")
 	)
 	(junction
 		(at 196.85 138.43)
@@ -1650,12 +1500,6 @@
 		(uuid "f202243c-f22d-4b97-8a92-9a1db06a97bb")
 	)
 	(junction
-		(at 186.69 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f7022574-398d-4b12-b905-bd3221c31eb2")
-	)
-	(junction
 		(at 168.91 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1671,6 +1515,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.785 121.92) (xy 215.9 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06079073-8a40-4d3c-a77a-06b28454a738")
+	)
+	(wire
+		(pts
 			(xy 127 116.84) (xy 124.46 116.84)
 		)
 		(stroke
@@ -1681,7 +1535,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 111.76) (xy 186.69 111.76)
+			(xy 163.195 111.76) (xy 186.69 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1691,7 +1545,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 114.3) (xy 207.01 114.3)
+			(xy 163.195 114.3) (xy 207.01 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1708,6 +1562,16 @@
 			(type default)
 		)
 		(uuid "0acd8940-0dc6-483a-9129-3ac7e1a53100")
+	)
+	(wire
+		(pts
+			(xy 167.005 119.38) (xy 167.005 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1287632a-acec-4974-86b0-9f92e4574d02")
 	)
 	(wire
 		(pts
@@ -1728,6 +1592,16 @@
 			(type default)
 		)
 		(uuid "16094153-8d73-4252-ac11-f32197d4d687")
+	)
+	(wire
+		(pts
+			(xy 175.895 138.43) (xy 175.895 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c2d1a95-d72c-4d27-9f00-bc01a4724be9")
 	)
 	(wire
 		(pts
@@ -1771,16 +1645,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 121.92) (xy 177.8 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "235a8008-872e-449e-8868-1abc6b1ef706")
-	)
-	(wire
-		(pts
 			(xy 212.09 127) (xy 212.09 109.22)
 		)
 		(stroke
@@ -1801,16 +1665,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 132.08) (xy 177.8 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27e4d3ea-0c32-4fc8-addc-e920c7aabf40")
-	)
-	(wire
-		(pts
 			(xy 96.52 99.06) (xy 93.98 99.06)
 		)
 		(stroke
@@ -1828,6 +1682,16 @@
 			(type default)
 		)
 		(uuid "3ed8a0c3-527d-4dcc-bc14-a3a23ab42070")
+	)
+	(wire
+		(pts
+			(xy 186.69 111.76) (xy 186.69 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40d1f724-2700-4c21-a759-a76aa6a9216d")
 	)
 	(wire
 		(pts
@@ -1881,16 +1745,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 111.76) (xy 186.69 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c1c733f-8ede-491d-ade1-c2ac39e08119")
-	)
-	(wire
-		(pts
 			(xy 166.37 63.5) (xy 172.72 63.5)
 		)
 		(stroke
@@ -1928,16 +1782,6 @@
 			(type default)
 		)
 		(uuid "5729ee70-4c5d-4cfe-9d4a-7ac05fdaa308")
-	)
-	(wire
-		(pts
-			(xy 184.15 119.38) (xy 184.15 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58fb00cc-a815-4e79-9e95-afe3f5da24aa")
 	)
 	(wire
 		(pts
@@ -1988,6 +1832,16 @@
 			(type default)
 		)
 		(uuid "62c4191b-589b-4085-aa6a-9bb8ac2eed57")
+	)
+	(wire
+		(pts
+			(xy 184.785 121.92) (xy 184.785 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "653ec97e-e7f0-41da-aadf-ef362e33c51f")
 	)
 	(wire
 		(pts
@@ -2081,7 +1935,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 121.92) (xy 215.9 121.92)
+			(xy 163.195 121.92) (xy 184.785 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2201,16 +2055,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 119.38) (xy 215.9 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a72832ec-8d31-4dea-a4a0-0466aefce93d")
-	)
-	(wire
-		(pts
 			(xy 120.65 119.38) (xy 127 119.38)
 		)
 		(stroke
@@ -2218,16 +2062,6 @@
 			(type default)
 		)
 		(uuid "a9b3adb9-06c2-47c2-9404-440d9615fde5")
-	)
-	(wire
-		(pts
-			(xy 177.8 138.43) (xy 184.15 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aafe6dbb-7df5-40ae-96b8-d89f5198eca1")
 	)
 	(wire
 		(pts
@@ -2291,6 +2125,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.895 138.43) (xy 196.85 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beafd8df-cd16-405b-9aaf-17cee86e3cb3")
+	)
+	(wire
+		(pts
 			(xy 170.18 74.93) (xy 170.18 76.2)
 		)
 		(stroke
@@ -2298,16 +2142,6 @@
 			(type default)
 		)
 		(uuid "bf7d4f85-dc7f-4811-9cdc-e36635a72522")
-	)
-	(wire
-		(pts
-			(xy 177.8 121.92) (xy 177.8 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c26cfb61-ee1f-41fd-9358-8bc0bfa789f4")
 	)
 	(wire
 		(pts
@@ -2401,6 +2235,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.005 119.38) (xy 215.9 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbebc24a-9677-4157-8729-d65abe5b5daa")
+	)
+	(wire
+		(pts
 			(xy 207.01 132.08) (xy 205.74 132.08)
 		)
 		(stroke
@@ -2451,7 +2295,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 119.38) (xy 184.15 119.38)
+			(xy 163.195 119.38) (xy 167.005 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2488,26 +2332,6 @@
 			(type default)
 		)
 		(uuid "f55d4ed1-82e1-4c83-9b3c-399fcbf40f06")
-	)
-	(wire
-		(pts
-			(xy 184.15 137.16) (xy 184.15 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6224ea2-0049-48dc-82ea-4a04861c6c51")
-	)
-	(wire
-		(pts
-			(xy 184.15 138.43) (xy 196.85 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa206a63-51d7-443c-9de4-4efd70a8eeb6")
 	)
 	(wire
 		(pts
@@ -2570,7 +2394,7 @@
 		(uuid "2d2de4f1-7da2-4516-af65-2ef6fe373689")
 	)
 	(label "MODBUS+"
-		(at 176.53 114.3 180)
+		(at 163.195 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2630,7 +2454,7 @@
 		(uuid "6ab8c0e4-dff6-43a2-a42a-9e1181975c95")
 	)
 	(label "CAN-"
-		(at 176.53 121.92 180)
+		(at 163.195 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2650,7 +2474,7 @@
 		(uuid "7cbccdcb-b004-4a6e-a299-fc176a846baf")
 	)
 	(label "CAN+"
-		(at 176.53 119.38 180)
+		(at 163.195 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2670,7 +2494,7 @@
 		(uuid "a21b30c3-d1c2-4a97-88d0-c784f0954ca4")
 	)
 	(label "MODBUS-"
-		(at 176.53 111.76 180)
+		(at 163.195 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2879,75 +2703,6 @@
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 177.8 128.27 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "161e5341-7c02-4df7-b977-fb39b5e8a5f5")
-		(property "Reference" "D1"
-			(at 173.228 127.508 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PTVS20VS1UR,115-ES"
-			(at 154.432 129.794 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 177.8 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 177.8 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c6c01f46-4f28-4729-9cd5-bab6fbe8f708")
-		)
-		(pin "2"
-			(uuid "932c33f5-e820-4234-bbed-84062cd5b9c7")
-		)
-		(instances
-			(project "bus_connector"
-				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3919,6 +3674,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SM712_SOT23")
+		(at 175.895 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9f0b257-dd6f-4c3a-af3b-b2d5e7f78cee")
+		(property "Reference" "D4"
+			(at 175.895 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CDSOT23-T24CAN"
+			(at 175.895 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 175.895 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.085 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.895 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ffd802a3-1dd2-4a3e-97cb-8c2a0a22909d")
+		)
+		(pin "1"
+			(uuid "94c61ecf-7dd0-4fb8-9778-acd34d95e568")
+		)
+		(pin "3"
+			(uuid "3dfceaee-1063-4f8f-9ff5-f9ea6f6484b6")
+		)
+		(instances
+			(project "bus_connector"
+				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 88.9 137.16 0)
 		(unit 1)
@@ -3978,75 +3804,6 @@
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 184.15 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "df35968e-6a3d-4206-a698-dfcbcb94cb42")
-		(property "Reference" "D2"
-			(at 179.578 131.826 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PTVS20VS1UR,115-ES"
-			(at 160.782 134.112 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 184.15 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 184.15 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14ac464a-6531-4cea-9cd7-909c8bd81b94")
-		)
-		(pin "2"
-			(uuid "2c5f131b-48d3-4255-8a95-f035a55a37e9")
-		)
-		(instances
-			(project "bus_connector"
-				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "D2")
 					(unit 1)
 				)
 			)
