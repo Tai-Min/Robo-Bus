@@ -32,6 +32,13 @@ jobs:
             console.info("Pull request number is", pullRequestNumber)
             return pullRequestNumber
 
+      - name: Delete previous comment
+        uses: Tai-Min/Robo-Bus/.github/actions/comment_remover@devel/add-bridge
+        with:
+          pr_number: ${{ github.event.pull_request.number }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          magic_header: "<!-- TEST_RUNNER -->"
+
       - name: Post a comment
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
