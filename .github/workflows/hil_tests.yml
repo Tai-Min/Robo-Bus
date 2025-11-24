@@ -6,7 +6,7 @@ on:
     outputs:
       comment:
         description: Comment from job or empty if the job was skipped
-        value: ${{ jobs.hardware_checks.outputs.comment }}
+        value: ${{ jobs.hardware_tests.outputs.comment }}
       skipped:
         description: true if skipped, empty otherwise
         value: ${{ jobs.handle_skipped.outputs.skipped }}

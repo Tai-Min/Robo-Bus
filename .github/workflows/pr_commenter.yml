@@ -32,14 +32,24 @@ jobs:
             console.info("Pull request number is", pullRequestNumber)
             return pullRequestNumber
 
-      - name: Delete previous comment
-        uses: Tai-Min/Robo-Bus/.github/actions/comment_remover@devel/add-bridge
+      - name: Committer check
+        id: committer_check
+        uses: Tai-Min/Robo-Bus/.github/actions/committer_check@master
         with:
-          pr_number: ${{ github.event.pull_request.number }}
+          repo: Tai-Min/Robo-Bus
+          pr_number: ${{ steps.pr.outputs.result }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          magic_header: "<!-- TEST_RUNNER -->"
+
+      - name: Delete previous comment
+        if: steps.committer_check.outputs.association == 'false'
+        uses: Tai-Min/Robo-Bus/.github/actions/comment_remover@master
+        with:
+          pr_number: ${{ steps.pr.outputs.result }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          magic_header: "\n<!-- TEST_RUNNER -->"
 
       - name: Post a comment
+        if: steps.committer_check.outputs.association == 'false'
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MSG_ARTIFACT_NAME: "pr_message"
