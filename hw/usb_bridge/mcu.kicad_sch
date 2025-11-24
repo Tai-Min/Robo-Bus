@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "dc5be604-7e2f-492b-9acc-9d7a7acc002a")
 	(paper "A4")
+	(title_block
+		(title "USB <-> CAN/RS485 Bridge")
+		(date "2025-11-24")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
@@ -2467,6 +2472,16 @@
 			)
 		)
 		(uuid "81bdfce6-1eff-4584-8e25-ce1a138151f0")
+	)
+	(text "This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the \nCERN OHL v.1.2.(http://ohwr.org/cernohl). This documentation is distributed \nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,\nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.\nPlease see the CERN OHL v.1.2 for applicable conditions"
+		(exclude_from_sim no)
+		(at 231.394 174.244 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d7b7772e-cfa4-4372-a9d1-0f9f358780a5")
 	)
 	(junction
 		(at 162.56 52.07)

@@ -489,7 +489,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "bridge.kicad_pro",
+    "filename": "usb_bridge.kicad_pro",
     "version": 3
   },
   "net_settings": {
