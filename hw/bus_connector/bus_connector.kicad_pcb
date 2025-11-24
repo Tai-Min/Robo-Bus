@@ -5548,19 +5548,6 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.2.(http://ohwr.org/cernohl).\nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,\nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions"
-		(at 184.29 176.58 0)
-		(layer "F.SilkS")
-		(uuid "085521a5-df51-4aca-936f-85fafb770a02")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "C_TERM"
 		(at 126.1 109.75 90)
 		(layer "F.SilkS")
@@ -5896,6 +5883,19 @@
 				(thickness 0.1)
 			)
 			(justify left bottom mirror)
+		)
+	)
+	(gr_text "This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.2.(http://ohwr.org/cernohl).\nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,\nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions"
+		(at 184.29 176.58 0)
+		(layer "User.4")
+		(uuid "085521a5-df51-4aca-936f-85fafb770a02")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(dimension
