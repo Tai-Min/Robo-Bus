@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "e42bcc36-c7d3-414a-8e1a-42e6cdd67034")
 	(paper "A4")
+	(title_block
+		(title "Bus Connector")
+		(date "2025-11-24")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector:DE9_Pins_MountingHoles"
 			(pin_names
@@ -2382,6 +2387,16 @@
 			)
 		)
 		(uuid "a2364cfb-775b-4a90-900e-80477bb4418a")
+	)
+	(text "This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the \nCERN OHL v.1.2.(http://ohwr.org/cernohl). This documentation is distributed \nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,\nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.\nPlease see the CERN OHL v.1.2 for applicable conditions"
+		(exclude_from_sim no)
+		(at 231.394 174.244 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a8d53a7a-909c-4ab9-8fe1-6a1fecf91233")
 	)
 	(text "Left connector"
 		(exclude_from_sim no)
