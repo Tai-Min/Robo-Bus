@@ -3554,7 +3554,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d839a71-69cf-4435-bfe6-9e76de2e53f0")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR03"
 			(at 124.46 135.89 0)
 			(effects
 				(font
@@ -3604,7 +3604,7 @@
 		(instances
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "#PWR08")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3665,6 +3665,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C114928.html"
+			(at 96.52 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "30fba744-7d89-44d4-a4be-11ace0b45dba")
 		)
@@ -3689,7 +3698,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e8f3ad9-f881-4fd3-89fe-1790e86d5531")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR04"
 			(at 134.62 140.97 0)
 			(effects
 				(font
@@ -3739,7 +3748,7 @@
 		(instances
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "#PWR09")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -3819,7 +3828,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "673609f2-8221-47a1-b3e4-298584a6f998")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 229.616 113.538 0)
 			(effects
 				(font
@@ -3846,7 +3855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "\\datasheets\\de9_male.pdf"
 			(at 224.79 115.57 0)
 			(effects
 				(font
@@ -3856,6 +3865,15 @@
 			)
 		)
 		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
+			(at 224.79 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C19077344.html?s_z=n_dsub"
 			(at 224.79 115.57 0)
 			(effects
 				(font
@@ -3897,7 +3915,7 @@
 		(instances
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -3950,6 +3968,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 142.24 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C114928.html"
 			(at 142.24 58.42 0)
 			(effects
 				(font
@@ -4159,6 +4186,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C114928.html"
+			(at 142.24 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f218ba23-dd1f-4cf9-9d13-a9ef4c361674")
 		)
@@ -4184,7 +4220,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f0e1ae5-0240-410f-a830-453754be4195")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR05"
 			(at 168.91 50.8 0)
 			(effects
 				(font
@@ -4234,7 +4270,7 @@
 		(instances
 			(project ""
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "#PWR012")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4250,7 +4286,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a3a8146-83a5-40b4-a8d2-1a02b193b996")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 213.36 106.68 0)
 			(effects
 				(font
@@ -4300,7 +4336,7 @@
 		(instances
 			(project "bus_connector"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "#PWR010")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4361,6 +4397,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C114928.html"
+			(at 96.52 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4e5129c5-0182-414e-899a-3e289806cd1d")
 		)
@@ -4385,7 +4430,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a30ed12e-1d4e-40b8-bce0-de88531ec928")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR07"
 			(at 180.34 85.09 0)
 			(effects
 				(font
@@ -4435,7 +4480,7 @@
 		(instances
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "#PWR04")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4450,7 +4495,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7574a74-b3ae-4b63-a147-ada8e86df33b")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR08"
 			(at 198.12 144.78 0)
 			(effects
 				(font
@@ -4500,7 +4545,7 @@
 		(instances
 			(project "bus_connector"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "#PWR07")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4584,7 +4629,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b6f84110-3acd-4957-a854-8813fafe7dfd")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 198.12 124.46 0)
 			(effects
 				(font
@@ -4592,7 +4637,7 @@
 				)
 			)
 		)
-		(property "Value" "SM712"
+		(property "Value" "SM712-02HTG"
 			(at 198.12 127 0)
 			(effects
 				(font
@@ -4609,7 +4654,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf"
+		(property "Datasheet" "\\datasheets\\SM712-02HTG.pdf"
 			(at 194.31 130.81 0)
 			(effects
 				(font
@@ -4619,6 +4664,15 @@
 			)
 		)
 		(property "Description" "7V/12V, 600W Asymmetrical TVS Diode Array, SOT-23"
+			(at 198.12 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C172881.html?s_z=n_SM712"
 			(at 198.12 130.81 0)
 			(effects
 				(font
@@ -4639,7 +4693,7 @@
 		(instances
 			(project "bus_connector"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4655,7 +4709,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c9f0b257-dd6f-4c3a-af3b-b2d5e7f78cee")
-		(property "Reference" "D4"
+		(property "Reference" "D1"
 			(at 176.53 124.46 0)
 			(effects
 				(font
@@ -4680,7 +4734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "\\datasheets\\CDSOT23-T24CAN.pdf"
 			(at 172.72 130.81 0)
 			(effects
 				(font
@@ -4690,6 +4744,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 176.53 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C2959841.html?s_z=n_CDSOT23-T24CAN"
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -4710,7 +4773,7 @@
 		(instances
 			(project "bus_connector"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "D4")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4791,7 +4854,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e3b5dac9-96b0-4913-a1e6-75bfd4ed8b18")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 139.446 114.808 0)
 			(effects
 				(font
@@ -4818,7 +4881,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "\\datasheets\\de9_female.pdf"
 			(at 134.62 116.84 0)
 			(effects
 				(font
@@ -4829,6 +4892,15 @@
 		)
 		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 			(at 139.446 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C19077337.html?s_z=n_XUNPU%2520D-SUB-DR-9"
+			(at 134.62 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4869,7 +4941,7 @@
 		(instances
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -4884,7 +4956,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f152c0ef-381b-4f5b-aa0e-a97b92e29c28")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR06"
 			(at 170.18 82.55 0)
 			(effects
 				(font
@@ -4934,7 +5006,7 @@
 		(instances
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "#PWR03")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4950,7 +5022,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fae6b2eb-baf8-4883-afef-aa2d7f080b4c")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 185.166 58.928 0)
 			(effects
 				(font
@@ -4977,7 +5049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "\\datasheets\\de9_female.pdf"
 			(at 180.34 60.96 0)
 			(effects
 				(font
@@ -4988,6 +5060,15 @@
 		)
 		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 			(at 185.674 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "https://www.lcsc.com/product-detail/C19077337.html?s_z=n_XUNPU%2520D-SUB-DR-9"
+			(at 180.34 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5028,7 +5109,7 @@
 		(instances
 			(project "terminator"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
