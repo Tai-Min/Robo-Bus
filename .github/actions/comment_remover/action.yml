@@ -1,0 +1,35 @@
+# Remove comments starting with magic header
+name: Comment cleaner
+
+inputs:
+  pr_number:
+    required: true
+    type: string
+  repo_token:
+    required: true
+    type: string
+  magic_header:
+    required: true
+    type: string
+
+runs:
+  using: "composite"
+  steps:
+    - name: Remove comments on a pr starting with magic header
+      shell: bash
+      env:
+          GH_TOKEN: ${{ inputs.repo_token }}
+          MAGIC_HEADER: ${{ inputs.magic_header }}
+      run: |
+        PR_NUMBER="${{ inputs.pr_number }}"
+
+        COMMENT_IDS=$(gh api \
+        repos/${{ github.repository }}/issues/$PR_NUMBER/comments \
+        --jq ".[] | select((.body | startswith(env.MAGIC_HEADER))) | .id")
+
+        for ID in $COMMENT_IDS; do
+          echo "Deleting comment ID $ID"
+          gh api \
+            repos/${{ github.repository }}/issues/comments/$ID \
+            -X DELETE
+        done
