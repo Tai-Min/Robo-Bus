@@ -1,0 +1,10 @@
+ERC report (2025-11-24T01:15:06+0000, Encoding UTF8)
+
+***** Sheet /
+[lib_symbol_mismatch]: Symbol 'CH334R' doesn't match copy in library 'Interface_USB'
+    ; warning
+    @(130.81 mm, 52.07 mm): Symbol U3 [CH334R]
+
+***** Sheet /mcu/
+
+ ** ERC messages: 1  Errors 0  Warnings 1

@@ -1,0 +1,31 @@
+** Drc report for bridge.kicad_pcb **
+** Created on 2025-11-24T01:15:09+0000 **
+
+** Found 7 DRC violations **
+[lib_footprint_mismatch]: Footprint 'MSOP-10_3x3mm_P0.5mm' does not match copy in library 'Package_SO'.
+    Local override; warning
+    @(143.0325 mm, 92.7550 mm): Footprint U1
+[lib_footprint_mismatch]: Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'.
+    Local override; warning
+    @(150.5800 mm, 92.9700 mm): Footprint U2
+[lib_footprint_mismatch]: Footprint 'LQFP-48_7x7mm_P0.5mm' does not match copy in library 'Package_QFP'.
+    Local override; warning
+    @(155.1975 mm, 111.2050 mm): Footprint U7
+[lib_footprint_mismatch]: Footprint 'SOT-23' does not match copy in library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(140.1150 mm, 106.5225 mm): Footprint U5
+[lib_footprint_mismatch]: Footprint 'QSOP-16_3.9x4.9mm_P0.635mm' does not match copy in library 'Package_SO'.
+    Local override; warning
+    @(144.9475 mm, 102.7550 mm): Footprint U3
+[lib_footprint_mismatch]: Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'.
+    Local override; warning
+    @(156.7750 mm, 100.1500 mm): Footprint U6
+[lib_footprint_mismatch]: Footprint 'SOT-23-6' does not match copy in library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(135.4125 mm, 91.2000 mm): Footprint U4
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

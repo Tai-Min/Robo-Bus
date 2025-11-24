@@ -1,0 +1,3 @@
+
+- hw/bridge/bridge.kicad_sch: [report](https://github.com/Tai-Min/Robo-Bus/blob/devel/add-bridge-PR53-AUTO/erc/hw/bridge/bridge.kicad_sch.rpt)
+Found 1 violations
