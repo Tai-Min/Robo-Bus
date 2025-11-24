@@ -1,0 +1,16 @@
+** Drc report for bus_connector.kicad_pcb **
+** Created on 2025-11-24T15:03:37+0000 **
+
+** Found 2 DRC violations **
+[lib_footprint_mismatch]: Footprint 'SOT-23' does not match copy in library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(164.4000 mm, 111.2450 mm): Footprint D1
+[lib_footprint_mismatch]: Footprint 'SOT-23' does not match copy in library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(164.4000 mm, 107.0900 mm): Footprint D2
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
