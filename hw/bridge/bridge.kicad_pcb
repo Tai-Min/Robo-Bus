@@ -9245,7 +9245,7 @@
 				)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C5119948.html?s_z=n_12401610E4"
+		(property "LCSC" "https://www.lcsc.com/product-detail/C7095263.html?s_z=n_USB4085"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9615,7 +9615,7 @@
 			(net 1 "GND")
 			(pinfunction "SHIELD")
 			(pintype "passive")
-			(uuid "11eaf988-1096-4bc5-8d7b-fc86736b0720")
+			(uuid "ca11e30e-db13-4441-9808-a6d88d934dd9")
 		)
 		(pad "S1" thru_hole oval
 			(at 7.3 0.98 270)
@@ -9626,7 +9626,7 @@
 			(net 1 "GND")
 			(pinfunction "SHIELD")
 			(pintype "passive")
-			(uuid "11eaf988-1096-4bc5-8d7b-fc86736b0720")
+			(uuid "843435ec-d5b1-4deb-b8a1-73b8ed9ebe15")
 		)
 		(pad "S1" thru_hole oval
 			(at 7.3 4.36 270)
@@ -9637,7 +9637,7 @@
 			(net 1 "GND")
 			(pinfunction "SHIELD")
 			(pintype "passive")
-			(uuid "11eaf988-1096-4bc5-8d7b-fc86736b0720")
+			(uuid "f826657b-ec58-45a1-956a-49391a2f6dc3")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4085.step"
