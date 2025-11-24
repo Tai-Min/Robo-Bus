@@ -14,7 +14,6 @@ jobs:
 
     uses: Tai-Min/Robo-Bus/.github/workflows/hardware_checks.yml@master
     with:
-      base_ref: ${{ github.base_ref }}
       head_ref: ${{ github.head_ref }}
       pr_number: ${{ github.event.pull_request.number }}
       repo_name: ${{ github.event.pull_request.head.repo.full_name }}
@@ -40,11 +39,12 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Delete previous comment
-      uses: Tai-Min/Robo-Bus/.github/actions/comment_remover@devel/add-bridge
+      if: steps.committer_check.outputs.association == 'true'
+      uses: Tai-Min/Robo-Bus/.github/actions/comment_remover@master
       with:
         pr_number: ${{ github.event.pull_request.number }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        magic_header: "<!-- TEST_RUNNER -->"
+        magic_header: "\n<!-- TEST_RUNNER -->"
 
     - name: Create comment
       id: comment
