@@ -39,17 +39,32 @@ jobs:
         pr_number: ${{ github.event.pull_request.number }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Delete previous comment
+      if: steps.committer_check.outputs.association == 'true'
+      run: |
+        PR_NUMBER="${{ github.event.pull_request.number }}"
+
+        COMMENT_IDS=$(gh api \
+        repos/${{ github.repository }}/issues/$PR_NUMBER/comments \
+        --jq ".[] | select(.user.login == \"github-actions[bot]\" and (.body | startswith(env.MAGIC_HEADER))) | .id")
+
+        for ID in $COMMENT_IDS; do
+          echo "Deleting comment ID $ID"
+          gh api \
+            repos/${{ github.repository }}/issues/comments/$ID \
+            -X DELETE
+        done
+
     - name: Create comment
       id: comment
       run: |
-        echo "${{ needs.hardware_checks.outputs.comment }}"
-        echo "${{ needs.hardware_checks.outputs.skipped }}"
 
-        COMMENT=""
+        COMMENT="<!-- TEST_RUNNER -->"
+
         if [[ "${{ needs.hardware_checks.outputs.skipped }}" = 'true' ]]; then
-          COMMENT="## Hardware checks\n- Skipped."
+          COMMENT="${COMMENT}\n## Hardware checks\n- Skipped."
         else
-          COMMENT="## Hardware checks\n${{ needs.hardware_checks.outputs.comment }}"
+          COMMENT="${COMMENT}\n## Hardware checks\n${{ needs.hardware_checks.outputs.comment }}"
         fi
 
         if [[ "${{ needs.hil_tests.outputs.skipped }}" = 'true' ]]; then
