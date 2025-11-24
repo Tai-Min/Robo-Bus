@@ -43,6 +43,7 @@ jobs:
       if: steps.committer_check.outputs.association == 'true'
       env:
         GH_TOKEN: ${{ github.token }}
+        MAGIC_HEADER: "<!-- TEST_RUNNER -->"
       run: |
         PR_NUMBER="${{ github.event.pull_request.number }}"
 
