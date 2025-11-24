@@ -35,9 +35,9 @@ jobs:
       - name: Delete previous comment
         uses: Tai-Min/Robo-Bus/.github/actions/comment_remover@devel/add-bridge
         with:
-          pr_number: ${{ github.event.pull_request.number }}
+          pr_number: ${{ steps.pr.outputs.result }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          magic_header: "<!-- TEST_RUNNER -->"
+          magic_header: "\n<!-- TEST_RUNNER -->"
 
       - name: Post a comment
         env:

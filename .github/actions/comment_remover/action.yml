@@ -25,7 +25,11 @@ runs:
 
         COMMENT_IDS=$(gh api \
         repos/${{ github.repository }}/issues/$PR_NUMBER/comments \
-        --jq ".[] | select((.body | startswith(env.MAGIC_HEADER))) | .id")
+        --jq ".[] | select(.body | startswith(env.MAGIC_HEADER)) | .id")
+
+        gh api repos/${{ github.repository }}/issues/$PR_NUMBER/comments --jq ".[] | .id"
+
+        echo "$COMMENT_IDS"
 
         for ID in $COMMENT_IDS; do
           echo "Deleting comment ID $ID"

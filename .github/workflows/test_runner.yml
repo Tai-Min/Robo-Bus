@@ -44,7 +44,7 @@ jobs:
       with:
         pr_number: ${{ github.event.pull_request.number }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        magic_header: "<!-- TEST_RUNNER -->"
+        magic_header: "\n<!-- TEST_RUNNER -->"
 
     - name: Create comment
       id: comment
