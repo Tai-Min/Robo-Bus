@@ -1774,156 +1774,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:Jumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.794 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Open"
-				(at 0 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_2_Open_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_0_1"
-				(arc
-					(start -1.524 1.27)
-					(mid 0 1.778)
-					(end 1.524 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2288,9 +2138,9 @@
 		)
 		(uuid dc3b70a3-7e0c-43e2-9bb1-86bf2602e33e)
 	)
-	(text "Place if this connector\nis in \"shield\" configuration"
+	(text "Place if this connector\nis in \"side terminator\"\nconfiguration"
 		(exclude_from_sim no)
-		(at 81.534 104.394 0)
+		(at 81.534 103.378 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2328,7 +2178,7 @@
 		)
 		(uuid "553231c2-b252-492d-8d97-81067f00dfc8")
 	)
-	(text "Place if this connector\nis in \"shield\" configuration"
+	(text "Place if this connector\nis in \"side terminator\"\nconfiguration"
 		(exclude_from_sim no)
 		(at 81.534 119.126 0)
 		(effects
@@ -2338,9 +2188,9 @@
 		)
 		(uuid "566aaff8-c2ac-469e-b951-82fd412833dc")
 	)
-	(text "Place if this connector\nis in \"terminator\" \nconfiguration"
+	(text "Place if this connector\nis in \"bus terminator\" \nconfiguration"
 		(exclude_from_sim no)
-		(at 127 58.674 0)
+		(at 127 57.912 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2357,16 +2207,6 @@
 			)
 		)
 		(uuid "7c5b0422-c4da-48cc-aa33-15fd4d4e4fb5")
-	)
-	(text "Short if this connector\nis in \"shield\" configuration"
-		(exclude_from_sim no)
-		(at 74.676 142.748 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "850dabf3-d4e6-48dd-a719-695d54ce6b64")
 	)
 	(text "female"
 		(exclude_from_sim no)
@@ -2418,7 +2258,7 @@
 		)
 		(uuid "d2c067d5-63f7-460d-b17f-802bb8a658ac")
 	)
-	(text "Place if this connector\nis in \"terminator\" \nconfiguration"
+	(text "Place if this connector\nis in \"bus terminator\" \nconfiguration"
 		(exclude_from_sim no)
 		(at 127.254 73.914 0)
 		(effects
@@ -2469,6 +2309,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63073f64-95de-47c1-8efd-101243dbd541")
+	)
+	(junction
+		(at 124.46 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c12e270-98fa-4519-93f4-db2e32f5dbfd")
 	)
 	(junction
 		(at 187.96 110.49)
@@ -2569,6 +2415,16 @@
 			(type default)
 		)
 		(uuid "0acd8940-0dc6-483a-9129-3ac7e1a53100")
+	)
+	(wire
+		(pts
+			(xy 124.46 106.68) (xy 124.46 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f371ef9-2bb9-4a42-8ca4-afbc4d8cb2a7")
 	)
 	(wire
 		(pts
@@ -2809,26 +2665,6 @@
 			(type default)
 		)
 		(uuid "62a6378b-d782-416f-a9b8-057e1284e37c")
-	)
-	(wire
-		(pts
-			(xy 88.9 135.89) (xy 88.9 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62c4191b-589b-4085-aa6a-9bb8ac2eed57")
-	)
-	(wire
-		(pts
-			(xy 86.36 135.89) (xy 88.9 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66001c22-1f58-4c0a-99af-8b284115c17a")
 	)
 	(wire
 		(pts
@@ -3172,16 +3008,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 106.68) (xy 127 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c80880c2-9571-4255-a2d6-3f744ea51f81")
-	)
-	(wire
-		(pts
 			(xy 166.37 55.88) (xy 172.72 55.88)
 		)
 		(stroke
@@ -3222,6 +3048,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 106.68) (xy 127 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dce393e0-7462-469b-855b-e34b324742af")
+	)
+	(wire
+		(pts
 			(xy 208.28 130.81) (xy 207.01 130.81)
 		)
 		(stroke
@@ -3249,16 +3085,6 @@
 			(type default)
 		)
 		(uuid "e5579bdc-bf55-433c-86e6-d4468c5120a2")
-	)
-	(wire
-		(pts
-			(xy 73.66 135.89) (xy 76.2 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e68e8e32-e969-4e22-a870-3c357bfd0959")
 	)
 	(wire
 		(pts
@@ -3340,16 +3166,6 @@
 		)
 		(uuid "ffcc5f40-3c8a-4726-82f4-64194b617863")
 	)
-	(label "SHIELD_L"
-		(at 120.65 106.68 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0d8ec3c9-a484-489e-8e71-ac900de0cf77")
-	)
 	(label "CAN-"
 		(at 120.65 121.92 180)
 		(effects
@@ -3409,16 +3225,6 @@
 			(justify right bottom)
 		)
 		(uuid "3cbd1de4-33aa-4610-a3ad-ff23808d6041")
-	)
-	(label "SHIELD_L"
-		(at 73.66 135.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "422fe5c2-e930-422a-b68b-678e44a425a4")
 	)
 	(label "MODBUS-"
 		(at 139.7 63.5 180)
@@ -4567,74 +4373,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 81.28 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab6d91d0-151f-4ab9-82a5-0ce636d70fbf")
-		(property "Reference" "JP1"
-			(at 81.28 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Shield_JMP"
-			(at 81.28 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 81.28 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 81.28 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09851b65-b23b-40b4-a68f-6476c25ed10f")
-		)
-		(pin "2"
-			(uuid "563dbf6f-3c34-4ac7-b0be-21d9d3969ac0")
-		)
-		(instances
-			(project "terminator"
-				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:SM712_SOT23")
 		(at 198.12 130.81 0)
 		(unit 1)
@@ -4789,71 +4527,6 @@
 			(project "bus_connector"
 				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 88.9 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d46be24f-1b9e-4880-8c80-a4297de49111")
-		(property "Reference" "#PWR01"
-			(at 88.9 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3e385c08-485d-427e-bf8b-2e85c01243f6")
-		)
-		(instances
-			(project "terminator"
-				(path "/e42bcc36-c7d3-414a-8e1a-42e6cdd67034"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
