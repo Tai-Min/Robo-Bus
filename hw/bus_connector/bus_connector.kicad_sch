@@ -5015,12 +5015,12 @@
 	(symbol
 		(lib_id "Diode:SM712_SOT23")
 		(at 176.53 130.81 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "c9f0b257-dd6f-4c3a-af3b-b2d5e7f78cee")
 		(property "Reference" "D1"
 			(at 176.53 124.46 0)
@@ -5048,7 +5048,7 @@
 			)
 		)
 		(property "Datasheet" "\\datasheets\\CDSOT23-T24CAN.pdf"
-			(at 172.72 130.81 0)
+			(at 180.34 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
