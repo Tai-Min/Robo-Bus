@@ -1,0 +1,11 @@
+ERC report (2025-12-02T18:51:45+0000, Encoding UTF8)
+
+***** Sheet /
+[lib_symbol_mismatch]: Symbol 'DE9_Pins_MountingHoles' doesn't match copy in library 'Connector'
+    ; warning
+    @(134.62 mm, 116.84 mm): Symbol J1 [DE9_Pins_MountingHoles]
+[lib_symbol_mismatch]: Symbol 'DE9_Pins_MountingHoles' doesn't match copy in library 'Connector'
+    ; warning
+    @(180.34 mm, 60.96 mm): Symbol J2 [DE9_Pins_MountingHoles]
+
+ ** ERC messages: 2  Errors 0  Warnings 2
