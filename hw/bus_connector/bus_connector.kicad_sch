@@ -5,9 +5,9 @@
 	(uuid "e42bcc36-c7d3-414a-8e1a-42e6cdd67034")
 	(paper "A4")
 	(title_block
-		(title "Bus Connector")
+		(title "${TITLE}")
 		(date "2025-11-24")
-		(rev "1.0")
+		(rev "${REVISION}")
 	)
 	(lib_symbols
 		(symbol "Connector:DE9_Pins_MountingHoles"
@@ -2305,9 +2305,9 @@
 		)
 		(uuid "6c8dc50b-4b57-450b-8891-347024617453")
 	)
-	(text "Place if this connector\nis in \"bus terminator\" \nconfiguration"
+	(text "Place if this connector\nis in \"bus terminator\" or \n\"bus connector\" configuration"
 		(exclude_from_sim no)
-		(at 185.674 140.716 0)
+		(at 181.356 140.716 0)
 		(effects
 			(font
 				(size 1.27 1.27)

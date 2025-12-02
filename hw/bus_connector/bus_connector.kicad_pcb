@@ -8,9 +8,9 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "Bus Connector")
+		(title "${TITLE}")
 		(date "2025-11-24")
-		(rev "1.0")
+		(rev "${REVISION}")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -122,6 +122,8 @@
 			(outputdirectory "")
 		)
 	)
+	(property "REVISION" "1.0.0d")
+	(property "TITLE" "Bus Connector")
 	(net 0 "")
 	(net 1 "VCC")
 	(net 2 "GND")
@@ -3623,7 +3625,7 @@
 	(footprint "symbols:robo-bus-qr"
 		(layer "F.Cu")
 		(uuid "f30beabc-afb7-4da3-a3d8-ca2f9665155b")
-		(at 137.525001 115.184053)
+		(at 137.3124 118.364)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -4684,14 +4686,14 @@
 	(footprint "Symbol:KiCad-Logo2_5mm_SilkScreen"
 		(layer "B.Cu")
 		(uuid "009a5e5b-3223-4fa5-9b7a-53dc86f9c523")
-		(at 156.609188 110.86 180)
+		(at 153.3652 118.2624 180)
 		(descr "KiCad Logo")
 		(tags "Logo KiCad")
 		(property "Reference" "REF**"
 			(at 0 5.08 0)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "1b2e3cf3-d7ff-451d-bd3d-e493d9a144c9")
+			(uuid "4c847ed3-6c55-4d62-988f-c08a7f58bdc9")
 			(effects
 				(font
 					(size 1 1)
@@ -4704,7 +4706,7 @@
 			(at 0 -5.08 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "93187894-6999-4795-a694-e8b8e50a6300")
+			(uuid "ec44c01f-42b3-48a5-ba2e-c2f413494c7a")
 			(effects
 				(font
 					(size 1 1)
@@ -4718,7 +4720,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "453ab52b-9ecd-4c1d-bf84-9cf5d6ffabc5")
+			(uuid "155a34c0-145e-40a5-8979-369885085e94")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,7 +4734,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "efbc41ba-f466-4120-8ab1-a00d141df54e")
+			(uuid "5e6ab9f9-46fe-4dab-bfcc-df9fb064b0ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5367,14 +5369,14 @@
 	(footprint "Symbol:OSHW-Logo_11.4x12mm_SilkScreen"
 		(layer "B.Cu")
 		(uuid "93568702-2ba2-448a-8303-72fb4d05d8c0")
-		(at 141.109188 110.99 180)
+		(at 140.8176 116.1288 180)
 		(descr "Open Source Hardware Logo")
 		(tags "Logo OSHW")
 		(property "Reference" "REF**"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "681ec87d-f086-4877-b963-60d951d488e0")
+			(uuid "8f3f1438-5f0f-495f-9627-682c15e3fc9c")
 			(effects
 				(font
 					(size 1 1)
@@ -5387,7 +5389,7 @@
 			(at 0.75 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "0f239dab-2ebe-48a5-bda6-4b5e64c94c6b")
+			(uuid "86c8a4a8-f154-4163-8741-006394849fcd")
 			(effects
 				(font
 					(size 1 1)
@@ -5401,7 +5403,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "a0b2e1f1-e7d7-401f-ae27-d32717e47676")
+			(uuid "b8651b2b-e569-455e-be5b-229b995bb2d8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5415,7 +5417,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "2599e077-24b5-423f-90d1-52194484f65d")
+			(uuid "8a59abfc-9041-4b3a-be9d-9f7000ea2632")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6416,17 +6418,6 @@
 		(layer "B.Mask")
 		(uuid "f5431631-97cb-4027-904d-99e3703e0d47")
 	)
-	(gr_rect
-		(start 133 119.2)
-		(end 163.2 122)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "2ff160cd-4bf7-4cfc-a3ed-a7d7dca6fbb6")
-	)
 	(gr_arc
 		(start 129.3 111.225)
 		(mid 129.9 110.625)
@@ -6694,7 +6685,7 @@
 		(uuid "fb88ce06-4b2a-4f85-8027-d4fa9c8fc83e")
 	)
 	(gr_text "${TITLE} REV:${REVISION}"
-		(at 150.95 119 0)
+		(at 141.9352 122.174 0)
 		(layer "F.SilkS")
 		(uuid "05a34783-1e55-482c-a62c-950eed60b8b0")
 		(effects
@@ -6703,7 +6694,7 @@
 				(thickness 0.2)
 				(bold yes)
 			)
-			(justify bottom)
+			(justify left bottom)
 		)
 	)
 	(gr_text "RS485-"
@@ -6733,7 +6724,7 @@
 		)
 	)
 	(gr_text "MAIN\nBOARD"
-		(at 142.175 116.675 0)
+		(at 141.962399 119.854947 0)
 		(layer "F.SilkS")
 		(uuid "21e48edd-b49f-4940-95a0-8afcb9b6904c")
 		(effects
@@ -6746,7 +6737,7 @@
 		)
 	)
 	(gr_text "github.com/Tai-Min/Robo-Bus"
-		(at 142.35 117.5 0)
+		(at 142.137399 120.679947 0)
 		(layer "F.SilkS")
 		(uuid "383798f6-ac88-4feb-81be-163bd13630c1")
 		(effects
@@ -6836,19 +6827,6 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "KM\nMP"
-		(at 163.3 121.8 0)
-		(layer "F.SilkS")
-		(uuid "8066e837-a222-4330-b1ed-a904c878d444")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.2)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "FEMALE"
 		(at 125.15 97.725 90)
 		(layer "F.SilkS")
@@ -6858,18 +6836,6 @@
 				(size 0.5 0.5)
 				(thickness 0.125)
 				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "bus connector: use whole board, populate connectors only\nbus terminator: use main board only, populate elements on it\nside terminator: use side board only, populate elements on it"
-		(at 133.05 121.6 0)
-		(layer "F.SilkS")
-		(uuid "99d96da0-3c40-4d8c-b9d4-4a95591cf3b5")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.1)
 			)
 			(justify left bottom)
 		)
@@ -6939,8 +6905,21 @@
 			(justify bottom)
 		)
 	)
+	(gr_text "KM\nMP"
+		(at 134.4676 122.3264 -0)
+		(layer "B.SilkS")
+		(uuid "8066e837-a222-4330-b1ed-a904c878d444")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "Licensed under CERN OHL v.1.2"
-		(at 162.989188 114.75 0)
+		(at 159.7452 122.1524 0)
 		(layer "B.SilkS")
 		(uuid "ffeabe78-633c-4c4b-939a-d1b6d4228e75")
 		(effects
@@ -8938,6 +8917,14 @@
 		(uuid "160dc778-28c5-417a-9007-addd13e29468")
 	)
 	(via
+		(at 152.8572 116.2812)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "1654782b-31fc-4ad0-9cc7-e274808d70cf")
+	)
+	(via
 		(at 124.94 118.82)
 		(size 0.45)
 		(drill 0.3)
@@ -9072,6 +9059,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 2)
 		(uuid "1f437912-a75a-47ec-9399-195622070f54")
+	)
+	(via
+		(at 152.8444 118.7516)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "1fe0f261-cb55-4a8a-b9e2-e60b6adbac08")
 	)
 	(via
 		(at 165.58 116.28)
@@ -9338,6 +9333,14 @@
 		(uuid "3a8c032b-5a9a-4ad3-9085-6dcb522e76fd")
 	)
 	(via
+		(at 135.128 111.2012)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "3bc20654-a77d-49c9-850f-6257b1c7bade")
+	)
+	(via
 		(at 169.7 93.6)
 		(size 0.45)
 		(drill 0.3)
@@ -9578,6 +9581,14 @@
 		(uuid "4a9a12ad-852b-4b7e-8cad-d152a6b80525")
 	)
 	(via
+		(at 160.4872 118.7504)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "4b970010-5a50-4211-a599-28f2374de83c")
+	)
+	(via
 		(at 112.55 107.355172)
 		(size 0.45)
 		(drill 0.3)
@@ -9616,6 +9627,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 2)
 		(uuid "4f2e32ed-d6f5-4e96-9afc-019d2dda9db1")
+	)
+	(via
+		(at 157.9372 118.7704)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "52dc5403-ca62-4f8b-adb5-796acf9608ea")
 	)
 	(via
 		(at 180.35 116.373261)
@@ -9690,6 +9709,14 @@
 		(uuid "59fe39dc-a57e-4c2f-b89f-2081d5e8a3f8")
 	)
 	(via
+		(at 155.3972 118.7704)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "5a9d80e4-05e1-42f8-b5cf-5d2cee5e5faa")
+	)
+	(via
 		(at 137.828512 123.35)
 		(size 0.45)
 		(drill 0.3)
@@ -9744,6 +9771,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 2)
 		(uuid "5c9e2638-0f5f-4e86-9c25-4570db406e55")
+	)
+	(via
+		(at 147.7644 118.7516)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "5e08e4da-4263-4a68-830a-29e1fd17f0af")
 	)
 	(via
 		(at 147.35 95.7)
@@ -10138,6 +10173,22 @@
 		(uuid "7cb7ab46-ebbb-4dee-9e67-817bf9e82db6")
 	)
 	(via
+		(at 137.668 111.2012)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "7d3f21be-e960-4efc-b859-9bdf5ee5fdab")
+	)
+	(via
+		(at 163.0272 118.7504)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "7ed90c48-589b-4441-b78d-b4f4df0a0dde")
+	)
+	(via
 		(at 121.375 112.95)
 		(size 0.45)
 		(drill 0.3)
@@ -10506,6 +10557,14 @@
 		(uuid "9e9d1736-45bc-4f61-aa3c-e9df17654551")
 	)
 	(via
+		(at 145.2372 116.2812)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "a0609b78-826e-4621-8071-986b7dc4f49c")
+	)
+	(via
 		(at 112.55 98.262069)
 		(size 0.45)
 		(drill 0.3)
@@ -10536,6 +10595,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 2)
 		(uuid "a113fa16-f676-4011-9865-c125966eeef3")
+	)
+	(via
+		(at 140.208 111.2012)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "a159b416-b4f3-4543-b24a-f31c0116d380")
 	)
 	(via
 		(at 133.8878 89.65)
@@ -11234,6 +11301,14 @@
 		(uuid "dcdf0e6c-6276-48f4-8619-42d659af1f0d")
 	)
 	(via
+		(at 142.6972 116.2812)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "dcf23df3-2b99-453c-bdb6-e435f61114b6")
+	)
+	(via
 		(at 124.94 98.5)
 		(size 0.45)
 		(drill 0.3)
@@ -11608,6 +11683,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 2)
 		(uuid "faef289c-a0e5-4b8b-b9a5-e7e090b52283")
+	)
+	(via
+		(at 150.3172 118.7704)
+		(size 0.45)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "fb0c928c-64a1-42b4-a91b-61acbc36be03")
 	)
 	(via
 		(at 114.775 123.35)
