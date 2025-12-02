@@ -5,9 +5,9 @@
 	(uuid "dc5be604-7e2f-492b-9acc-9d7a7acc002a")
 	(paper "A4")
 	(title_block
-		(title "USB <-> CAN/RS485 Bridge")
+		(title "${TITLE}")
 		(date "2025-11-24")
-		(rev "1.0")
+		(rev "${REVISION}")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"

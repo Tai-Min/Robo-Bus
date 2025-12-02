@@ -7,7 +7,7 @@
 	(title_block
 		(title "USB <-> CAN/RS485 Bridge")
 		(date "2025-11-24")
-		(rev "1.0")
+		(rev "${REVISION}")
 	)
 	(lib_symbols
 		(symbol "74xGxx:74LVC2G04"
