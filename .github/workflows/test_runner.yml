@@ -12,7 +12,7 @@ jobs:
       pull-requests: write
       contents: write
 
-    uses: Tai-Min/Robo-Bus/.github/workflows/hardware_checks.yml@master
+    uses: ./.github/workflows/hardware_checks.yml
     with:
       head_ref: ${{ github.head_ref }}
       pr_number: ${{ github.event.pull_request.number }}
@@ -20,7 +20,7 @@ jobs:
 
   hil_tests:
     if: ${{ github.event.label.name == 'run_tests' }}
-    uses: Tai-Min/Robo-Bus/.github/workflows/hil_tests.yml@master
+    uses: ./.github/workflows/hil_tests.yml
 
   post_comment:
     needs: [hardware_checks, hil_tests]
@@ -30,17 +30,19 @@ jobs:
       pull-requests: write
 
     steps:
+    - uses: actions/checkout@v4
+
     - name: Committer check
       id: committer_check
-      uses: Tai-Min/Robo-Bus/.github/actions/committer_check@master
+      uses: ./.github/actions/committer_check
       with:
-        repo: Tai-Min/Robo-Bus
+        repo: ${{ github.repository }}
         pr_number: ${{ github.event.pull_request.number }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Delete previous comment
       if: steps.committer_check.outputs.association == 'true'
-      uses: Tai-Min/Robo-Bus/.github/actions/comment_remover@master
+      uses: ./.github/actions/comment_remover
       with:
         pr_number: ${{ github.event.pull_request.number }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}

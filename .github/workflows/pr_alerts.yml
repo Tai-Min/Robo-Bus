@@ -27,9 +27,9 @@ jobs:
     - name: Committer check
       if: steps.filter.outputs.gh == 'true'
       id: committer_check
-      uses: Tai-Min/Robo-Bus/.github/actions/committer_check@master
+      uses: ./.github/actions/committer_check@master
       with:
-        repo: Tai-Min/Robo-Bus
+        repo: ${{ github.repository }}
         pr_number: ${{ github.event.pull_request.number }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
 
