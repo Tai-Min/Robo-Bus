@@ -34,15 +34,15 @@ jobs:
 
       - name: Committer check
         id: committer_check
-        uses: Tai-Min/Robo-Bus/.github/actions/committer_check@master
+        uses: ./.github/actions/committer_check@master
         with:
-          repo: Tai-Min/Robo-Bus
+          repo: ${{ github.repository }}
           pr_number: ${{ steps.pr.outputs.result }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Delete previous comment
         if: steps.committer_check.outputs.association == 'false'
-        uses: Tai-Min/Robo-Bus/.github/actions/comment_remover@master
+        uses: ./.github/actions/comment_remover@master
         with:
           pr_number: ${{ steps.pr.outputs.result }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
