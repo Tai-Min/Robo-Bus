@@ -670,5 +670,8 @@
       "Root"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "REVISION": "1.0.0d",
+    "TITLE": "Bus Connector"
+  }
 }
