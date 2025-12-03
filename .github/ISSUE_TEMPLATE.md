@@ -1,5 +1,5 @@
 ---
-title: {{ env.TITLE }}
-labels: {{ env.LABELS }}
+title: "{{ env.TITLE }}"
+labels: "{{ env.LABELS }}"
 ---
 {{ env.DESCRIPTION }}
