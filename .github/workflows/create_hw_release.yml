@@ -64,7 +64,7 @@ jobs:
 
             cp -r $HW_PATH/$PROJECT/ release
           done    
-          ls release
+          ls release/bus_connector
 
       - name: Publish artifacts
         if: success()
