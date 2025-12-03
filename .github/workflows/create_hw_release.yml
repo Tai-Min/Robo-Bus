@@ -88,6 +88,7 @@ jobs:
           URL: ${{steps.artifact.outputs.artifact-url}}
         with:
           filename: .github/ISSUE_HW_RELEASE_SUCCESS.md
+          assignees: ${{ github.actor }}
 
       - uses: JasonEtco/create-an-issue@v2
         if: failure()
@@ -99,3 +100,4 @@ jobs:
           REPO: ${{ github.repository }}
         with:
           filename: .github/ISSUE_HW_RELEASE_FAIL.md
+          assignees: ${{ github.actor }}
