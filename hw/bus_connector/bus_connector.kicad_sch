@@ -3701,7 +3701,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C114928.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C114928.html"
+			(at 96.52 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C114928"
 			(at 96.52 119.38 0)
 			(effects
 				(font
@@ -3845,6 +3854,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 168.91 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "06d9ae1e-9f99-44a3-82ef-aa1cff70a8a5")
 		)
@@ -3976,7 +3994,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C19077344.html?s_z=n_dsub"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C19077344.html?s_z=n_dsub"
+			(at 224.79 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C19077344"
 			(at 224.79 115.57 0)
 			(effects
 				(font
@@ -4079,6 +4106,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 232.41 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "28581eff-f643-4208-8ed3-49df351e8d08")
 		)
@@ -4146,7 +4182,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C114928.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C114928.html"
+			(at 142.24 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C114928"
 			(at 142.24 58.42 0)
 			(effects
 				(font
@@ -4217,6 +4262,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 187.96 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 187.96 106.68 0)
 			(effects
 				(font
@@ -4423,7 +4477,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C114928.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C114928.html"
+			(at 142.24 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C114928"
 			(at 142.24 73.66 0)
 			(effects
 				(font
@@ -4568,6 +4631,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 181.61 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8500ec87-22e0-485c-90b9-b71c794f1753")
 		)
@@ -4701,7 +4773,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C114928.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C114928.html"
+			(at 96.52 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C114928"
 			(at 96.52 104.14 0)
 			(effects
 				(font
@@ -4772,6 +4853,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 175.26 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 175.26 106.68 0)
 			(effects
 				(font
@@ -4975,7 +5065,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C172881.html?s_z=n_SM712"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C172881.html?s_z=n_SM712"
+			(at 198.12 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C172881"
 			(at 198.12 130.81 0)
 			(effects
 				(font
@@ -5055,7 +5154,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C2959841.html?s_z=n_CDSOT23-T24CAN"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C2959841.html?s_z=n_CDSOT23-T24CAN"
+			(at 176.53 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2959841"
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -5202,7 +5310,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C19077337.html?s_z=n_XUNPU%2520D-SUB-DR-9"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C19077337.html?s_z=n_XUNPU%2520D-SUB-DR-9"
+			(at 134.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C19077337"
 			(at 134.62 116.84 0)
 			(effects
 				(font
@@ -5370,6 +5487,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 207.01 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6e245b10-76ff-4646-82fe-961fba466fd9")
 		)
@@ -5437,7 +5563,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C19077337.html?s_z=n_XUNPU%2520D-SUB-DR-9"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C19077337.html?s_z=n_XUNPU%2520D-SUB-DR-9"
+			(at 180.34 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C19077337"
 			(at 180.34 60.96 0)
 			(effects
 				(font
