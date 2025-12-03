@@ -3743,7 +3743,15 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C2842269.html"
+		(property "Freq" "8MHz"
+			(at 109.22 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C2842269.html"
 			(at 109.22 71.12 0)
 			(effects
 				(font
@@ -3752,12 +3760,13 @@
 				(hide yes)
 			)
 		)
-		(property "Freq" "8MHz"
-			(at 109.22 75.184 0)
+		(property "LCSC Part #" "C2842269"
+			(at 109.22 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3829,7 +3838,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C66501.html"
 			(at 91.44 73.66 90)
 			(effects
 				(font
@@ -3838,7 +3847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C66501"
 			(at 91.44 73.66 90)
 			(effects
 				(font
@@ -3916,7 +3925,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C170142.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C170142.html"
 			(at 102.87 76.2 90)
 			(effects
 				(font
@@ -3925,7 +3934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C170142"
 			(at 102.87 76.2 90)
 			(effects
 				(font
@@ -4198,7 +4207,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C7494874.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C7494874.html"
 			(at 100.33 106.68 0)
 			(effects
 				(font
@@ -4207,7 +4216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C7494874"
 			(at 100.33 106.68 0)
 			(effects
 				(font
@@ -4428,6 +4437,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 162.56 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f685e0ab-8342-4d9d-bf5f-59a9f7eddf95")
 		)
@@ -4498,7 +4516,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C2847904.html?s_z=n_STM32G0B1CBT"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C2847904.html?s_z=n_STM32G0B1CBT"
 			(at 161.29 101.6 0)
 			(effects
 				(font
@@ -4507,7 +4525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C2847904"
 			(at 161.29 101.6 0)
 			(effects
 				(font
@@ -4789,7 +4807,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C66501.html"
 			(at 123.19 46.99 90)
 			(effects
 				(font
@@ -4798,7 +4816,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C66501"
 			(at 123.19 46.99 90)
 			(effects
 				(font
@@ -5141,7 +5159,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C98220.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C98220.html"
 			(at 99.06 134.62 0)
 			(effects
 				(font
@@ -5150,7 +5168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C98220"
 			(at 99.06 134.62 0)
 			(effects
 				(font
@@ -5229,7 +5247,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C7494857.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C7494857.html"
 			(at 105.41 127 0)
 			(effects
 				(font
@@ -5238,7 +5256,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C7494857"
 			(at 105.41 127 0)
 			(effects
 				(font
@@ -5316,7 +5334,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C170142.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C170142.html"
 			(at 115.57 76.2 90)
 			(effects
 				(font
@@ -5325,7 +5343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C170142"
 			(at 115.57 76.2 90)
 			(effects
 				(font
@@ -5469,7 +5487,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "https://www.lcsc.com/product-detail/C66501.html"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/C66501.html"
 			(at 113.03 46.99 90)
 			(effects
 				(font
@@ -5478,7 +5496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" ""
+		(property "LCSC Part #" "C66501"
 			(at 113.03 46.99 90)
 			(effects
 				(font
