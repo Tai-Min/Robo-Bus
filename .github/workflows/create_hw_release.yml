@@ -66,10 +66,10 @@ jobs:
           done    
           ls release/bus_connector
 
-      - name: Publish artifacts
+      - uses: actions/upload-artifact@v4
         if: success()
-        run: |
-          echo "TODO: Create artifacts"
+        path: "./release"
+        if-no-files-found: error
 
       - uses: actions/checkout@v4
 
@@ -78,7 +78,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TITLE: "AUTOMATED release: ${{ inputs.name }} succeeded"
-          LABELS: bot, hardware
+          LABELS: [bot, hardware]
           DESCRIPTION: "Run [${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) (based on ${{ inputs.sha }}) succeeded, artifacts are available"
         
 
