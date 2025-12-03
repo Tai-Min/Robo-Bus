@@ -29,7 +29,7 @@ jobs:
     - name: Committer check
       if: steps.filter.outputs.gh == 'true'
       id: committer_check
-      uses: ./.github/actions/committer_check@master
+      uses: ./.github/actions/committer_check
       with:
         repo: ${{ github.repository }}
         pr_number: ${{ github.event.pull_request.number }}
