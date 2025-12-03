@@ -97,6 +97,5 @@ jobs:
           RUN_ID: ${{ github.run_id }}
           SHA: ${{ inputs.sha }}
           REPO: ${{ github.repository }}
-          AUTHOR: "${{ github.actor }}"
         with:
           filename: .github/ISSUE_HW_RELEASE_FAIL.md
