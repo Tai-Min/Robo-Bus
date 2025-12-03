@@ -5,7 +5,9 @@ on:
 
 jobs:
   check_author:
-    if: ${{ !github.event.issue.pull_request }} && startsWith(github.event.comment.body, '/release')
+    if: >
+      github.event.issue.pull_request == null &&
+      startsWith(github.event.comment.body, '/release')
     runs-on: ubuntu-22.04
     outputs:
       association: ${{ steps.author_check.outputs.association }}
