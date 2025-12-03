@@ -71,6 +71,8 @@ jobs:
         run: |
           echo "TODO: Create artifacts"
 
+      - uses: actions/checkout@v4
+
       - uses: JasonEtco/create-an-issue@v2
         if: success()
         env:
