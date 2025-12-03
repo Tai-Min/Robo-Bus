@@ -1,0 +1,121 @@
+name: Create a release draft
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  check_author:
+    if: ${{ !github.event.issue.pull_request }} && contains(github.event.comment.body, '/release')
+    runs-on: ubuntu-22.04
+    outputs:
+      association: ${{ steps.author_check.outputs.association }}
+    steps:
+      - name: Get author of the comment
+        id: author_check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          AUTHOR_ASSOCIATION=$(gh api repos/Tai-Min/Robo-Bus/issues/comments/${{ github.event.comment.id }} | jq .author_association)
+
+          echo "$AUTHOR_ASSOCIATION"
+          echo "association=$AUTHOR_ASSOCIATION" >> $GITHUB_OUTPUT
+
+  release_publisher:
+    if: needs.check_author.outputs.association == '"OWNER"' || needs.check_author.outputs.association == '"COLLABORATOR"'
+    runs-on: ubuntu-22.04
+    needs: check_author
+    permissions:
+      issues: write
+      contents: write
+    steps:
+
+      - name: Get release description
+        id: release_body
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # TODO: get issue comment from inputs
+
+          BODY=$(gh api repos/Tai-Min/Robo-Bus/issues/comments/${{ github.event.comment.id }} | jq .body)
+          BODY=$(echo "$BODY" | awk '{sub("/release","");print}')
+          BODY=$(echo ${BODY:1:-1})
+          echo "$BODY"
+
+          echo "body<<EOF" >> $GITHUB_OUTPUT
+          echo -e "$BODY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Get author comment variables
+        id: author_comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          #TODO: get issue from inputs
+          COMMENT=$(gh api repos/${{ github.repository }}/issues/${{ github.event.issue.number }} | jq .body)
+          NAME=$(echo "$COMMENT" | grep -oP '(?<=<!-- name:)[^ ]+(?= -->)')
+          SHA=$(echo "$COMMENT" | grep -oP '(?<=<!-- sha:)[^ ]+(?= -->)')
+          RUN_ID=$(echo "$COMMENT" | grep -oP '(?<=<!-- run_id:)[^ ]+(?= -->)')
+          URL=$(echo "$COMMENT" | grep -oP '(?<=<!-- url:)[^ ]+(?= -->)')
+          ARTIFACT_URL=$(echo "$COMMENT" | grep -oP '(?<=<!-- artifact_url:)[^ ]+(?= -->)')
+
+          echo "$NAME"
+          echo "$SHA"
+          echo "$RUN_ID"
+          echo "$URL"
+          echo "$ARTIFACT_URL"
+
+          echo "name=$NAME" >> $GITHUB_OUTPUT
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+          echo "run_id=$RUN_ID" >> $GITHUB_OUTPUT
+          echo "url=$URL" >> $GITHUB_OUTPUT
+          echo "artifact_url=$ARTIFACT_URL" >> $GITHUB_OUTPUT
+
+      - uses: actions/download-artifact@v5
+        id: download_artifacts
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ steps.author_comment.outputs.run_id }}
+          path: ./release
+
+      - name: Create Release
+        id: create_release
+        uses: comnoco/create-release-action@v2.0.5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.author_comment.outputs.name }}
+          release_name: ${{ steps.author_comment.outputs.name }}
+          body: ${{ steps.release_body.outputs.body }}
+          draft: true
+          prerelease: true
+          commitish: ${{ steps.author_comment.outputs.sha }}
+      
+      - name: Zip release
+        run: |
+          cd ${{ steps.download_artifacts.outputs.download-path }}
+          zip -r release.zip .
+
+      - name: Upload Release Asset
+        id: upload_release_asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ steps.download_artifacts.outputs.download-path }}/release.zip
+          asset_name: release.zip
+          asset_content_type: application/zip
+
+      - name: Post comment with results
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `
+            Release created: [${{ steps.author_comment.outputs.name }}](${{ steps.create_release.outputs.html_url }})
+            `;
+            await github.rest.issues.createComment({
+              issue_number: ${{ github.event.issue.number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body
+            });
