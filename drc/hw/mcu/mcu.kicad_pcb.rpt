@@ -1,0 +1,13 @@
+** Drc report for mcu.kicad_pcb **
+** Created on 2025-12-03T00:30:36+0000 **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 1 Footprint errors **
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(180.7400 mm, 77.3100 mm): Footprint REF**
+
+** End of Report **

@@ -1,0 +1,5 @@
+
+- hw/mcu/mcu.kicad_pcb: [report](https://github.com/Tai-Min/Robo-Bus/blob/devel/better-pcb-render-PR68-AUTO/drc/hw/mcu/mcu.kicad_pcb.rpt)
+Found 0 violations
+Found 0 unconnected items
+Found 1 schematic parity issues
