@@ -23,7 +23,9 @@ jobs:
         filters: |
           gh:
             - '.github/**'
-
+            
+    - uses: actions/checkout@v4
+    
     - name: Committer check
       if: steps.filter.outputs.gh == 'true'
       id: committer_check
