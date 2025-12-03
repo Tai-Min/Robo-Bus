@@ -3701,15 +3701,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C114928.html"
-			(at 96.52 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC Part #" "C114928"
 			(at 96.52 119.38 0)
 			(effects
@@ -3994,15 +3985,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C19077344.html?s_z=n_dsub"
-			(at 224.79 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC Part #" "C19077344"
 			(at 224.79 115.57 0)
 			(effects
@@ -4174,15 +4156,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 142.24 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C114928.html"
 			(at 142.24 58.42 0)
 			(effects
 				(font
@@ -4469,15 +4442,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 142.24 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C114928.html"
 			(at 142.24 73.66 0)
 			(effects
 				(font
@@ -4773,15 +4737,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C114928.html"
-			(at 96.52 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC Part #" "C114928"
 			(at 96.52 104.14 0)
 			(effects
@@ -5065,15 +5020,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C172881.html?s_z=n_SM712"
-			(at 198.12 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC Part #" "C172881"
 			(at 198.12 130.81 0)
 			(effects
@@ -5146,15 +5092,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 176.53 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C2959841.html?s_z=n_CDSOT23-T24CAN"
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -5303,15 +5240,6 @@
 		)
 		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 			(at 139.446 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C19077337.html?s_z=n_XUNPU%2520D-SUB-DR-9"
-			(at 134.62 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5556,15 +5484,6 @@
 		)
 		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 			(at 185.674 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/C19077337.html?s_z=n_XUNPU%2520D-SUB-DR-9"
-			(at 180.34 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
