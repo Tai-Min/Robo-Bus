@@ -1,7 +1,7 @@
 ---
 title: ✅ AUTOMATED release {{env.NAME}} succeeded
 labels: bot, hardware
-assignees: {{env.AUTHOR}}
+assignees: {{tools.context.actor}}
 ---
 <!-- name:{{env.NAME}} -->
 <!-- sha:{{env.SHA}} -->
