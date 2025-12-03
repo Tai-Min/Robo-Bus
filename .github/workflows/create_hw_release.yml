@@ -54,22 +54,26 @@ jobs:
             kicad-cli sch erc "$HW_PATH/$PROJECT/$PROJECT.kicad_sch" --output "$HW_PATH/$PROJECT/report/erc.rpt"
             kicad-cli sch erc "$HW_PATH/$PROJECT/$PROJECT.kicad_sch" --output "$HW_PATH/$PROJECT/report/erc.rpt"
 
-            kicad-cli sch export pdf "$HW_PATH/$PROJECT/$PROJECT.kicad_sch" --output "$HW_PATH/$PROJECT/plots/schematics.pdf"
+            kicad-cli sch export pdf "$HW_PATH/$PROJECT/$PROJECT.kicad_sch" --output "$HW_PATH/$PROJECT/plots/${PROJECT}_sch.pdf"
 
-            kicad-cli pcb drc "$HW_PATH/$PROJECT/$PROJECT.kicad_pcb" --output "$HW_PATH/$PROJECT/drc.rpt" --schematic-parity
+            kicad-cli pcb drc "$HW_PATH/$PROJECT/$PROJECT.kicad_pcb" --output "$HW_PATH/$PROJECT/report/drc.rpt" --schematic-parity
 
             python3 ./Board2Pdf/src/board2pdf/cli.py "$HW_PATH/$PROJECT/$PROJECT.kicad_pcb" --colorize pymupdf --ini "$HW_PATH/board2pdf.config.ini"
 
             $(cd Fabrication-Toolkit && python3 -m plugins.cli -p ../$HW_PATH/$PROJECT/$PROJECT.kicad_pcb --noBackup --nonInteractive)
 
             cp -r $HW_PATH/$PROJECT/ release
-          done    
-          ls release/bus_connector
+          done
+
+          find release -name '*.svg' -type f -delete
 
       - uses: actions/upload-artifact@v4
+        id: artifact
         if: success()
-        path: "./release"
-        if-no-files-found: error
+        with:
+          name: hardware
+          path: ./release
+          if-no-files-found: error
 
       - uses: actions/checkout@v4
 
@@ -77,12 +81,21 @@ jobs:
         if: success()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TITLE: "AUTOMATED release: ${{ inputs.name }} succeeded"
-          LABELS: [bot, hardware]
-          DESCRIPTION: "Run [${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) (based on ${{ inputs.sha }}) succeeded, artifacts are available"
-        
+          NAME: ${{ inputs.name }}
+          RUN_ID: ${{ github.run_id }}
+          SHA: ${{ inputs.sha }}
+          REPO: ${{ github.repository }}
+          URL: ${{steps.artifact.outputs.artifact-url}}
+        with:
+          filename: .github/ISSUE_HW_RELEASE_SUCCESS.md
 
-      - name: Create issue if failed
+      - uses: JasonEtco/create-an-issue@v2
         if: failure()
-        run: |
-          echo "TODO: create issue with link to this run id ${{ github.run_id }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NAME: ${{ inputs.name }}
+          RUN_ID: ${{ github.run_id }}
+          SHA: ${{ inputs.sha }}
+          REPO: ${{ github.repository }}
+        with:
+          filename: .github/ISSUE_HW_RELEASE_FAIL.md
