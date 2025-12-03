@@ -6837,19 +6837,6 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the CERN OHL v.1.2.(http://ohwr.org/cernohl).\nThis documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,\nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions"
-		(at 184.29 176.58 0)
-		(layer "User.4")
-		(uuid "085521a5-df51-4aca-936f-85fafb770a02")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
 	(dimension
 		(type orthogonal)
 		(layer "Dwgs.User")
@@ -16988,4 +16975,28 @@
 		)
 	)
 	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "drawing_sheet.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WAhCq0bANZtjiDgWjeUd7GfIpdQ3hsyJE4imh40WCrg3bHZNmcww0sw4IEAhQCDAL5lJzOj
+				pT+67/YvbT+xKmvrmW/8KFQ2Oef8xK9I+Farb213mmX+KIu3+RqV985lKu8S6eqtOr4kbVGiPXrU
+				0FVt89I+L+vxRQ2dVv1fN92t3wUAICBIqfanm+bIRNk9X4SmMtd5W/34SYZGrTXBbZzjfFP9qwIg
+				IEhPLNFpzXsqBJlvi9J55PpTNhS/0Av/dccTzaUrOLDziasXG43MLVVTuGOrGQ04il9HJPEioAVG
+				6LTOt1od2sIZjdhHehLRxxlHEEbwx28r0Vq79G/8prtGd6cqU8d59Vxc51tZlltNFAAb51H1jvM0
+				p7Ka+W79Lne3JTrOt87V0ia+237qtX6ss7lR3wKlAg6Nsqco/XufGbVV5dU7vedrd1mUqzIIhzRO
+				q66t/FLReEb8Iv6l7fpPrPLzU/zmRT29fmLrry3r1Lbi+FMaT7+82kz/dJzvtiozn57eErfgOgej
+				Qnoh+X2VsdFIaAqMl/ku4OROzIvafZ2hbfW7kCCJ7ktylavn9f1fGgeI2OAEAwGBgds6bcG5o+HQ
+				GOk9cTb90dKaF02lrP+n/ql9NMQh7Rs1ocgJXfQunAhIil7o3iRDghOXeJyNg0QNGfEmI0h6Iw6B
+				FxDiVSLih/GJxikZUMK5RDKgH0BkxhNFz+OSD7yEGNBFjY/jJ4afz0EZz0mOpkKCntM1A1rKWL+J
+				IOmsaVYpIxCP1N4BgIagATmGmBkakSCSpCDJcGBExMxVN+ZEMIr2+Ixg+w44oI2QkWfDYQBGWKkF
+				Mwg4uwAUEVRASQ6CoSO7wOH2oRcJQ92PVxKzOyKxApiF5j1bCYde/8e8NSfJCOTZBjnL5kEgk9zl
+				MlBII26C1dPzpy84m5fIib7lme/qD5PyoQz2EJoQE1jDRgTxITi8ia/sl5+zrDxPhKBBn57ycYJg
+				ZCwqHFwyZdBoqHYp0zBZO06dzgfsT4kYixZyxQyfvGf1jGnpkx8aKmozkcOWchtBzaWzZv2hQIju
+				lOqJaiUvzvCA3LzBdbUVIJOYJSx0+3ufDFvX5dIvDoxARYL0gCYirRADAnCnk8CcCCxLwcP0pwGD
+				AcdTPbjcedGBdAsSMjEiw0/8xNymVps2TR/W8jcsl1Bj2egAHQNMBQ==|
+			)
+			(checksum "F4CA3C5331BFF1A6D590C818164A77B8")
+		)
+	)
 )
