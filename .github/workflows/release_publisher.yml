@@ -5,7 +5,7 @@ on:
 
 jobs:
   check_author:
-    if: ${{ !github.event.issue.pull_request }} && contains(github.event.comment.body, '/release')
+    if: ${{ !github.event.issue.pull_request }} && startsWith(github.event.comment.body, '/release')
     runs-on: ubuntu-22.04
     outputs:
       association: ${{ steps.author_check.outputs.association }}
@@ -16,7 +16,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           AUTHOR_ASSOCIATION=$(gh api repos/Tai-Min/Robo-Bus/issues/comments/${{ github.event.comment.id }} | jq .author_association)
-
+          echo "${{ github.event.comment.body }}"
           echo "$AUTHOR_ASSOCIATION"
           echo "association=$AUTHOR_ASSOCIATION" >> $GITHUB_OUTPUT
 
@@ -28,7 +28,6 @@ jobs:
       issues: write
       contents: write
     steps:
-
       - name: Get release description
         id: release_body
         env:
