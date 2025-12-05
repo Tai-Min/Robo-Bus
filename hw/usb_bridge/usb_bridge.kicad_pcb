@@ -14195,7 +14195,7 @@
 				)
 			)
 		)
-		(property "Value" "500mA"
+		(property "Value" "BSMD0603C-0500T"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "f29ad95c-19c7-4011-987c-7c1722a3c71f")
@@ -14218,7 +14218,7 @@
 				)
 			)
 		)
-		(property "Description" "BSMD0603C-0500T"
+		(property "Description" "500mA"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
