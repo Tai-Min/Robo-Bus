@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 1.5,
+          "width": 1.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -69,7 +69,59 @@
           ""
         ],
         [
+          "lib_footprint_mismatch|161827500|95820000|85d674f9-384c-4cbe-b0ac-4ffc9463230a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|174000000|102035000|3ba89cb2-6df6-40d9-b6d8-83d6b13787f1|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_overlap|126967500|92425000|0570e645-1e16-4d74-91ce-0177306359df|15626956-7e9b-4bfd-b1d7-f533277f6578",
+          ""
+        ],
+        [
+          "silk_overlap|126967500|92425000|0570e645-1e16-4d74-91ce-0177306359df|db2f35ab-72b5-40d1-a6a0-eafb358cf754",
+          ""
+        ],
+        [
+          "silk_overlap|126967500|93895000|0570e645-1e16-4d74-91ce-0177306359df|e5f7ce14-3ccf-4181-b04c-5bf9175d7661",
+          ""
+        ],
+        [
+          "silk_overlap|126967500|94055000|0570e645-1e16-4d74-91ce-0177306359df|6f1e5a08-a26f-4788-97b1-32b960f9f19e",
+          ""
+        ],
+        [
+          "silk_overlap|126967500|95525000|0570e645-1e16-4d74-91ce-0177306359df|23e26ff9-0ae0-47af-9600-5f36708b5c70",
+          ""
+        ],
+        [
+          "silk_overlap|126967500|95525000|0570e645-1e16-4d74-91ce-0177306359df|519f653e-ab01-412e-91c5-58e2c969257a",
+          ""
+        ],
+        [
+          "silk_overlap|126972500|87615000|319d220c-57bf-45b0-9af1-01a0942b29bb|59ef378f-3d9f-4ceb-92fe-d7b8a5012235",
+          ""
+        ],
+        [
+          "silk_overlap|126972500|87615000|59ef378f-3d9f-4ceb-92fe-d7b8a5012235|8bdb460f-2a05-4d65-a8aa-d7982aee5723",
+          ""
+        ],
+        [
+          "silk_overlap|126972500|89085000|59ef378f-3d9f-4ceb-92fe-d7b8a5012235|61ae21da-e1e3-48b5-bc23-19809249d4eb",
+          ""
+        ],
+        [
+          "silk_overlap|126972500|89235000|329ad1b0-d28f-4669-a10c-599abe16a3a0|59ef378f-3d9f-4ceb-92fe-d7b8a5012235",
+          ""
+        ],
+        [
+          "silk_overlap|126972500|89235000|59ef378f-3d9f-4ceb-92fe-d7b8a5012235|605cf4d4-8f2c-4d71-99bd-58548af078a0",
+          ""
+        ],
+        [
+          "silk_overlap|126972500|90705000|1532fb4b-5899-432a-9ea2-a6b47e61719a|59ef378f-3d9f-4ceb-92fe-d7b8a5012235",
           ""
         ]
       ],
@@ -153,7 +205,7 @@
         "min_track_width": 0.16,
         "min_via_annular_width": 0.075,
         "min_via_diameter": 0.45,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -532,7 +584,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "kicad-embed://drawing_sheet.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -618,22 +670,10 @@
           "show": false
         },
         {
-          "group_by": true,
-          "label": "LCSC",
-          "name": "LCSC",
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Field5",
-          "name": "Field5",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Freq",
-          "name": "Freq",
-          "show": false
         }
       ],
       "filter_string": "",
@@ -671,7 +711,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "kicad-embed://drawing_sheet.kicad_wks",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
@@ -694,7 +734,7 @@
     ]
   ],
   "text_variables": {
-    "REVISION": "1.0",
+    "REVISION": "1.0.0d",
     "TITLE": "USB <-> CAN / RS485 ADAPTER"
   }
 }
