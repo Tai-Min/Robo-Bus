@@ -846,156 +846,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:Jumper_2_Small_Bridged"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Small_Bridged"
-				(at 0 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, small symbol, bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_2_Small_Bridged_0_0"
-				(circle
-					(center -1.016 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.016 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Small_Bridged_0_1"
-				(arc
-					(start -0.762 0.254)
-					(mid 0 0.5696)
-					(end 0.762 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Small_Bridged_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "MCU_ST_STM32G0:STM32G0B1CBTx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2612,107 +2462,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "VREF/VDD"
 		(exclude_from_sim no)
@@ -2723,16 +2472,6 @@
 			)
 		)
 		(uuid "81bdfce6-1eff-4584-8e25-ce1a138151f0")
-	)
-	(text "This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the \nCERN OHL v.1.2.(http://ohwr.org/cernohl). This documentation is distributed \nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,\nSATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.\nPlease see the CERN OHL v.1.2 for applicable conditions"
-		(exclude_from_sim no)
-		(at 231.394 174.244 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d7b7772e-cfa4-4372-a9d1-0f9f358780a5")
 	)
 	(junction
 		(at 162.56 52.07)
@@ -2745,18 +2484,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6da8e353-f1aa-48cb-a4dd-8466381113d7")
-	)
-	(junction
-		(at 162.56 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73899d7c-1e1b-4004-85c2-83ce1e00739c")
-	)
-	(junction
-		(at 162.56 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "75df375f-4f21-46d2-8e06-0a68b48ff1f3")
 	)
 	(junction
 		(at 99.06 129.54)
@@ -2970,16 +2697,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 48.26) (xy 162.56 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19de501b-4d08-4b70-827d-968388040997")
-	)
-	(wire
-		(pts
 			(xy 102.87 80.01) (xy 102.87 81.28)
 		)
 		(stroke
@@ -2987,16 +2704,6 @@
 			(type default)
 		)
 		(uuid "1c55a817-4394-4062-adb3-b1ce665e2f48")
-	)
-	(wire
-		(pts
-			(xy 132.08 50.8) (xy 162.56 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "226b8fb4-2a89-418b-9705-81c20a91157c")
 	)
 	(wire
 		(pts
@@ -3037,16 +2744,6 @@
 			(type default)
 		)
 		(uuid "3f94a07b-f361-4020-bed0-938654e065a5")
-	)
-	(wire
-		(pts
-			(xy 162.56 49.53) (xy 162.56 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "406a2dbc-f902-464b-98d5-f8f9f0be125c")
 	)
 	(wire
 		(pts
@@ -3320,16 +3017,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 49.53) (xy 162.56 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce7deac1-20ea-4e3a-afa2-ca5731e2f6d8")
-	)
-	(wire
-		(pts
 			(xy 91.44 69.85) (xy 91.44 68.58)
 		)
 		(stroke
@@ -3407,16 +3094,6 @@
 			(type default)
 		)
 		(uuid "ee1af86a-8c38-4a16-9c0f-df098ada593f")
-	)
-	(wire
-		(pts
-			(xy 162.56 41.91) (xy 162.56 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee618cce-ceec-41e1-b43f-14e912c4473c")
 	)
 	(wire
 		(pts
@@ -3635,7 +3312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "001a2547-0c42-4967-8807-e9b536e01b25")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR041"
 			(at 91.44 85.09 0)
 			(effects
 				(font
@@ -3685,7 +3362,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR042")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -3761,6 +3438,72 @@
 			(project ""
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
 					(reference "Y2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 132.08 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1170404d-f323-4538-b6c3-387fab410a1f")
+		(property "Reference" "#PWR050"
+			(at 132.08 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 132.08 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 132.08 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20ab6c7b-0afe-4845-8a13-2ce8d5e8b770")
+		)
+		(instances
+			(project "usb_bridge"
+				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -3931,7 +3674,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22a3a795-2566-4e6f-8802-dfaf1484c3ee")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR049"
 			(at 123.19 58.42 0)
 			(effects
 				(font
@@ -3981,7 +3724,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR051")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -3997,7 +3740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "317f4526-b284-481f-8cba-e6a86d847b36")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR045"
 			(at 109.22 88.9 0)
 			(effects
 				(font
@@ -4047,7 +3790,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR046")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -4062,7 +3805,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4bb7cd9e-a7ca-486e-9b1e-87c3cd6a3263")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR047"
 			(at 113.03 58.42 0)
 			(effects
 				(font
@@ -4112,7 +3855,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR049")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -4208,71 +3951,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 161.29 49.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "63ab5edc-aaac-43a7-a185-ed920168a91e")
-		(property "Reference" "#FLG08"
-			(at 159.385 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 153.67 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 161.29 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed605e5c-4518-4d07-9769-6d0506f81d1f")
-		)
-		(instances
-			(project "usb_bridge"
-				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#FLG08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 99.06 125.73 0)
 		(unit 1)
@@ -4282,7 +3960,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b8490e5-a0c7-480a-8972-25bf31c35157")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR043"
 			(at 99.06 129.54 0)
 			(effects
 				(font
@@ -4332,85 +4010,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Small_Bridged")
-		(at 162.56 45.72 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e5b8f52-8e08-415c-8784-8fc94d7707d9")
-		(property "Reference" "JP11"
-			(at 160.782 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Amp TP"
-			(at 164.084 41.656 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
-			(at 162.56 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 162.56 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, small symbol, bridged"
-			(at 162.56 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 162.56 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f685e0ab-8342-4d9d-bf5f-59a9f7eddf95")
-		)
-		(pin "2"
-			(uuid "358ab1ab-220c-4f13-a3af-a3c4af68a346")
-		)
-		(instances
-			(project "usb_bridge"
-				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "JP11")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -4643,7 +4243,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f532398-e761-4588-a019-603ea7592a3f")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR046"
 			(at 113.03 45.72 0)
 			(effects
 				(font
@@ -4693,7 +4293,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR048")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -4787,7 +4387,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "825b4794-18b3-452e-84d9-d1c0094a3155")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR040"
 			(at 83.82 114.3 0)
 			(effects
 				(font
@@ -4837,7 +4437,7 @@
 		(instances
 			(project ""
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR041")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -4845,7 +4445,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 162.56 41.91 0)
+		(at 162.56 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4853,8 +4453,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c14bd05-090c-437d-92c0-d311d92f25f7")
-		(property "Reference" "#PWR053"
-			(at 162.56 45.72 0)
+		(property "Reference" "#PWR052"
+			(at 162.56 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4863,7 +4463,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 162.56 36.83 0)
+			(at 162.56 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4871,7 +4471,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 41.91 0)
+			(at 162.56 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4880,7 +4480,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 41.91 0)
+			(at 162.56 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4889,7 +4489,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 162.56 41.91 0)
+			(at 162.56 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4903,7 +4503,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR053")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -4919,7 +4519,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8eef8307-6886-4f38-b041-06bf77398408")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR048"
 			(at 123.19 45.72 0)
 			(effects
 				(font
@@ -4969,7 +4569,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR050")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -4985,7 +4585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5820de3-c00f-4ac8-a5cb-db0d44b7dd81")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR051"
 			(at 161.29 157.48 0)
 			(effects
 				(font
@@ -5035,7 +4635,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR052")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -5051,7 +4651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd490496-4c5f-4b0f-a705-88561fda6517")
-		(property "Reference" "R16"
+		(property "Reference" "R15"
 			(at 101.6 133.3499 0)
 			(effects
 				(font
@@ -5114,7 +4714,7 @@
 		(instances
 			(project ""
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "R16")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -5208,7 +4808,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "df084d9b-1eb9-4b50-96fc-1080112f01ae")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 119.126 74.93 90)
 			(effects
 				(font
@@ -5271,7 +4871,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -5287,7 +4887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e458a137-8860-4768-8e6c-8451eb969d83")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR042"
 			(at 92.71 105.41 0)
 			(effects
 				(font
@@ -5337,7 +4937,7 @@
 		(instances
 			(project ""
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR043")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -5352,7 +4952,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f28ee7a1-0f81-4af8-bed0-ee10e2668943")
-		(property "Reference" "C14"
+		(property "Reference" "C13"
 			(at 107.188 46.228 90)
 			(effects
 				(font
@@ -5415,7 +5015,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "C14")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -5431,7 +5031,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f35a2c39-dfc6-4268-a1bd-37f5c093c4da")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR044"
 			(at 99.06 146.05 0)
 			(effects
 				(font
@@ -5481,7 +5081,7 @@
 		(instances
 			(project "bridge"
 				(path "/3b0cc3d4-df75-4145-abb6-d19d57c31f1b/ee32e54e-8e22-4372-9897-0863eef95f76"
-					(reference "#PWR045")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
