@@ -1,0 +1,3 @@
+
+- hw/usb_bridge/usb_bridge.kicad_sch: [report](https://github.com/Tai-Min/Robo-Bus/blob/devel/bridge-add-qr-PR65-AUTO/erc/hw/usb_bridge/usb_bridge.kicad_sch.rpt)
+Found 1 violations
