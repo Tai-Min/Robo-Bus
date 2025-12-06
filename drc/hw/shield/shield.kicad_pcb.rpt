@@ -1,0 +1,154 @@
+** Drc report for shield.kicad_pcb **
+** Created on 2025-12-06T15:19:37+0000 **
+
+** Found 8 DRC violations **
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(214.6700 mm, 86.8900 mm): Reference field of D2
+    @(214.6700 mm, 86.2250 mm): Segment of D1 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(214.6700 mm, 86.8900 mm): Reference field of D2
+    @(214.6700 mm, 86.2250 mm): Segment of D1 on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(149.0472 mm, 111.5060 mm): PCB text 'Licensed under CERN OHL v.1.2' on F.Silkscreen
+[lib_footprint_mismatch]: Footprint 'RaspberryPi_Pico_Common_Unspecified' does not match copy in library 'Module'.
+    Local override; warning
+    @(152.4000 mm, 76.2000 mm): Footprint A2
+[lib_footprint_mismatch]: Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'.
+    Local override; warning
+    @(230.1000 mm, 90.1600 mm): Footprint U2
+[lib_footprint_mismatch]: Footprint 'SOT-23' does not match copy in library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(214.6700 mm, 84.6650 mm): Footprint D1
+[lib_footprint_mismatch]: Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'.
+    Local override; warning
+    @(230.3350 mm, 103.8850 mm): Footprint U3
+[lib_footprint_mismatch]: Footprint 'SOT-23' does not match copy in library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(214.6700 mm, 89.2900 mm): Footprint D2
+
+** Found 22 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(139.9000 mm, 105.5600 mm): PTH pad 0 [GND] of J2
+    @(148.2450 mm, 106.9800 mm): PTH pad 6 [GND] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(139.9000 mm, 105.5600 mm): PTH pad 0 [GND] of J2
+    @(143.5100 mm, 95.2500 mm): PTH pad 18 [GND] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(143.5100 mm, 57.1500 mm): PTH pad 3 [GND] of A2
+    @(143.5100 mm, 69.8500 mm): PTH pad 8 [GND] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(143.5100 mm, 82.5500 mm): PTH pad 13 [GND] of A2
+    @(143.5100 mm, 69.8500 mm): PTH pad 8 [GND] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(143.5100 mm, 95.2500 mm): PTH pad 18 [GND] of A2
+    @(143.5100 mm, 82.5500 mm): PTH pad 13 [GND] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(152.4000 mm, 104.1400 mm): PTH pad 3 [GND] of J2
+    @(148.2450 mm, 106.9800 mm): PTH pad 6 [GND] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(152.4000 mm, 104.1400 mm): PTH pad 3 [GND] of J2
+    @(161.2900 mm, 95.2500 mm): PTH pad 23 [GND] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(161.2900 mm, 57.1500 mm): PTH pad 38 [GND] of A2
+    @(161.2900 mm, 69.8500 mm): PTH pad 33 [GND] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(161.2900 mm, 82.5500 mm): PTH pad 28 [GND] of A2
+    @(161.2900 mm, 95.2500 mm): PTH pad 23 [GND] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(161.2900 mm, 82.5500 mm): PTH pad 28 [GND] of A2
+    @(161.2900 mm, 69.8500 mm): PTH pad 33 [GND] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(161.2900 mm, 95.2500 mm): PTH pad 23 [GND] of A2
+    @(164.9000 mm, 105.5600 mm): PTH pad 0 [GND] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(215.6075 mm, 89.2900 mm): Pad 3 [GND] of D2 on F.Cu
+    @(215.6075 mm, 84.6650 mm): Pad 3 [GND] of D1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(215.6075 mm, 89.2900 mm): Pad 3 [GND] of D2 on F.Cu
+    @(232.5750 mm, 92.0650 mm): Pad 5 [GND] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(215.6075 mm, 89.2900 mm): Pad 3 [GND] of D2 on F.Cu
+    @(164.9000 mm, 105.5600 mm): PTH pad 0 [GND] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(214.3400 mm, 80.1800 mm): PTH pad 1 [+3.3V] of RN1
+    @(161.2900 mm, 62.2300 mm): PTH pad 36 [+3.3V] of A2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(232.5750 mm, 88.2550 mm): Pad 8 [+3.3V] of U2 on F.Cu
+    @(214.3400 mm, 80.1800 mm): PTH pad 1 [+3.3V] of RN1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(149.6300 mm, 104.1400 mm): PTH pad 2 [/CAN-] of J2
+    @(213.7325 mm, 85.6150 mm): Pad 2 [/CAN-] of D1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(153.7850 mm, 106.9800 mm): PTH pad 8 [/MODBUS+] of J2
+    @(213.7325 mm, 90.2400 mm): Pad 2 [/MODBUS+] of D2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(151.0150 mm, 106.9800 mm): PTH pad 7 [/CAN+] of J2
+    @(213.7325 mm, 83.7150 mm): Pad 1 [/CAN+] of D1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.8600 mm, 104.1400 mm): PTH pad 1 [VCC] of J2
+    @(156.5550 mm, 106.9800 mm): PTH pad 9 [VCC] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(155.1700 mm, 104.1400 mm): PTH pad 4 [/MODBUS-] of J2
+    @(213.7325 mm, 88.3400 mm): Pad 1 [/MODBUS-] of D2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(227.6250 mm, 89.5250 mm): Pad 2 [/TNOW] of U2 on F.Cu
+    @(227.6250 mm, 90.7950 mm): Pad 3 [/TNOW] of U2 on F.Cu
+
+** Found 15 Footprint errors **
+[missing_footprint]: Missing footprint C1 (0.1u)
+    Local override; warning
+[missing_footprint]: Missing footprint J1 (ADDR_EN)
+    Local override; warning
+[missing_footprint]: Missing footprint Q1 (PMOS)
+    Local override; warning
+[missing_footprint]: Missing footprint R1 (0R)
+    Local override; warning
+[missing_footprint]: Missing footprint R2 (0R)
+    Local override; warning
+[missing_footprint]: Missing footprint R3 (0R)
+    Local override; warning
+[missing_footprint]: Missing footprint R4 (0R)
+    Local override; warning
+[missing_footprint]: Missing footprint R5 (0R)
+    Local override; warning
+[missing_footprint]: Missing footprint SW1 (SW_DIP_x08)
+    Local override; warning
+[missing_footprint]: Missing footprint TP1 (TestPoint)
+    Local override; warning
+[missing_footprint]: Missing footprint TP2 (TestPoint)
+    Local override; warning
+[missing_footprint]: Missing footprint TP3 (TestPoint)
+    Local override; warning
+[missing_footprint]: Missing footprint TP4 (TestPoint)
+    Local override; warning
+[missing_footprint]: Missing footprint U1 (TCAN330G)
+    Local override; warning
+[missing_footprint]: Missing footprint U4 (74HC165)
+    Local override; warning
+
+** End of Report **
