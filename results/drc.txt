@@ -1,0 +1,5 @@
+
+- hw/shield/shield.kicad_pcb: [report](https://github.com/Tai-Min/Robo-Bus/blob/devel/add-shield-files-PR93-AUTO/drc/hw/shield/shield.kicad_pcb.rpt)
+Found 13 violations
+Found 56 unconnected items
+Found 20 schematic parity issues

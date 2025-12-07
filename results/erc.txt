@@ -1,0 +1,3 @@
+
+- hw/shield/shield.kicad_sch: [report](https://github.com/Tai-Min/Robo-Bus/blob/devel/add-shield-files-PR93-AUTO/erc/hw/shield/shield.kicad_sch.rpt)
+Found 53 violations

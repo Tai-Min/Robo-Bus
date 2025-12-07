@@ -1,0 +1,165 @@
+ERC report (2025-12-07T23:58:35+0000, Encoding UTF8)
+
+***** Sheet /
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(35.56 mm, 24.13 mm): Symbol #PWR01 Pin 1 [Power input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(29.21 mm, 90.17 mm): Symbol U2 Pin 2 [~{RE}, Input, Line]
+[label_dangling]: Label not connected to anything
+    ; error
+    @(27.94 mm, 97.79 mm): Label 'RS_DI'
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(29.21 mm, 97.79 mm): Symbol U2 Pin 4 [DI, Input, Line]
+[label_dangling]: Label not connected to anything
+    ; error
+    @(39.37 mm, 139.70 mm): Label 'CAN_TX'
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(40.64 mm, 139.70 mm): Symbol U1 Pin 1 [TXD, Input, Line]
+[label_dangling]: Label not connected to anything
+    ; error
+    @(39.37 mm, 142.24 mm): Label 'CAN_RX'
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(133.35 mm, 64.77 mm): Symbol #PWR02 Pin 1 [Power input, Line]
+[label_dangling]: Label not connected to anything
+    ; error
+    @(27.94 mm, 147.32 mm): Label 'CAN_SHDN'
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 96.52 mm): Symbol A2 Pin 37 [3V3_EN, Passive, Line]
+[label_dangling]: Label not connected to anything
+    ; error
+    @(27.94 mm, 149.86 mm): Label 'CAN_S'
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(40.64 mm, 147.32 mm): Symbol U1 Pin 5 [SHDN, Input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 101.60 mm): Symbol A2 Pin 1 [GPIO0, Bidirectional, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(40.64 mm, 149.86 mm): Symbol U1 Pin 8 [S, Input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(134.62 mm, 78.74 mm): Symbol A2 Pin 39 [VSYS, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 104.14 mm): Symbol A2 Pin 2 [GPIO1, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 106.68 mm): Symbol A2 Pin 4 [GPIO2, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 109.22 mm): Symbol A2 Pin 5 [GPIO3, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 111.76 mm): Symbol A2 Pin 6 [GPIO4, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 114.30 mm): Symbol A2 Pin 7 [GPIO5, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 116.84 mm): Symbol A2 Pin 9 [GPIO6, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 119.38 mm): Symbol A2 Pin 10 [GPIO7, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 121.92 mm): Symbol A2 Pin 11 [GPIO8, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 124.46 mm): Symbol A2 Pin 12 [GPIO9, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 127.00 mm): Symbol A2 Pin 14 [GPIO10, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 129.54 mm): Symbol A2 Pin 15 [GPIO11, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 132.08 mm): Symbol A2 Pin 16 [GPIO12, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 134.62 mm): Symbol A2 Pin 17 [GPIO13, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 137.16 mm): Symbol A2 Pin 19 [GPIO14, Bidirectional, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(116.84 mm, 139.70 mm): Symbol A2 Pin 20 [GPIO15, Bidirectional, Line]
+[pin_to_pin]: Pins of type Power output and Power output are connected
+    ; error
+    @(139.70 mm, 152.40 mm): Symbol A2 Pin 3 [GND, Power output, Line]
+    @(162.56 mm, 139.70 mm): Symbol A2 Pin 33 [AGND, Power output, Line]
+[label_dangling]: Label not connected to anything
+    ; error
+    @(181.61 mm, 125.73 mm): Label 'CLK'
+[label_dangling]: Label not connected to anything
+    ; error
+    @(184.15 mm, 125.73 mm): Label 'SH/~{LD}'
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(218.44 mm, 53.34 mm): Symbol U3 Pin 2 [VIN, Power input, Line]
+[label_dangling]: Label not connected to anything
+    ; error
+    @(186.69 mm, 125.73 mm): Label 'SOUT'
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 92.71 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 95.25 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 100.33 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 102.87 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 105.41 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 107.95 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 110.49 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 113.03 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 115.57 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 118.11 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 120.65 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 123.19 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 125.73 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 128.27 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 130.81 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 133.35 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 135.89 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(118.11 mm, 138.43 mm): No Connect
+
+ ** ERC messages: 53  Errors 35  Warnings 18
