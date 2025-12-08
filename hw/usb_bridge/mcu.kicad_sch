@@ -3402,7 +3402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "\\datasheets\\HCI XC53G2-8.000-F12NJHP.pdf"
+		(property "Datasheet" ".\\datasheets\\HCI XC53G2-8.000-F12NJHP.pdf"
 			(at 109.22 71.12 0)
 			(effects
 				(font
@@ -3896,7 +3896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ".\\datasheets\\GoldPin.pdf"
 			(at 100.33 106.68 0)
 			(effects
 				(font
@@ -4053,7 +4053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "\\datasheets\\STM32G0B1CBT.pdf"
+		(property "Datasheet" ".\\datasheets\\STM32G0B1CBT.pdf"
 			(at 161.29 101.6 0)
 			(effects
 				(font
@@ -4757,7 +4757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ".\\datasheets\\GoldPin.pdf"
 			(at 105.41 127 0)
 			(effects
 				(font
