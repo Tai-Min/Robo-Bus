@@ -2305,16 +2305,6 @@
 		)
 		(uuid "6c8dc50b-4b57-450b-8891-347024617453")
 	)
-	(text "Place if this connector\nis in \"bus terminator\" or \n\"bus connector\" configuration"
-		(exclude_from_sim no)
-		(at 181.356 140.716 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7c5b0422-c4da-48cc-aa33-15fd4d4e4fb5")
-	)
 	(text "female"
 		(exclude_from_sim no)
 		(at 182.372 48.006 0)
@@ -3967,7 +3957,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "\\datasheets\\DE9_male.pdf"
+		(property "Datasheet" ".\\datasheets\\DE9_male.pdf"
 			(at 224.79 115.57 0)
 			(effects
 				(font
@@ -4974,7 +4964,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6f84110-3acd-4957-a854-8813fafe7dfd")
 		(property "Reference" "D2"
@@ -5002,7 +4992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "\\datasheets\\SM712-02HTG.pdf"
+		(property "Datasheet" ".\\datasheets\\SM712-02HTG.pdf"
 			(at 194.31 130.81 0)
 			(effects
 				(font
@@ -5055,7 +5045,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "c9f0b257-dd6f-4c3a-af3b-b2d5e7f78cee")
 		(property "Reference" "D1"
 			(at 176.53 124.46 0)
@@ -5082,7 +5072,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "\\datasheets\\CDSOT23-T24CAN.pdf"
+		(property "Datasheet" ".\\datasheets\\CDSOT23-T24CAN.pdf"
 			(at 180.34 130.81 0)
 			(effects
 				(font
@@ -5229,7 +5219,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "\\datasheets\\DE9_female.pdf"
+		(property "Datasheet" ".\\datasheets\\DE9_female.pdf"
 			(at 134.62 116.84 0)
 			(effects
 				(font
@@ -5473,7 +5463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "\\datasheets\\DE9_female.pdf"
+		(property "Datasheet" ".\\datasheets\\DE9_female.pdf"
 			(at 180.34 60.96 0)
 			(effects
 				(font
