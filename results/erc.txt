@@ -1,0 +1,3 @@
+
+- hw/bus_connector/bus_connector.kicad_sch: [report](https://github.com/Tai-Min/Robo-Bus/blob/bug/fix-connector-datasheets-PR97-AUTO/erc/hw/bus_connector/bus_connector.kicad_sch.rpt)
+Found 0 violations
