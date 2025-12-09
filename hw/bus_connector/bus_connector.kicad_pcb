@@ -122,7 +122,7 @@
 			(outputdirectory "")
 		)
 	)
-	(property "REVISION" "1.0.0d")
+	(property "REVISION" "1.0.1d")
 	(property "TITLE" "Bus Connector")
 	(net 0 "")
 	(net 1 "VCC")

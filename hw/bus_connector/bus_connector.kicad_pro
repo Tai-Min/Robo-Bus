@@ -670,7 +670,7 @@
     ]
   ],
   "text_variables": {
-    "REVISION": "1.0.0d",
+    "REVISION": "1.0.1d",
     "TITLE": "Bus Connector"
   }
 }
