@@ -1,0 +1,65 @@
+ERC report (2025-12-09T18:17:19+0000, Encoding UTF8)
+
+***** Sheet /
+[wire_dangling]: Wires not connected to anything
+    ; error
+    @(105.41 mm, 71.12 mm): Horizontal Wire, length 2.54 mm
+    @(133.35 mm, 66.04 mm): Horizontal Wire, length 30.48 mm
+[wire_dangling]: Wires not connected to anything
+    ; error
+    @(113.03 mm, 71.12 mm): Horizontal Wire, length 2.54 mm
+    @(115.57 mm, 71.12 mm): Vertical Wire, length 1.27 mm
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(83.82 mm, 107.95 mm): Symbol #PWR040 Pin 1 [Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(92.71 mm, 101.60 mm): Symbol #PWR042 Pin 1 [Power input, Line]
+[label_dangling]: Label not connected to anything
+    ; error
+    @(130.81 mm, 76.20 mm): Hierarchical Label 'CAN_RX'
+[pin_not_connected]: Hierarchical label "CAN_RX" in root sheet cannot be connected to non-existent parent sheet
+    ; error
+    @(130.81 mm, 76.20 mm): Hierarchical Label 'CAN_RX'
+[label_dangling]: Label not connected to anything
+    ; error
+    @(130.81 mm, 78.74 mm): Hierarchical Label 'CAN_TX'
+[pin_not_connected]: Hierarchical label "CAN_TX" in root sheet cannot be connected to non-existent parent sheet
+    ; error
+    @(130.81 mm, 78.74 mm): Hierarchical Label 'CAN_TX'
+[label_dangling]: Label not connected to anything
+    ; error
+    @(191.77 mm, 68.58 mm): Hierarchical Label 'LED_RX'
+[pin_not_connected]: Hierarchical label "LED_RX" in root sheet cannot be connected to non-existent parent sheet
+    ; error
+    @(191.77 mm, 68.58 mm): Hierarchical Label 'LED_RX'
+[label_dangling]: Label not connected to anything
+    ; error
+    @(191.77 mm, 71.12 mm): Hierarchical Label 'LED_TX'
+[pin_not_connected]: Hierarchical label "LED_TX" in root sheet cannot be connected to non-existent parent sheet
+    ; error
+    @(191.77 mm, 71.12 mm): Hierarchical Label 'LED_TX'
+[label_dangling]: Label not connected to anything
+    ; error
+    @(191.77 mm, 83.82 mm): Hierarchical Label 'USB-'
+[pin_not_connected]: Hierarchical label "USB-" in root sheet cannot be connected to non-existent parent sheet
+    ; error
+    @(191.77 mm, 83.82 mm): Hierarchical Label 'USB-'
+[label_dangling]: Label not connected to anything
+    ; error
+    @(191.77 mm, 88.90 mm): Hierarchical Label 'USB+'
+[pin_not_connected]: Hierarchical label "USB+" in root sheet cannot be connected to non-existent parent sheet
+    ; error
+    @(191.77 mm, 88.90 mm): Hierarchical Label 'USB+'
+[label_dangling]: Label not connected to anything
+    ; error
+    @(191.77 mm, 99.06 mm): Hierarchical Label 'CAN_S'
+[pin_not_connected]: Hierarchical label "CAN_S" in root sheet cannot be connected to non-existent parent sheet
+    ; error
+    @(191.77 mm, 99.06 mm): Hierarchical Label 'CAN_S'
+[unresolved_variable]: Unresolved text variable in drawing sheet
+    ; error
+[unresolved_variable]: Unresolved text variable in drawing sheet
+    ; error
+
+ ** ERC messages: 20  Errors 20  Warnings 0
