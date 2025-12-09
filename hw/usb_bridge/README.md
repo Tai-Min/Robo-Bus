@@ -1,0 +1,1 @@
+USB <--> CAN part of this pcb is based on [candleLight FD](https://github.com/linux-automation/candleLightFD/tree/main).
