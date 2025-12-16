@@ -17,7 +17,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          AUTHOR_ASSOCIATION=$(gh api repos/Tai-Min/Robo-Bus/issues/comments/${{ github.event.comment.id }} | jq .author_association)
+          AUTHOR_ASSOCIATION=$(gh api repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }} | jq .author_association)
           echo "${{ github.event.comment.body }}"
           echo "$AUTHOR_ASSOCIATION"
           echo "association=$AUTHOR_ASSOCIATION" >> $GITHUB_OUTPUT
@@ -37,7 +37,7 @@ jobs:
         run: |
           # TODO: get issue comment from inputs
 
-          BODY=$(gh api repos/Tai-Min/Robo-Bus/issues/comments/${{ github.event.comment.id }} | jq .body)
+          BODY=$(gh api repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }} | jq .body)
           BODY=$(echo "$BODY" | awk '{sub("/release","");print}')
           BODY=$(echo ${BODY:1:-1})
           echo "$BODY"
