@@ -82,7 +82,7 @@
 			(outputdirectory "")
 		)
 	)
-	(property "REVISION" "1.0.0d")
+	(property "REVISION" "1.0.1d")
 	(property "TITLE" "USB <-> CAN / RS485 ADAPTER")
 	(net 0 "")
 	(net 1 "GND")
