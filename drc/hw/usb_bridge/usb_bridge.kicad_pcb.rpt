@@ -1,0 +1,39 @@
+** Drc report for usb_bridge.kicad_pcb **
+** Created on 2026-01-27T19:28:04+0000 **
+
+** Found 8 DRC violations **
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.3700 mm, 117.1350 mm): 3 Column Table
+    @(135.8650 mm, 109.3450 mm): Segment of J3 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.3700 mm, 117.1350 mm): 3 Column Table
+    @(135.8650 mm, 110.7250 mm): Segment of J3 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.3700 mm, 117.1350 mm): 3 Column Table
+    @(135.8650 mm, 111.9950 mm): Segment of J3 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.3700 mm, 117.1350 mm): 3 Column Table
+    @(135.8650 mm, 117.1850 mm): Segment of J3 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.3700 mm, 117.1350 mm): 3 Column Table
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.3700 mm, 117.1350 mm): 3 Column Table
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.3700 mm, 117.1350 mm): 3 Column Table
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.3700 mm, 117.1350 mm): 3 Column Table
+    @(135.8650 mm, 111.9950 mm): Segment of J3 on F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
