@@ -1,0 +1,5 @@
+
+- hw/usb_bridge/usb_bridge.kicad_pcb: [report](https://github.com/Tai-Min/Robo-Bus/blob/devel/usb-bridge-fixes-PR106-AUTO/drc/hw/usb_bridge/usb_bridge.kicad_pcb.rpt)
+Found 8 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
