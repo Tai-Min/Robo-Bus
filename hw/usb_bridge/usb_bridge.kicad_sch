@@ -9096,7 +9096,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PTVSHC3D4V5B"
+		(property "Value" "PESD5V0S1BA"
 			(at 70.104 66.294 0)
 			(effects
 				(font
@@ -9105,7 +9105,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 72.39 73.66 0)
 			(effects
 				(font
@@ -11932,7 +11932,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PTVSHC3D4V5B"
+		(property "Value" "PESD5V0S1BA"
 			(at 63.5 63.5 0)
 			(effects
 				(font
@@ -11941,7 +11941,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 66.04 67.31 0)
 			(effects
 				(font
