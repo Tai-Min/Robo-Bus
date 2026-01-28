@@ -9114,7 +9114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ".\\datasheets\\PTVSHC3D4V5B.pdf"
+		(property "Datasheet" ".\\datasheets\\PESD5V0S1BA.pdf"
 			(at 72.39 73.66 0)
 			(effects
 				(font
@@ -11950,7 +11950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ".\\datasheets\\PTVSHC3D4V5B.pdf"
+		(property "Datasheet" ".\\datasheets\\PESD5V0S1BA.pdf"
 			(at 66.04 67.31 0)
 			(effects
 				(font
