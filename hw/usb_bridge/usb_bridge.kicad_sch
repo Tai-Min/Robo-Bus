@@ -13776,7 +13776,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 17.78 104.394 90)
 			(effects
 				(font
@@ -13811,7 +13811,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C22548"
+		(property "LCSC Part #" "C98220"
 			(at 20.32 104.14 90)
 			(effects
 				(font
