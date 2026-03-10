@@ -63,7 +63,40 @@
           "width": 0.21
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_overlap|135039166|113882857|0a0ec402-d2aa-4b49-9020-e2c33439d7ee|78824ebe-306a-486c-8b3b-a8f2a6069f57",
+          ""
+        ],
+        [
+          "silk_overlap|135086785|111899642|0a0ec402-d2aa-4b49-9020-e2c33439d7ee|83b1ebce-ff1b-40a2-a7da-1da2652dc097",
+          ""
+        ],
+        [
+          "silk_overlap|135396309|116352857|0a0ec402-d2aa-4b49-9020-e2c33439d7ee|e9cc1fbe-9d8a-4ff6-996b-ca252203ecc7",
+          ""
+        ],
+        [
+          "silk_overlap|135815000|109390000|0a0ec402-d2aa-4b49-9020-e2c33439d7ee|ae5baacb-7a60-41fc-8893-e89830210c62",
+          ""
+        ],
+        [
+          "silk_overlap|135815000|109390000|0a0ec402-d2aa-4b49-9020-e2c33439d7ee|f99c881d-2af1-4b4b-9d71-0b241c59f9a7",
+          ""
+        ],
+        [
+          "silk_overlap|135815000|111995000|0a0ec402-d2aa-4b49-9020-e2c33439d7ee|4e95084a-a64d-45b7-a2a9-0d6f5cef8308",
+          ""
+        ],
+        [
+          "silk_overlap|135815000|117135000|0a0ec402-d2aa-4b49-9020-e2c33439d7ee|4f40dff8-b644-478d-88f3-88a68587a2cf",
+          ""
+        ],
+        [
+          "silk_overlap|135815000|117135000|0a0ec402-d2aa-4b49-9020-e2c33439d7ee|7a29a164-616f-42f8-b309-719545a65d15",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -524,7 +557,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../usb_bridge.step",
       "svg": "",
       "vrml": ""
     },
@@ -678,7 +711,7 @@
     ]
   ],
   "text_variables": {
-    "REVISION": "1.0.1d",
+    "REVISION": "1.0.1rc",
     "TITLE": "USB <-> CAN / RS485 ADAPTER"
   }
 }

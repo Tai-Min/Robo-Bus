@@ -82,7 +82,7 @@
 			(outputdirectory "")
 		)
 	)
-	(property "REVISION" "1.0.1d")
+	(property "REVISION" "1.0.1rc")
 	(property "TITLE" "USB <-> CAN / RS485 ADAPTER")
 	(net 0 "")
 	(net 1 "GND")
@@ -196,7 +196,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4044821f-a112-4a76-a72f-57d7c1359a7c")
@@ -257,7 +257,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C22548"
+		(property "LCSC Part #" "C98220"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2071,7 +2071,7 @@
 				)
 			)
 		)
-		(path "/91cd6d30-3a4b-4502-9865-e66bd6a52748")
+		(path "/c1353fa8-e23a-4ba9-a1cd-f8212357a844")
 		(sheetname "/")
 		(sheetfile "usb_bridge.kicad_sch")
 		(attr smd)
@@ -5394,7 +5394,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6551,7 +6551,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "50V"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7879,7 +7879,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "8666e5a2-23a4-4700-93fa-9fe0e3fd4b1d")
+			(uuid "1bc15ce7-975e-4e95-abb9-aeaa02705498")
 		)
 		(pad "1" thru_hole circle
 			(at -1.697056 1.697056)
@@ -7891,7 +7891,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "8666e5a2-23a4-4700-93fa-9fe0e3fd4b1d")
+			(uuid "81ffb814-35f2-4815-afcd-83afa88f499a")
 		)
 		(pad "1" thru_hole circle
 			(at 0 -2.4)
@@ -7903,7 +7903,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "8666e5a2-23a4-4700-93fa-9fe0e3fd4b1d")
+			(uuid "6d056610-6df1-4584-acd6-c950f2395e75")
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -7915,7 +7915,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "8666e5a2-23a4-4700-93fa-9fe0e3fd4b1d")
+			(uuid "30ec0fd4-c07c-4c66-a06e-3a59517e7758")
 		)
 		(pad "1" thru_hole circle
 			(at 0 2.4)
@@ -7927,7 +7927,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "8666e5a2-23a4-4700-93fa-9fe0e3fd4b1d")
+			(uuid "56f13e79-5dc1-4636-b606-6c9dc6da8a17")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 -1.697056)
@@ -7939,7 +7939,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "8666e5a2-23a4-4700-93fa-9fe0e3fd4b1d")
+			(uuid "5e059bd7-9c84-4e24-9908-02fbb80f30c7")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 1.697056)
@@ -7951,7 +7951,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "8666e5a2-23a4-4700-93fa-9fe0e3fd4b1d")
+			(uuid "dea962b0-9def-4d88-9b8a-319fca2ff597")
 		)
 		(pad "1" thru_hole circle
 			(at 2.4 0)
@@ -7963,7 +7963,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "8666e5a2-23a4-4700-93fa-9fe0e3fd4b1d")
+			(uuid "46910b7b-15ee-464d-b125-c719d2ed9483")
 		)
 		(embedded_fonts no)
 	)
@@ -18362,84 +18362,6 @@
 				(thickness 0.1)
 			)
 			(justify bottom)
-		)
-	)
-	(gr_text "D-"
-		(at 141.87 93.53 90)
-		(layer "B.SilkS")
-		(uuid "02f3d2ea-75a0-4844-b92d-e8b85df9cc81")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.125)
-				(bold yes)
-			)
-			(justify bottom mirror)
-		)
-	)
-	(gr_text "+"
-		(at 155.52 94.22 90)
-		(layer "B.SilkS")
-		(uuid "07c0a290-b7fa-4622-b7c0-2d63df05c3f2")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.125)
-				(bold yes)
-			)
-			(justify bottom mirror)
-		)
-	)
-	(gr_text "-"
-		(at 155.54 91.65 90)
-		(layer "B.SilkS")
-		(uuid "6a5237f8-a515-45f5-8840-11795d92e6e7")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.125)
-				(bold yes)
-			)
-			(justify bottom mirror)
-		)
-	)
-	(gr_text "+"
-		(at 162.86 98.91 90)
-		(layer "B.SilkS")
-		(uuid "9c2e7bb4-0427-49e1-9a6b-9fd70e3580a3")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.125)
-				(bold yes)
-			)
-			(justify bottom mirror)
-		)
-	)
-	(gr_text "S"
-		(at 158.14 97 90)
-		(layer "B.SilkS")
-		(uuid "d78f4b67-bce3-404c-9ae2-f375bf2834a4")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.125)
-				(bold yes)
-			)
-			(justify bottom mirror)
-		)
-	)
-	(gr_text "-"
-		(at 162.84 101.48 90)
-		(layer "B.SilkS")
-		(uuid "dc7b0222-f968-4faa-a8d7-c38bf9d38f6f")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.125)
-				(bold yes)
-			)
-			(justify bottom mirror)
 		)
 	)
 	(table
