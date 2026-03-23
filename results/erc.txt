@@ -1,0 +1,3 @@
+
+- hw/pico_expansion_board/pico_expansion_board.kicad_sch: [report](https://github.com/Tai-Min/Robo-Bus/blob/devel/add-pico-expansion-board-PR118-AUTO/erc/hw/pico_expansion_board/pico_expansion_board.kicad_sch.rpt)
+Found 0 violations
