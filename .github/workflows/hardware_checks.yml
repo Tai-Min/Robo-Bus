@@ -172,7 +172,7 @@ jobs:
 
           echo "$FILES"
 
-          python -m pip install PyMuPDF==1.14.15
+          python -m pip install PyMuPDF==1.13.20
           python -m pip install --upgrade pdfCropMargins
           git clone https://gitlab.com/dennevi/Board2Pdf --branch v1.9.x
 
