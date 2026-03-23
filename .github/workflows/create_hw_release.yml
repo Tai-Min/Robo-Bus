@@ -33,6 +33,7 @@ jobs:
           cp /usr/share/kicad/template/sym-lib-table ~/.config/kicad/9.0/sym-lib-table
           cp /usr/share/kicad/template/fp-lib-table ~/.config/kicad/9.0/fp-lib-table
 
+          python -m pip install PyMuPDF==1.24.13
           python -m pip install --upgrade pdfCropMargins
           git clone https://gitlab.com/dennevi/Board2Pdf --branch v1.9.x
 
