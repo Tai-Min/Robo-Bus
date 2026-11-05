@@ -1,0 +1,3 @@
+
+- hw/breakout/breakout.kicad_sch: [report](https://github.com/Tai-Min/Robo-Bus/blob/devel/breakout-PR124-AUTO/erc/hw/breakout/breakout.kicad_sch.rpt)
+Found 0 violations
