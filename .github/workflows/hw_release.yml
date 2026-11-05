@@ -1,0 +1,28 @@
+name: Create hardware package
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: Name of the hardware release
+        required: true
+        type: string
+      sha:
+        description: Commit sha
+        required: true
+        type: string
+      projects:
+        description: Comma separated project names
+        required: true
+        type: string
+
+jobs:
+  release_creator:
+    permissions:
+      contents: read
+      issues: write 
+    uses: Tai-Min/Hardware-Actions/.github/workflows/create_hw_package.yml@master
+    with:
+      name: ${{ inputs.name }}
+      sha: ${{ inputs.sha }}
+      projects: ${{ inputs.projects }}
