@@ -1,0 +1,27 @@
+name: On pull request
+
+on:
+  pull_request_target:
+
+jobs:
+  # Label PR accordingly to proposed changes
+  pr_labeler:
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    uses: Tai-Min/Hardware-Actions/.github/workflows/pr_labeler.yml@master
+
+  # Enforce PR rules
+  pr_rule_enforcer:
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: Tai-Min/Hardware-Actions/.github/workflows/pr_rule_enforcer.yml@master
+
+  # Check PR for suspicious changes
+  pr_alerts:
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: Tai-Min/Hardware-Actions/.github/workflows/pr_alerts.yml@master

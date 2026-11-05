@@ -1,0 +1,19 @@
+name: On issue commented
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  release_publisher:
+    permissions:
+      issues: write
+      contents: write
+      actions: read
+    uses: Tai-Min/Hardware-Actions/.github/workflows/release_publisher.yml@master
+    with:
+      comment_id: ${{ github.event.comment.id }}
+      comment_body: ${{ github.event.comment.body }}
+      issue_number: ${{ github.event.issue.number }}
+      is_pull_request: ${{ github.event.issue.pull_request != null }}
+    

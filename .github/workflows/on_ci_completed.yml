@@ -1,0 +1,17 @@
+name: Update PR comments
+
+on:
+  workflow_run:
+    workflows: [ CI ]
+    types: [ completed ]
+
+jobs:
+  pr_commenter:
+    permissions:
+      actions: read
+      pull-requests: write
+    uses: Tai-Min/Hardware-Actions/.github/workflows/pr_commenter.yml@master
+    with:
+      run_id: ${{ github.event.workflow_run.id }}
+    secrets:
+      github_token: ${{ secrets.GITHUB_TOKEN }}

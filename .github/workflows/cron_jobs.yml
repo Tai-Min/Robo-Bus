@@ -1,0 +1,14 @@
+name: Cron jobs
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Everday at midnight
+
+jobs:
+  # Remove stale branches created by actions
+  stale_branch_remover:
+      uses: Tai-Min/Hardware-Actions/.github/workflows/stale_branch_remover.yml@master
+      permissions:
+        actions: read
+        pull-requests: read
+        contents: write
