@@ -83,35 +83,35 @@
       ],
       "drc_exclusions": [
         [
-          "silk_edge_clearance|105305000|55000000|b9e028e5-fecf-426f-902a-ed3531a5a276|59e1e076-cb6c-4ef4-ae86-a5d54ea9697b",
+          "silk_edge_clearance|137880000|83675000|b9e028e5-fecf-426f-902a-ed3531a5a276|59e1e076-cb6c-4ef4-ae86-a5d54ea9697b",
           ""
         ],
         [
-          "silk_edge_clearance|105340000|86000000|29be4f5d-88b5-438d-815d-1d250c3996ae|d027e0f5-6a69-4c79-82ce-bf5b3b8c0ff1",
+          "silk_edge_clearance|137915000|114675000|29be4f5d-88b5-438d-815d-1d250c3996ae|d027e0f5-6a69-4c79-82ce-bf5b3b8c0ff1",
           ""
         ],
         [
-          "silk_edge_clearance|115705000|55000000|b9e028e5-fecf-426f-902a-ed3531a5a276|5169e7c1-4999-49b3-8205-fe5a950002d5",
+          "silk_edge_clearance|148280000|83675000|b9e028e5-fecf-426f-902a-ed3531a5a276|5169e7c1-4999-49b3-8205-fe5a950002d5",
           ""
         ],
         [
-          "silk_edge_clearance|115740000|86000000|29be4f5d-88b5-438d-815d-1d250c3996ae|6fe55464-72b5-4531-8374-9c6457ba58ed",
+          "silk_edge_clearance|148315000|114675000|29be4f5d-88b5-438d-815d-1d250c3996ae|6fe55464-72b5-4531-8374-9c6457ba58ed",
           ""
         ],
         [
-          "silk_edge_clearance|116795000|86000000|29be4f5d-88b5-438d-815d-1d250c3996ae|4492ad36-e8af-4f72-89d6-2455808a15f7",
+          "silk_edge_clearance|149370000|114675000|29be4f5d-88b5-438d-815d-1d250c3996ae|4492ad36-e8af-4f72-89d6-2455808a15f7",
           ""
         ],
         [
-          "silk_edge_clearance|127195000|86000000|29be4f5d-88b5-438d-815d-1d250c3996ae|3fc7f697-9809-4349-8da9-c03dccffb33d",
+          "silk_edge_clearance|159770000|114675000|29be4f5d-88b5-438d-815d-1d250c3996ae|3fc7f697-9809-4349-8da9-c03dccffb33d",
           ""
         ],
         [
-          "silk_edge_clearance|128300000|55000000|b9e028e5-fecf-426f-902a-ed3531a5a276|0382f8b9-b131-4d2f-a374-00047305a8a9",
+          "silk_edge_clearance|160875000|83675000|b9e028e5-fecf-426f-902a-ed3531a5a276|0382f8b9-b131-4d2f-a374-00047305a8a9",
           ""
         ],
         [
-          "silk_edge_clearance|140500000|85830000|85186aaa-e818-4c5f-b405-217ac9831fbf|615df117-8c21-4edf-87f8-be12461465c4",
+          "silk_edge_clearance|173075000|114505000|85186aaa-e818-4c5f-b405-217ac9831fbf|615df117-8c21-4edf-87f8-be12461465c4",
           ""
         ]
       ],
